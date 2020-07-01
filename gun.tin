@@ -1,0 +1,15 @@
+#class {bot} {open} 
+#act {^=M=Punk} {k punk};
+#act {^=M=Nuke Addict} {k addict};
+#act {^=M=Nuke Dealer} {k dealer};
+#act {^=M=A stocky Metallaskull gang member} {k member};
+#act {^=M=A huge Metallaskull gang member} {k member};
+#act {^=M=A leggy Metallaskull gang member} {k member};
+#act {^=M=A large black spider gang member} {k member};
+#act {^=M=A small black spider gang member} {k member};
+#act {^=M=A thin black spider gang member} {k member};
+#act {^=M=P.E.T. Gang Leader} {k leader};
+#act {^=M=A Small P.E.T. Gang Member} {k member};
+#act {^=M=A Young P.E.T. Gang Member} {k member};
+
+#class {bot} {close}

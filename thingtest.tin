@@ -1,0 +1,69 @@
+#alias {ttest} {
+
+    #ACTION {^%%*%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|} 
+    {
+        #FORMAT {crafting[ingredient]} {%l} {%%1};
+        #VAR {satchel[$crafting[ingredient]][total]} {%%4};
+        #VAR {satchel[$crafting[ingredient]][subtotal][1]} {%%7};
+        #VAR {satchel[$crafting[ingredient]][subtotal][2]} {%%10};
+        #VAR {satchel[$crafting[ingredient]][subtotal][3]} {%%13};
+        #VAR {satchel[$crafting[ingredient]][subtotal][4]} {%%16};
+        #VAR {satchel[$crafting[ingredient]][subtotal][5]} {%%19};
+	#showme passing $crafting[ingredient];
+        .transmuteup $crafting[ingredient];
+    };
+
+    #ACTION {You have %%d/%%d items in your satchel.}
+    {
+        #UNACTION {^%%*%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|};
+        #UNACTION {You have %%d/%%d items in your satchel.};
+    };
+
+    #SEND {!stashlist %0 ore};	
+	
+};
+
+#alias {.transmuteup} {
+        #var ttotal 0;
+        #math {stotal} {$satchel[%0][subtotal][2] * 3};
+        #math {gtotal} {$stotal + $satchel[%0][subtotal][3] * 2};
+        #math {atotal} {$gtotal + $satchel[%0][subtotal][4] * 2};
+        #math {ptotal} {$atotal + $satchel[%0][subtotal][5]};
+
+        #showme got here : $satchel[%0][subtotal][1] legendary ore;
+        #showme s:$stotal g:$gtotal a:$atotal p:$ptotal;
+	#showme $satchel[%0][subtotal][3];
+	#showme $satchel[%0][subtotal][4];
+	#showme $satchel[%0][subtotal][5];
+
+        #if {$satchel[%0][subtotal][2] >= 4} {
+                !us 4 superior %0;
+                !transmute all %0 quality to legendary;
+		#showme got to 1 with $stotal;
+        };
+        #elseif {$gtotal >= 24} {
+                #math {usnum} {12 - $stotal};
+                !us $satchel[%0][subtotal][2] superior %0;
+                !us $usnum good %0;
+                !transmute all %0 quality to legendary;
+		#showme got to 2 with $gtotal;
+        };
+        #elseif {$atotal >= 48} {
+                #math {usnum} {24 - $gtotal};
+                !us $satchel[%0][subtotal][2] superior %0;
+                !us $satchel[%0][subtotal][3] good %0;
+                !us $usnum average %0;
+                !transmute all %0 quality to legendary;
+		#showme got to 3 with $atotal;
+        };
+        #elseif {$ptotal >= 96} {
+                #math {usnum} {48 - $atotal};
+                !us $satchel[%0][subtotal][2] superior %0;
+                !us $satchel[%0][subtotal][3] good %0;
+                !us $satchel[%0][subtotal][4] average %0;
+                !us $usnum poor %0;
+                !transmute all %0 quality to legendary;
+		#showme got to 4 with $ptotal;
+        };
+	!stash all;
+};

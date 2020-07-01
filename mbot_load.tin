@@ -1,0 +1,10 @@
+#class {cbotload} {kill}
+#class {cbotload} {open}
+
+#alias {miner %1} {
+	#read ./crafting/mbot.tin;
+	mpath %1;
+	#read ./crafting/mbot_main.tin;
+}
+
+#class {cbotload} {close}

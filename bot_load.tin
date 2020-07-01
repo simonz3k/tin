@@ -1,0 +1,9 @@
+#class {botload} {kill}
+#class {botload} {open}
+
+#alias {-%1} {
+	#read ./bot/%1.tin;
+	#read ./bot/bot_main.tin;
+}
+
+#class {botload} {close}
