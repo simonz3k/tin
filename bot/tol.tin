@@ -1,0 +1,14 @@
+#class {bot} {open}
+
+#var no_loop 1
+#var {botpath} {doorway;onward;doorway;onward;doorway;onward;doorway;onward;doorway;onward;doorway;onward;doorway;onward;doorway;onward;doorway;onward;doorway;light};
+
+#act {^=M={Sandalphon|Gabriel|Michael|Haniel|Raphael|Khamael|Tzadkiel|Tzaphkiel|Ratziel|Metatron}} {
+	#var mobname angel;
+	_check_mob;
+};
+
+#act {#END OF PATH} {#bell} {1};
+
+#alias {botcleanup} {};
+#class {bot} {close}

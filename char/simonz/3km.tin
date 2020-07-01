@@ -1,0 +1,32 @@
+#EVENT {SESSION CONNECTED}
+{
+  #VAR {session[name]} {%0};
+};
+#SESSION {3k} {3k.org} {3000};simonz;1661
+#CONFIG {packet patch} {0.5};
+#CONFIG {command echo} {off};
+#FORMAT {session[ScreenRows]} {%R};
+#FORMAT {session[ScreenCols]} {%C};
+
+#SPLIT 1 4;
+
+
+#NOP #READ ${session[name]}_Variables.tin;
+#read ./m_mip.tin
+#read ./m_miphp.tin
+#read ./graph.tin
+#read ./trigs.tin
+#read ./alias.tin;
+#read ./gag.tin;
+#read ./subs.tin;
+#read ./bot_load.tin;
+#read ./mbot_load.tin;
+#read ./m_mapper.tin;
+#read ./dirs.tin;
+#read ./crafting/satchel.tin
+
+#ticker {tHPBar} 
+{
+    update_status;
+}
+{2};

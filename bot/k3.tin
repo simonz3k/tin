@@ -1,0 +1,14 @@
+#class {bot} {open}
+
+#var no_loop 1
+#var {botpath} {e;e;e;e;e};
+
+#act {^=M=A {robotic lion|robotic hound|robotic tiger|robotic velociraptor|TANK|refugee|demon soldier|flameroller|tornado of Kayos energy|time-lost pirate|small imp|stowaway alien}} {
+	#var mobname mob;
+	_check_mob;
+};
+
+#act {#END OF PATH} {#bell} {1};
+
+#alias {botcleanup} {};
+#class {bot} {close}

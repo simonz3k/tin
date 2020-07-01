@@ -1,0 +1,109 @@
+#NOP dir aliases
+
+#alias {v} {vortex};
+#alias {fa} {fantasy};
+#alias {pw} {portal wayhaven};
+#alias {pd} {portal desert};
+#alias {pi} {portal ice};
+#alias {pe} {portal eforest};
+#alias {pf} {portal wforest};
+#alias {pr} {portal road};
+#alias {bc} {board chaos};
+#alias {tat} {board tatooine};
+#alias {sbs} {squeeze between stalagmites};
+
+
+
+
+/* chessboard */
+#alias {/chess} {
+	chaos;
+	enter;
+	e;
+	climb;
+	scaler 80;
+}
+#alias {/bchess} {
+	slide;
+	w;
+	vortex;
+	home;
+}
+
+/* Cowville */
+#alias {/cow} {
+	chaos;
+	enter;
+	#3 e;
+	#2 s;
+	ride cow;
+	#8 n;
+	ne;
+	#3 n;
+	#2 nw;
+	w;
+}
+
+#alias {/bcow} {
+	#2 se;
+	#3 s;
+	sw;
+	#8 s;
+	path;
+	#2 n;
+	#3 w;
+	vortex;
+	home;
+}
+
+/* Hotel Transylvannia */
+#alias {/trans} {
+	chaos;
+	enter;
+	#3 e;
+	#2 s;
+	#2 e;
+	s;
+	#2 w;
+	buy 5;
+	theatre;
+	e;
+	enter;
+	light rod;
+	pull rug;
+	scaler 57;	
+}
+#alias {/btrans} {
+	#2 out;
+	w;
+	s;
+	#2 e;
+	n;
+	#2 w;
+	#2 n;
+	#3 w;
+	vortex;
+	home;
+}
+
+/* Zelligar's Castle */
+#alias {/zell} {
+	fantasy;
+	portal wayhaven;
+	#12 w;
+	leave;
+	#3 w;
+	#4 n;
+	enter;
+	scaler 70;
+	
+}
+#alias {/bzell} {
+	leave;
+	#4 s;
+	#3 e;
+	enter;
+	#12 e;
+	portal;
+	home;
+}

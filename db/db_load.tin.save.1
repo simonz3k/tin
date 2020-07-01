@@ -1,0 +1,38 @@
+#class {db} {open}
+
+#RUN sql sqlite3 /home/scott/tintin-desktop/db/3k;
+#sql #EVENT {RECEIVED LINE} {#3k #show <129>From #sql:<099>%1};
+#sql .timeout 30000;
+
+ 33 # alias to hide python output from #3k session
+ 34 #alias {^hidesql$}
+ 35 {
+ 36     #var hide_python 1;
+ 37     #SHOW <129>[<069>Hiding Python Output<129>]<099>
+ 38 }
+ 39
+ 40 # alias to show python output in #3k session
+ 41 #alias {^showsql$}
+ 42 {
+ 43     #var hide_sql 0;
+ 44     #SHOW <129>[<169>Showing SQL Output<129>]<099>
+ 45 }
+ 46
+ 47
+ 48 # trigger to capture prefixed sql output and display in #3k session
+ 49 #action {^From #sql:%*}
+ 50 {
+ 51     #IF {"%1" == "#3k%*"}
+ 52     {
+ 53         %1;
+ 54         #IF {$hide_sql}
+ 55         {
+ 56             #line gag
+ 57         }
+ 58     };
+ 59     #ELSEIF {$hide_sql}
+ 60     {
+ 61         #line gag
+ 62     }
+ 63 }
+#class {db} {close}

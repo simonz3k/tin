@@ -1,0 +1,17 @@
+#class {bot} {open}
+
+#var no_loop 1
+#var {botpath} {enter;{#map dig {out} $vnum;n};w;e;e;n;;{grab cell;s};w;s;out};
+#map get {roomvnum} {vnum};
+#map dig {enter} {10002};
+
+#act {^=M={A demon soldier|Yttra the Great Worm|Harnem the Kayos-Twisted Giant|Ratl the Devil's Hand|Myrr the Robot Swarm|Szthsz the Lizard|Thill the Quill, Kayos Demon|Beelz, the Demon King}} {
+	#var mobname mob;
+	_check_mob;
+};
+
+#act {You grab the power cell from the locker.} {..};
+#alias {botcleanup} {};
+#act {#END OF PATH} {#bell} {1};
+
+#class {bot} {close}

@@ -1,0 +1,11 @@
+#substitute {[Controlling Pain]} {[CP]};
+#substitute {[Dodging]} {[D]};
+#substitute {[GFS]} {[G]};
+#substitute {[LFS]} {[L]};
+#substitute { [Deflect XP: %1]} {[FDef XP: %1]}
+#substitute { [Deflection UP]} {[FD]};
+#substitute {[Dissipating Shields]} {[Dis Sh]};
+#substitute {[Dissipating Attacks]} {[Dis Atk]};
+#substitute {[Dissipating Control Pain]} {[Dis CP]};
+#substitute {[Accelerated Healing]} {[aHeal]};
+#substitute {[Dissipating Healing]} {[DisHeal]}

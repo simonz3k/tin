@@ -1,0 +1,6 @@
+#class ctrigs open
+#NOP crafting triggers
+
+#act {You have created something new!} {retrieve all}
+
+#class ctrigs closed

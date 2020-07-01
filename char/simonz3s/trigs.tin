@@ -1,0 +1,238 @@
+#class {trigs} {open}
+
+#alias {trel} {#class trigs kill;#read trigs.tin}
+
+#var cact 0;
+#alias {cact} { #if {$cact == 0} {#var cact 1} {#var cact 0} #var cact};
+
+#var medp 50;
+#alias {medp} {#showme medp changed from $medp to %1; #var medp %1};
+
+#var htp 50;
+#alias {htp} {#showme htp changed from $htp to %1; #var htp %1};
+
+#var coon 0;
+#alias {coon} {#if {$coon == 0} {#showme fuse activated;#var coon 1;}{#showme fuse disabled;#var coon 0;}};
+
+#var tank 1;
+#alias {tank} {#if {$tank == 1} {#showme Not tanking;#var tank 0;}{#showme Tanking;#var tank 1;}};
+
+#var disa 0;
+#alias {disa} {#if {$disa == 0} {#showme turning dissipates back on after htrance;#var disa 1;}{#showme not dissapating;#var disa 0;}};
+
+
+#act {^%1 dealt the killing blow to} {
+	#if {$tank == 1} {
+		#if {$cact == 1} {
+			!get corpse
+		}
+		{
+			!focus absorb energy;
+			!get coins;
+
+		};
+	};
+	#NOP !get all;
+	!hp;
+	#delay {1} {#showme Rounds: $mip[pround]};
+
+	#if {$cbot == 1} {!g};
+
+	#if {$bot == 1} {
+		#act {stir from your meditation} { #delay {2} {!focus meditation;#unact {stir from your meditation}}};
+		#if {$gp2 > $htp} {
+			#delay {2} {!focus hibernation trance};
+			#act {fully rejuvenated and thus exit} {
+				#unact {fully rejuvenated and thus exit};
+				#delay {2}; 
+				#if {$gp1 < $medp} {
+					!focus meditation;
+					clog {Htrance triggered};
+				} {
+					#delay {1} {.bot};
+				}
+			};
+		} {
+			#delay {2};
+			#if {$gp1 < $medp} {
+				!focus meditation;
+				clog {Meditation triggered};
+			} {
+				#delay {1} {.bot};
+			}
+		}
+		#act {You stop your meditation exercises} {
+			#unact {stir from your meditation};
+			#unact {You stop your meditation exercises};            
+			#delay {2} {.bot};
+		};
+		#act {You have no need to meditate} {
+			#unact {stir from your meditation};
+			#unact {You have no need to meditate};
+			#delay {2} {.bot};
+		};
+		#if {$disa == 1} {!ds};
+	};
+	#if {$coon == 1} {!fuse 100};
+	#NOP if {$cact == 1} {#delay {10} {rf}};
+} {1}
+
+#act {Your lightstaff has run out of charge.} {clog {%0}};
+#act {You insert the energy cell into the handle of your} {
+	!smr backpack 2;
+	!get cell from backpack;
+	!eb;
+	!keep cell;
+	!sm backpack;
+	!smr backpack 2;
+	!sm backpack;
+};
+#act {A diatium power cel~ [%*]} {clog {Lightsaber cell check - %1 cells left}};
+
+
+#act {%* scratches {his|her|its} butt.} {!say Someone should wash %2 hands..};
+#act {%*{lightdaggers's|lightsaber's|lightstaff's} casing flares nearly white hot} {
+	@weapon_fail{%2};
+};
+#act {Your %*{lightdaggers|lightsaber|lightstaff} erupts in a deafening display} {
+	@weapon_fail{%2};
+};
+#act {Sparks fly from your %*{lightdaggers's|lightsaber's|lightstaff's} handle as the circuitry} {
+	@weapon_fail{%2};
+};
+#act {Your %*{lightdaggers|lightsaber|lightstaff} shuts down, and the heat in your hand} {
+        @weapon_fail{%2};
+};
+#act {Your %*{lightdaggers's|lightsaber's|lightstaff's} blade crackles and fades} {
+        @weapon_fail{%2};
+};
+#act {Green beams of pure energy withdraw back into your %*{lightstaff}} {
+        clog {Unwielding lightstaff};
+};
+#act {The green beam of pure energy withdraws back into your %*{lightsaber}} {
+        clog {Unwielding lightsaber};
+};
+#act {The green beams of pure energy withdraw back into your %*{light daggers}} {
+        clog {Unwielding lightdaggers};
+};
+
+
+
+
+#var staff_status 1;
+#var saber_status 1;
+#var dagger_status 1;
+
+#function {weapon_fail}
+{
+	clog {%1 failed, attempting to switch};
+	#switch {"%1"}
+     {
+          #case {"lightstaff's"} {ls1};
+          #case {"lightsaber's"} {ls3};
+          #case {"lightdaggers's"} {!tell simonz your weapons is all dead;};
+          #case {"lightstaff"} {ls1};
+          #case {"lightsaber"} {ls3};
+          #case {"lightdaggers"} {!tell simonz your weapons is all dead;};
+     };
+
+};
+
+#act {CK30 [Jedi(Staff)]: I have received communication from Tatooine} {
+	clog {Droid shop rotation};
+};
+
+
+#act {^You have become a %1} {clog {%1}};
+
+#act {^%1 thinks . o O ( %2 } {clog {%1 esp: %2}};
+
+#act {The colours in your transmuter's stone begins to swirl.} {
+	#highlight {%0} {light pink};
+	clog {%0};
+};
+#act {^Your transmuter's stone bursts with %* new colours!$} {
+	#highlight {%0} {light pink};
+	clog {%0};
+	!exa stone;	
+};
+#act {A Transmuter's Stone (%*)} {clog {%0}}:
+
+#act {^You have found %1!} {
+	#if {"%1" != "a deposit %*"} {
+		clog {Found world drop: {%1}};
+		!get %1;
+	}
+}
+
+#act {%1 You have found A Tome %2} {!get tome;!smuggle tome;clog {%0}} {1};
+
+#act {You have advanced your %1 skill} {clog {%0}};
+
+#act {What luck!  You have found %1!} {clog {%0}};
+
+#act {the accomplishments of the Mortal %1.} {clog {%1 leveled}};
+#act {[BOOM!] %1 has eternally reached level %2!} {clog {%0}};
+#act {corpse of %1, courtesy of %2.  The buzzards feed} {clog {%1 died to %2}};
+#act {You see the Grim Reaper drift over to the corpse of %1.  The dark} {clog {%1 died}};
+#act {[[DEATH]] %1 has been slain by Zombie!} {clog {newbie death: %0}};
+#act {%1 screams as %2 tears his heart out! (c) Castle Arg} {clog {%1 died to %2}};
+#gag {^The Force guides your actions. -> focus check /deflect$}
+
+#	FDEF xp tracking system
+
+#	this resets the data, useful for when you want to get a baseline number for a particular mob or area
+#alias {fdr} {
+	#var my[fdef][base] 0;
+	#var my[fdef][current] 0;
+	#var my[fdef][previous] 0;
+	#var my[fdef][total_gain] 0;
+	#var my[fdef][proc] 0;
+	#var my[fdef][total_proc] 0;
+	#var my[fdef][proc_rate] 0.000000;
+	#var my[fdef][rounds] 0;
+	#var my[fdef][xp_rate][current] 0.000000;
+	#var my[fdef][xp_rate][average] 0.000000;
+}
+fdr;
+#var my[fdef][ses_gain] 0;
+
+#act {^You are %1% to your next deflect level.$} {
+	#gag {%0};
+	#math {my[fdef][rounds]} {$my[fdef][rounds] + 1};
+	#var my[fdef][previous] $my[fdef][current];
+	#var my[fdef][current] %1;
+	#if {$my[fdef][base] == 0 } {#var my[fdef][base] $my[fdef][current]};
+	#if {$my[fdef][ses_base] == 0} {#var my[fdef][ses_base] $my[fdef][current]};
+	#math {my[fdef][total_gain]} {$my[fdef][current] - $my[fdef][base]};
+	#math {my[fdef][ses_gain]} {$my[fdef][current] - $my[fdef][ses_base]};
+	#math {my[fdef][xp_rate][average]} {$my[fdef][total_gain] / $my[fdef][total_proc]};
+	#if {$my[fdef][current] == $my[fdef][previous]} {
+		#var my[fdef][proc] 0
+	} {
+		#var my[fdef][proc] 1;
+		#math {my[fdef][total_proc]} {$my[fdef][total_proc] + 1.000000};
+	};
+	#math {my[fdef][proc_rate]} {$my[fdef][total_proc] / $my[fdef][rounds]};
+	#math {my[fdef][xp_rate][current]} {$my[fdef][current] - $my[fdef][previous]};
+}
+
+#alias {fds} {
+	#showme fdef rounds: $my[fdef][rounds];
+	#showme fdef total proc: $my[fdef][total_proc];
+	#showme fdef proc rate: $my[fdef][proc_rate];
+	#showme fdef total gain: $my[fdef][total_gain];
+	#showme fdef total session gain: $my[fdef][ses_gain];
+	#showme fdef xp increase: $my[fdef][xp_rate][current];
+	#showme fdef avg increase: $my[fdef][xp_rate][average];
+
+}
+
+#act {^Your legs run away with you%1} {clog {%0}};
+
+#act {You notice a small fragment and pick it up} {smr backpack;put fragment in backpack;sm backpack};
+
+#act {^To do so, type: tskill %w %*}{!tskill %1 %2;};
+
+#act {**** REMINDER ****} {clog {%0 : $rem}};
+#class {trigs} {close}

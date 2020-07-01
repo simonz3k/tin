@@ -1,0 +1,24 @@
+#class {db_satchel} {open}
+
+#	reset the data in the satchel table
+#alias {sreset} {#sql update satchel set total = 0, legendary = 0, superior = 0, good = 0, average = 0, poor = 0\;};
+
+#	add capture and add data from the satchel to the database
+#ALIAS {dbc}
+{
+    #ACTION {^%%*%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|}
+    {
+		#format {name} {%l} {%%1};
+		#sql update satchel set total = %%4, legendary =  %%7, superior = %%10, good = %%13, average = %%16, poor = %%19 where name = "$name"\;
+	};
+
+    #ACTION {You have %%d/%%d items in your satchel.}
+    {
+        #UNACTION {^%%*%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|};
+        #UNACTION {You have %%d/%%d items in your satchel.};
+    };
+
+    #SEND {!stashlist %0};
+};
+
+#class {db_satchel} {close}

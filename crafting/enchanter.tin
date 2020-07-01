@@ -1,0 +1,34 @@
+#class {enchanter} {open}
+
+#read crafting/enchanter_vars.tin;
+
+#var gmq "best";
+#alias {gmq} {#showme Changing gem ingredient quality from $gmq to %0;#var gmq %0}
+
+#alias {mgem} {
+	!out;
+	!e;
+	!buy gem of %0;
+	!w;
+	!kiln;
+	#foreach {$crafting[enchanting][recipies][%0][ingredients][%*]} {i} {
+		#showme Ingredient: $i;
+		!unstash2 best $i;
+		!insert $i;
+	}
+	!insert moulding;
+	!fire;
+}
+
+#alias {gk} {
+	#foreach {$crafting[enchanting][recipies][%0][ingredients][%*]} {i} {
+		!stashlist $i;
+	}
+}
+
+
+
+
+
+
+#class {enchanter} {close}

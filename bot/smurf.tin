@@ -1,0 +1,31 @@
+#class {bot} {open}
+
+#var {botpath} {s;s;s;w;e;e;w;s;w;e;e;e;w;sw;se;w;e;s;w;w;n;s;s;s;s;e;e;e;e;s;w;s;enter;w;e;e;w;s;w;e;e;w;s;w;e;e;w;s;w;e;e;w;s;w;e;e;w;s;w;e;s;w;e;e;w;n;e;out;n}
+!scaler 1;
+
+#act {=M=%*{Smurf|A very large rat|A large furry spider|Azrael|Gargamel|A cute and fuzzy Squirrel}} {
+	#switch {"%2"} {
+		#case {"Smurf"}			{#var mobname smurf};
+		#case {"A very large rat"}	{#var mobname rat};
+		#case {"A large furry spider"}	{#var mobname spider};
+		#case {"Azreal"}		{#var mobname azreal};
+		#case {"Gargamel"}		{#var mobname gargamel}
+		#case {"A cute and fuzzy Squirrel"}		{#var mobname squirrel}
+	};
+	_check_mob
+};
+
+/*
+#act {^{A Silver Mirror|A long grey beard|Brainy Smurf's Glasses|A Large Cog|A Sturdy Compass|An Acorn|Gargamel's Staff}.} {
+	!get %2;
+	!dispose %2;
+};
+*/
+
+#NOP act {=M= Papa Smurf <?>} {mission ask;mission accept};
+#NOP act {=M= Papa Smurf <!>} {mission return};
+#NOP act {=M= Papa Smurf <.>} {#nop};
+
+#class {bot} {close}
+
+

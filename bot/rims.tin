@@ -1,0 +1,17 @@
+#class {bot} {open}
+
+#var {botpath} {e;ne;se;n;nw;se;s;se;nw;s;sw;w;n;e;d;n;nw;ne;sw;se;s;u;n;w;w};
+
+#act {^=M={A small Rimalkin|A large Rimalkin|A very large Rimalkin}} {
+	#var mobname rimalkin;
+#NOP        #switch {"%1"} {
+#NOP                #case {"A small Rimalkin"}      {#var mobname {small rimalkin}};
+#NOP                #case {"A large Rimalkin"}      {#var mobname {large rimalkin}};
+#NOP                #case {"A very large Rimalkin"}      {#var mobname {very large rimalkin}};
+#NOP        };
+        _check_mob
+};
+
+#alias {botcleanup} {};
+
+#class {bot} {close}

@@ -1,0 +1,24 @@
+#class {bot} {open}
+
+#var {botpath} {e;e;e;e;e;e;e;e;e;e;ne;ne;ne;w;w;w;w;w;w;w;w;w;w;w;w;w;s;s;n;n;n;n;n;n;e;e;e;e;e;e;e;e;e;ne;e;e;e;e;e;ne;e;e;e;ne;w;w;nw;w;w;w;w;w;w;w;nw;w;w;w;s;w;w;w;w;w;w;n;s;e;e;e;s;s;s;s;e;e;e;n;n;n;n;s;s;s;s;w;s;s;s;s;e;e;e;e;e;e;e;n;n;n;n;n;n;n;n;e;e;e;e;e;se;e;e;ne;ne;ne;ne;ne;ne;se;e;s;e;e;e;e;e;e;s;w;n;w;w;w;w;w;n;w;nw;ne;ne;ne;n;w;w;w;w;w;w;s;s;s;s;s;s;s;sw;se;se;sw;sw;w;w;nw;sw;sw;sw;sw;sw;sw;sw;sw;sw;w;w;w;w;w;w;w;w;w;w};
+
+#act {^=M={Punk|Nuke Addict|Nuke Dealer|A stocky Metallaskull gang member|A huge Metallaskull gang member|A leggy Metallaskull gang member|A large black spider gang member|A small black spider gang member|A thin black spider gang member|P.E.T. Gang Leader|A Small P.E.T. Gang Member|A Young P.E.T. Gang Member}} {
+	#switch {"%1"} {
+		#case {"Punk"}		{#var mobname punk};
+		#case {"Nuke Addict"}	{#var mobname addict};
+		#case {"Nuke Dealer"}	{#var mobname dealer};
+		#case {"A huge Metallaskull gang member"}	{#var mobname member};
+		#case {"A leggy Metallaskull gang member"}	{#var mobname member};
+		#case {"A stocky Metallaskull gang member"}	{#var mobname member};
+		#case {"A large black spider gang member"}	{#var mobname member};
+		#case {"A small black spider gang member"}	{#var mobname member};
+		#case {"A thin black spider gang member"}	{#var mobname member};
+		#case {"P.E.T. Gang Leader"}	{#var mobname leader};
+		#case {"A Small P.E.T. Gang Member"}	{#var mobname member};
+		#case {"A Young P.E.T. Gang Member"}	{#var mobname member};
+	};
+	_check_mob;
+}
+
+
+#class {bot} {close}

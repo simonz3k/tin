@@ -1,0 +1,26 @@
+#class {db} {open}
+
+#run sql {sqlite3 /home/scott/tintin-desktop/db/3k}
+#3k
+#sql #EVENT {RECEIVED LINE} {#3k #show <129>From #sql:<099>%1}
+
+
+#ALIAS {dbc}
+{
+    #ACTION {^%%*%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|}
+    {
+		#format {name} {%l} {%%1};
+		#showme trying to write $name;
+		#sql update satchel set total = %%4, legendary =  %%7, superior = %%10, good = %%13, average = %%16, poor = %%19 where name = "$name"\;
+	};
+
+    #ACTION {You have %%d/%%d items in your satchel.}
+    {
+        #UNACTION {^%%*%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|};
+        #UNACTION {You have %%d/%%d items in your satchel.};
+    };
+
+    #SEND {!stashlist %0};
+};
+
+#class {db} {close}

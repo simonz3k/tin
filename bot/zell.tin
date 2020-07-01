@@ -1,0 +1,118 @@
+#class {bot} {open}
+
+#var no_loop 1;
+!dungeons;
+!scaler 140;
+#var {botpath} {n;n;e;w;w;n;nw;e;e;s;n;w;n;n;s;e;n;e;n;s;w;s;e;e;w;s;s;search shelves;n;n;w;w;w;s;take key;n;e;e;e;s;s;e;e;e;n;n;n;n;e;e;s;s;w;w;s;e;e;e;n;n;n;n;w;w;w;w;s;s;s;s;unlock door;w;take key;e;n;n;n;n;e;e;e;e;s;s;s;s;w;w;w;s;w;w;w;n;n;w;w;n;unlock door;w;w;s;s;sw;w;w;w;n;nw;e;e;e;e;n;ne;e;e;e;w;w;w;sw;nw;nw;w;e;sw;e;se;w;w;s;w;se;e;e;e;s;ne;n;n;e;e;s;s;w;se;s;e;s;s};
+
+#alias {bp} {
+	#switch {%1} {
+		#case {2} {#var {botpath} {e;e;e;n;n;n;n;e;e;s;s;w;w;s;e;e;e;n;n;n;n;w;w;w;w;s;s;s;s;unlock door;w;take key;e;n;n;n;n;e;e;e;e;s;s;s;s;w;w;w;s;w;w;w;n;n;w;w;n;unlock door;w;w;s;s;sw;w;w;w;n;nw;e;e;e;e;n;ne;e;e;e;w;w;w;sw;nw;nw;w;e;sw;e;se;w;w;s;w;se;e;e;e;s;ne;n;n;e;e;s;s;w;se;s;e;s;s}};
+		#case {3} {#var {botpath} {unlock door;w;w;s;s;sw;w;w;w;n;nw;e;e;e;e;n;ne;e;e;e;w;w;w;sw;nw;nw;w;e;sw;e;se;w;w;s;w;se;e;e;e;s;ne;n;n;e;e;s;s;w;se;s;e;s;s}};
+		#default {#var {botpath} {n;n;e;w;w;n;nw;e;e;s;n;w;n;n;s;e;n;e;n;s;w;s;e;e;w;s;s;search shelves;n;n;w;w;w;s;take key;n;e;e;e;s;s;e;e;e;n;n;n;n;e;e;s;s;w;w;s;e;e;e;n;n;n;n;w;w;w;w;s;s;s;s;unlock door;w;take key;e;n;n;n;n;e;e;e;e;s;s;s;s;w;w;w;s;w;w;w;n;n;w;w;n;unlock door;w;w;s;s;sw;w;w;w;n;nw;e;e;e;e;n;ne;e;e;e;w;w;w;sw;nw;nw;w;e;sw;e;se;w;w;s;w;se;e;e;e;s;ne;n;n;e;e;s;s;w;se;s;e;s;s}};
+	}
+	#path load $botpath;
+}
+
+#act  {^=M={Steel|Clay|Flesh|Stone|Mud|Straw|Glass} Golem} {
+	#var mobname golem;
+	_check_mob
+};
+
+#var cgolem 0;
+#alias {cgolem} {
+	#if {$cgolem == 0} {
+		#act {The Golem calls for help} {!focus cloud mind on golem;#var calm_trys 0};
+		#act {resists your attempt to cloud} {
+			#if {$calm_trys < 10} {
+				!focus cloud mind on golem;
+				#math {calm_trys} {$calm_trys + 1}
+			} {
+				clog {failed to cloud mind too many times};
+			}
+		};
+		#var cgolem 1;
+		#showme Now calming golems;
+	} {
+		#unact {The Golem calls for help};
+		#var cgolem 0;
+		#showme No longer calming golems;
+		#unact {resists your attempt to cloud};
+	}
+};
+
+#act {You sweep your hand over {one|some} of the higher shelves} {take gloves;keep gloves;#delay {1}{..}}
+#act {You reach in and snatch the key from the deadly acid.} {keep key;..}
+#act {There is no key here.} {..}
+#act {You slip the key into the lock and unlock the door.} {open door;..}
+#act {The door is already unlocked.} {..}
+#act {key: Taken.} {..}
+
+#act {Zelligar molds some magical clay into a} {focus cloud mind on golem};
+
+#highlight {Zelligar screams as he realizes that he has run out of clay!} {tab b red};
+
+#var ctime 0;
+#act {COMBAT TIME VERY LONG.. YOU NEED TO FINISH THIS SUCKER} {
+	#if {$ctime == 0} {
+		#var ctime 1;
+		#delay {30} {
+			clog {%0};
+			#var ctime 0;
+		}
+	}
+}
+	
+
+#NOP *** Zell fdef maximization ***
+#NOP    This relies on mip processing, with the enemy hp % pull into a variable called
+#NOP    $enemy[hp].  It uscreates a ticker to check the hp every round and if the enemy hp
+#NOP    is lower than 10%, switch to the other golem, thus maximizing the time you're
+#NOP    getting hit by both, which will increase your fdef rate.
+
+#NOP    The logic is based on the state of the zf variable:
+#NOP    - 0 : off
+#NOP    - 1 : on and waiting to switch
+#NOP    - 2 : second golem is dead, ticker is off so it doesn't trigger again
+#NOP    - 3 : first golem is dead, change state back to 0 and run alias to start ticker
+
+
+
+#var zf 0;
+
+#alias {zf} {
+#showme zf is $zf;
+    #if {$zf == 0} {
+        #var zf 1;
+        #showme zf turned on;
+        #act {The Golem calls for help!} {
+            #ticker {zf} {
+                #if {$enemy[hp] < 10} {
+                    !k golem;
+                    #unticker {zf};
+                };
+            }{2}
+        }
+    } {
+        #showme zf turned off;
+        #var zf 0;
+        #unticker {zf};
+        #unact {The Golem calls for help!};
+    }
+};
+
+#highlight {The Golem calls for help!} {tan b red};
+
+#alias {botcleanup} {
+	#2 {!unkeep key;!dispose key;};
+	!unkeep gloves of acid protection;
+	!dispose gloves of acid protection;
+	#unalias zf;#unticker zf;#unvar zf;
+}
+
+
+
+#class {bot} {close}
+
+
+

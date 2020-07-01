@@ -1,0 +1,36 @@
+#class {farming} {open}
+
+#unvar crafting[farming];
+#read crafting/farm_vars.tin;
+
+#alias {sch} {!look at soil;!look at bugs;!look at mushrooms;!look at weeds;};
+
+#alias {fnb} {
+	#foreach {*crafting[farming][nutrients][%*]} {i} {
+		#foreach {*crafting[farming][nutrients][$i][items][%*]} {x} {
+			!buy $x;
+		}
+	};
+};
+
+#alias {meas} {
+	sch;
+	!depress oximeter button;
+	!push hygrometer button;
+	!jab type I nutriometer;
+	!jab type II nutriometer;
+	!jab type III nutriometer;
+	!jab type IV nutriometer;
+	!cantilever type I contristometer;
+	!cantilever type II contristometer;
+	!cantilever type III contristometer;
+	!cantilever type IV contristometer;
+};
+
+
+
+
+#NOP #foreach {$crafting[farming][nutrients][%0][ingredients][%*]} {i} {  };
+
+
+#class {farming} {close}

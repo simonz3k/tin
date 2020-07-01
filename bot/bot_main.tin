@@ -1,0 +1,118 @@
+#class {bot} {open};
+
+/* Disable items while botting */
+#NOP mapoff
+prompt >$nl$
+
+/* Initialize Variables */
+#var foundmob 0
+#var foundplayer 0
+#var mobname 0
+#var bot 0
+#var vacuum 0
+
+/*
+#var IdleTimeout 4200;
+#event {RECEIVED INPUT} {
+	#undelay {deadmanSwitch};
+	#delay {deadmanSwitch} {.stop;go home} {$IdleTimeout};
+};
+*/
+
+#alias {.pause} {
+	#class {xbot} {kill};
+	#alias {_check_mob} {.pause}
+}
+
+#alias {.stop} {
+	#NOP map get {roomvnum} {botvnum};
+	#class {xbot} {kill};
+	#alias {xx} {#nop};
+	#alias {_check_mob} {#nop};
+	#var halt 1
+}
+
+#alias {_check_mob} {#nop}
+
+#alias {..} {
+	#var bot 1;
+	#var halt 0;
+	#class {xbot} {open};
+		#delay {4};
+		#act {{^=S=}} {xx} {1};
+		#alias {xx} {
+			#var foundplayer 0;
+			#var itemfound 0;
+			#act {^>$} {
+				#delay {2} {#path walk};
+				#unact {^>$}
+			} {1}
+		};
+		#alias {_check_mob} {
+			#act {^>$} {
+				#unact {^>$};
+				#if {$foundplayer} {
+					#path walk
+				} {
+					.pause;
+					k $mobname;
+					#if {$cact == 1} {#delay {2} {rf}};
+					#var foundmob 1;
+				}
+			}
+		};
+		glance;
+	#class {xbot} {close}
+}
+
+#alias {killbot} {
+	.stop;
+	#class bot kill;
+	#unalias {.bot};
+	#var bot 0;
+}
+#alias {botkill} {
+	.stop;
+	#class bot kill;
+	#unalias {.bot};
+	#var bot 0;
+}
+#alias {bresume} {
+	#var bot 1;
+	#undelay {gohome};
+}
+
+#alias {.bot} {
+	#if {$halt == 0} {
+		#delay {0} {..}
+	}
+}
+
+
+
+/* Detect Players 
+#act {^=P=} {
+	#regex {%0} {Sky} {#nop} {#var foundplayer 1}
+} {6}
+*/
+
+/* Skip room on Mob 
+#NOP #act {Crikey} {#var foundplayer 1}
+*/
+
+#alias {v %1} {#if {%1 == "on"} {#var vacuum 1} {#var vacuum 0}}
+
+#act {#END OF PATH} {
+	botcleanup;
+	killbot;
+	#line log {./logs/3k.chat} {$timestamp\};
+	#line log {./logs/3k.chat} {<165>#END OF PATH<088>};
+}
+	
+
+
+
+#path load botpath
+#var halt 2
+
+#class {bot} {close}

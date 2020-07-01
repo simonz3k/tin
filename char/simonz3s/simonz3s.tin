@@ -1,0 +1,35 @@
+#EVENT {SESSION CONNECTED}
+{
+  #VAR {session[name]} {%0};
+};
+
+#SESSION {3s} {3scapse.org} {3s00};simonz;1661
+#CONFIG {packet patch} {0.5};
+#CONFIG {command echo} {off};
+#FORMAT {session[ScreenRows]} {%R};
+#FORMAT {session[ScreenCols]} {%C};
+
+#SPLIT 1 5;
+
+#var {guild} {jedi};
+
+#NOP #READ ${session[name]}_variables.tin;
+#read ./mip.tin;
+#read ./miphp.tin;
+#read ./graph.tin;
+#read ./trigs.tin;
+#read ./alias.tin;
+#read ./gag.tin;
+#read ./subs.tin;
+#read ./bot_load.tin;
+#read ./mbot_load.tin;
+#read ./mapper.tin;
+#read ./dirs.tin;
+#read ./crafting/satchel.tin
+#read ./crafting/ctrigs.tin
+#read ./crafting/enchanter.tin
+#ticker {tHPBar} 
+{
+    update_status;
+}
+{2};

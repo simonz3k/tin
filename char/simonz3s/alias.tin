@@ -1,0 +1,152 @@
+#class {aliases} {open}
+
+/* 3K Aliases */
+
+#NOP alias {mipon} {#read .tt/3k/mip.tin}
+#NOP alias {mipoff} {#class mip kill}
+
+#alias {dg} {divvy gold}
+#alias {fol} {follow}
+#alias {ga} {get all}
+#alias {gac} {get all from corpse}
+#alias {cl} {ctell}
+#alias {pth} {ptell -h}
+#alias {th} {tellhist}
+#alias {rem} {remove}
+
+
+#alias {ls1} {
+	sheath;
+	draw lightsaber;
+	#delay {2} {focus mode /guide};
+}
+
+#alias {ls1f} {
+	sheath;
+	draw lightsaber;
+	focus mode /flurry;
+}
+
+#alias {ls2} {
+	sheath;
+	draw lightstaff;
+	#delay {2} {focus mode /guide};
+}
+
+#alias {ls3} {
+	sheath;
+	draw lightdaggers;
+	focus mode /flurry;
+}
+
+#var hib 0;
+#alias {hib} {
+	#if {$hib == 0} {
+		#var hib 1;
+	} {
+		#var hib 0;
+	}
+	#var hib;
+}
+
+#alias {brod} {
+	!buy rod;
+	!put rod in backpack;
+}
+
+#alias {bcell} {
+	!buy cell;
+	!smuggle cell;
+}
+
+#alias {rf} {
+	!drop corpse;
+	!focus release force;
+	!get coins;
+}
+
+#alias {clog} {
+	#format {timestamp} {%t} {<108>[<268>%H<108>:<268>%M<108>]<088> };
+	#line log {3k.chat} {$timestamp\};
+	#line log {3k.chat} {<110>Notif:<088> %1};
+};
+
+#alias {landon} {
+	#switch {"%1"} {
+		#case {"w"} {
+			#act {Pack arrives} {!k pack};
+			#act {^=M= A Small Wolf Pack} {!k pack};
+			#act {^=M= A Small Wolf Pack} {!k pack};
+			#showme Land Wolves pickup;
+		};
+		#case {"h"} {
+			#act {Herd arrives} {!k herd};
+			#act {^=M= A Small Horse Herd} {!k herd};
+			#showme Land Horses pickup;
+		};
+		#default {
+			#act {Pack arrives} {!k pack};
+			#act {^=M= A Small Wolf Pack} {!k pack};
+			#act {Herd arrives} {!k herd};
+			#act {^=M= A Small Horse Herd} {!k herd};
+			#showme Land all pickup;
+		};
+	};
+
+};
+#alias {landoff} {
+	#unact {Pack arrives} {!k pack};
+	#unact {Herd arrives} {!k herd};
+	#unact {^=M= A Small Wolf Pack} {!k pack};
+	#unact {^=M= A Small Horse Herd} {!k herd};
+};
+
+#alias {mwatch} {
+	#showme Now watching for %1;
+	#act {%1} {clog {<110>%1 is available for training<088>}};
+}
+
+#alias {crem} {#showme 1 es rejuv,damn,unseen};
+
+#alias {mgo} {miner 8;..};
+#alias {pgo} {miner 7;mig nethernium voidstone;..};
+
+#alias {eprot} {!focus maintain for rpoison;!focus maintain for rstun;!focus maintain for emet;};
+
+#alias {fdon} {
+	#act {Holocron Fragment [%*]} {
+#showme triggered on %0 var1 %1;
+		#var holonum %1;
+		#$holonum get fragment from backpack;
+		!sm backpack;
+		#delay {3} {#$holonum {unkeep fragment;donate fragment}};
+		#unact {Holocron Fragment [%*]};
+	};
+	!smr backpack;
+	!exa backpack;
+
+};
+
+#alias {pathdump} {
+	#path save forward pathtmp;
+	#map find {roomnote} %1;
+	#path save forward pathto;
+	#replace {pathto} {;} {,};
+	#showme $pathto;
+	#path load $pathtmp;
+	!tell %2 $pathto;
+	#unvar pathtmp;
+	#unvar pathto;
+	
+}
+
+#alias {edet} {!ei %0;!(learn details %0;}
+
+#alias {cfix} {#showme {<088>} {0}};
+
+#alias {rem} {
+	#showme Reminder variable set to %0;
+	#var rem %0;
+};
+
+#class {aliases} {close}

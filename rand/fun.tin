@@ -1,0 +1,19 @@
+#NOP fun stuff
+
+#class fun {open}
+
+#alias {funk} {
+	#var str {};
+	#var charcount 0;
+	#var mod 0;
+
+	#parse {%2} {char} {
+		#math mod {$charcount % 2};
+		#if {$mod == 0} {#format char %u $char};
+		#var str {$str$char};
+		#if {"$char" != " "} {#math charcount $charcount + 1};
+	}
+	!%1 $str;
+}
+
+#class fun {close}

@@ -1,0 +1,29 @@
+#class {bot} {open}
+
+
+#var {botpath} {n;e;e;n;n;w;w;w;s;e}
+
+#act {^=M={Kerridis|Aris|Dorilian|Yriadne|Celyndil|Eremon}} {
+	#switch {"%1"} {
+		#case {"Kerridis"}	{#var mobname elf};
+		#case {"Aris"}		{#var mobname elf};
+		#case {"Dorilian"}	{#var mobname elf};
+		#case {"Yriadne"}	{#var mobname elf};
+		#case {"Celyndil"}	{#var mobname elf};
+		#case {"Eremon"}	{#var mobname elf};
+	};
+	_check_mob
+}
+
+/*
+#act {^{Elven sword|Elven breastplate|%*ring|A gleaming}} {
+	#switch {"%1"} {
+		#case {"Elven sword"}		{!get sword;!smuggle sword;};	
+		#case {"Elven breastplate"}	{!get breastplate;!smuggle breastplate;};
+		#case {"A gleaming"}	{!get scimitar;!smuggle scimitar;};
+		#case {"%2 rapier"}	{!get sword;!smuggle sword;};
+		#case {"%2ring"}	{!get ring;!smuggle ring;};
+	}
+}
+*/
+#class {bot} {close}

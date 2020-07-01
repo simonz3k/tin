@@ -1,0 +1,24 @@
+#class {bot} {open}
+
+!dungeons
+!scaler 130;
+
+#var {botpath} {n;e;e;e;nw;nw;n;n;ne;se;n;se;n;ne;nw;se;sw;s;nw;s;se;ne;ne;ne;nw;nw;nw;nw;sw;nw;se;s;n;ne;nw;nw;w;w;sw;sw;se;ne;sw;s;n;se;se;nw;nw;nw;sw;sw;sw;sw;se;se;se;ne;n;sw;n;nw;ne;sw;se;s;ne;s;ne;se;s;s;sw;sw;e;e;e;s}
+
+#act {^=M={A Root Warrior|Tree Guardian|An Earthen Spirit|A Guardian Branch|Minor Earth Elemental|Earth Elemental|Earth Elemental Lord|Terra, Knight of Earth}} {
+	#switch {"%1"} {
+		#case {"A Root Warrior"}		{#var mobname warrior};
+		#case {"Tree Guardian"}	{#var mobname guardian};
+		#case {"An Earthen Spirit"}	{#var mobname spirit};
+		#case {"A Guardian Branch"}	{#var mobname branch};
+		#case {"Minor Earth Elemental"}	{#var mobname elemental};
+		#case {"Earth Elemental"}	{#var mobname elemental};
+		#case {"Earth Elemental Lord"}		{#var mobname elemental};
+		#case {"Terra, Knight of Earth"}		{#var mobname terra};
+	};
+	_check_mob;
+}
+
+#alias botcleanup {};
+
+#class {bot} {close}

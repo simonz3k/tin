@@ -1,0 +1,86 @@
+#class {bot} {open};
+
+/* Disable items while botting */
+#mapoff
+prompt >$nl$
+
+/* Initialize Variables */
+#var foundnode 0
+#var mobname 0
+#var cbot 0
+
+/*
+#var IdleTimeout 4200;
+#event {RECEIVED INPUT} {
+	#undelay {deadmanSwitch};
+	#delay {deadmanSwitch} {.stop;go home} {$IdleTimeout};
+};
+*/
+
+#alias {.pause} {
+	#class {xbot} {kill};
+	#alias {_check_room} {.pause}
+}
+
+#alias {.stop} {
+	#NOP map get {roomvnum} {botvnum};
+	#class {xbot} {kill};
+	#alias {xx} {#nop};
+	#alias {_check_room} {#nop};
+	#var halt 1
+}
+
+#alias {_check_mob} {#nop}
+
+#alias {..} {
+	#var cbot 1;
+	#var halt 0;
+	#class {xbot} {open};
+		#delay {4};
+		#act {{^=S=}} {_check_room} {1};
+		#alias {_check_room} {
+			!spelunk;
+		};
+		glance;
+	#class {xbot} {close}
+}
+
+#alias {killbot} {
+	.stop;
+	#class bot kill;
+	#unalias {.bot};
+	#var cbot 0;
+}
+#alias {botkill} {
+	.stop;
+	#class bot kill;
+	#unalias {.bot};
+	#var cbot 0;
+}
+#alias {bresume} {
+	#var cbot 1;
+	#undelay {gohome};
+}
+
+#alias {.bot} {
+	#if {$halt == 0} {
+		#delay {0} {..}
+	}
+}
+
+
+#act {#END OF PATH} {
+	#line log {3k.chat} {$timestamp\};
+	#line log {3k.chat} {#END OF PATH};
+	#showme Path for mine $botnum ended at $timestamp;
+	killbot;
+	go mines;
+}
+	
+
+
+
+#path load botpath
+#var halt 2
+
+#class {bot} {close}

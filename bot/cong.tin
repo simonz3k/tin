@@ -1,0 +1,14 @@
+#class {bot} {open}
+
+#var no_loop 1
+#var {botpath} {nw;nw;{get jar;se};se;se;se;{get jar;nw};nw;sw;sw;{get jar;ne};ne;ne;ne;{get jar;sw};sw;{place jars on altar;winds}};
+
+#act {^=M={A|An} {Fire|Earth|Water|Air} Elemental attacking you!} {
+	#var mobname elemental;
+	_check_mob;
+}
+#act {#END OF PATH} {#bell} {1};
+
+#alias {botcleanup}{};
+
+#class {bot} {close}

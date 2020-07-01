@@ -1,0 +1,75 @@
+#class {bot} {open}
+
+#var no_loop 1
+#var botnum 7
+#var {botpath} 
+
+#NOP this alias loads the path for the mine level you're doing
+#alias {mpath} {
+	#switch {%1} {
+		#case {1} {#var botnum 1;#var {botpath} {se;e;e;w;n;w;e;n;e;se;nw;w;s;s;s;se;sw;e;e;w;w;s;s;n;n;ne;nw;sw;w;w;n;s;e;sw;s;s;nw;n;w;s}};
+		#case {2} {#var botnum 2;#var {botpath} {se;e;e;w;n;w;e;n;e;se;nw;w;s;s;s;se;sw;e;e;w;w;s;s;n;n;ne;nw;sw;w;w;n;s;e;sw;s;s;nw;n;w;s}};
+		#case {3} {#var botnum 3;#var {botpath} {n;n;w;w;se;nw;s;n;sw;ne;w;e;nw;se;n;e;e;n;w;n;n;w;w;s;e;s;n;w;nw;s;s;s;s;s;w;w;n;e}};
+		#case {4} {#var botnum 4;#var {botpath} {e;e;e;e;e;e;e;e;w;w;n;n;n;sw;sw;sw;se;se;se;n;n;s;s;ne;ne;ne;n;n;n;s;s;s;nw;nw}};
+		#case {5} {#var botnum 5;#var {botpath} {e;n;n;n;e;se;se;e;e;ne;e;s;s;w;w;e;s;e;e;w;w;s;nw;nw;s;s;s;s;w;n;n;n;sw;sw;w;n;n;n}};
+		#case {6} {#var botnum 6;#var {botpath} {w;n;n;n;w;w;sw;w;w;n;s;s;e;e;ne;e;s;w;se;w;s;w;n;s;s;s;sw;se;ne;nw;s}};
+		#case {7} {#var botnum 7;#var {botpath} {se;n;e;s;n;e;e;e;e;s;w;w;s;e;s;e;e;n;e;n;w;e;s;w;s;w;s;s;e;e;e;n;n;w;s;n;e;s;s;w;w;w;w;w;w;n;n;e;s}};
+		#case {8} {#var botnum 8;#var {botpath} {s;w;w;sw;se;se;n;n;s;s;ne;ne}};
+	}
+	#path load $botpath;
+	already_searched;
+}
+
+#NOP this alias creates a trigger that has to be disabled periodically to prevent the bot from moving on when mining is happening. 
+#alias {already_searched} {
+	#act {It appears this part of the shaft has already been searched.} {
+		#delay {1} {#path walk};
+	};
+};
+
+#NOP triggers based on spelunking/mining responses
+
+#act {{You are not skilled enough to mine this|You have found nothing|You have exhausted the supply|There is already a deposit here}} {
+	#delay {1} {#path walk};
+	already_searched;
+};
+#act {You have found a deposit of %1 ore} {
+	#if {"%1" != "$mig1" && "%1" != "$mig2"} {
+                #delay {2} {!$mine_action};
+        } {
+                #delay {1} {#path walk};
+        };
+};
+#act {=I= A %1 ore deposit} {
+        #unact {It appears this part of the shaft has already been searched.};
+	#if {"%1" != "$mig1" && "%1" != "$mig2"} {
+		#delay {2} {!$mine_action};
+	} {
+		already_searched;
+		#NOP delay {1} {#path walk};
+	};
+};
+
+#NOP set the target mining action.  defaults to 'mine', but can be used to set custom mine for actions if you have the miner mskill at 5
+#var mine_action mine;
+#alias {mact} {
+	#if "%0" != "" {
+		#var mine_action {%0};
+		#showme Mine action is now '$mine_action';
+	}{ #unvar mine_action;#showme Mine action is now disabled;}
+};
+
+
+#NOP this alias and its vars let you pick deposits to ignore, which is useful if you're after something specific or won't get cxp.
+#NOP eg: typing 'mig gold silver' will ignore gold and silver, and only pick up mithril on level 4
+
+#var mig1 {};
+#var mig2 {};
+#alias {mig} {
+        #var mig1 %1;
+        #var mig2 %2;
+        #showme Now ignoring %1 %2 deposits;
+};
+
+
+#class {bot} {close}

@@ -1,0 +1,174 @@
+#var {crafting[enchanting][recipies][minor might][ingredients]}{{1}{aquamarine}{2}{aquamarine dust}{3}{fragment of light}}
+#var {crafting[enchanting][recipies][minor blades aggression][ingredients]}{{1}{copper shards}{2}{tiger's eye}{3}{fragment of light}}
+#var {crafting[enchanting][recipies][minor blades protection][ingredients]}{{1}{copper shards}{2}{morganite}{3}{fragment of light}}
+#var {crafting[enchanting][recipies][minor crushing protection][ingredients]}{{1}{aquamarine}{2}{tiger's eye dust}{3}{fragment of water}}
+#var {crafting[enchanting][recipies][minor agility][ingredients]}{{1}{copper shards}{2}{tiger's eye}{3}{fragment of light}}
+#var {crafting[enchanting][recipies][minor crushing aggression][ingredients]}{{1}{aquamarine}{2}{tiger's eye dust}{3}{fragment of water}}
+#var {crafting[enchanting][recipies][minor flame protection][ingredients]}{{1}{eye of flame}{2}{morganite dust}{3}{fragment of light}}
+#var {crafting[enchanting][recipies][minor flame aggression][ingredients]}{{1}{eye of flame}{2}{morganite dust}{3}{fragment of light}}
+#var {crafting[enchanting][recipies][minor endurance][ingredients]}{{1}{morganite}{2}{tiger's eye dust}{3}{fragment of shadow}}
+#var {crafting[enchanting][recipies][minor frost protection][ingredients]}{{1}{eye of frost}{2}{morganite dust}{3}{fragment of water}}
+#var {crafting[enchanting][recipies][minor frost aggression][ingredients]}{{1}{eye of frost}{2}{morganite dust}{3}{fragment of water}}
+#var {crafting[enchanting][recipies][minor acid protection][ingredients]}{{1}{bronze shards}{2}{morganite}{3}{fragment of might}}
+#var {crafting[enchanting][recipies][minor lion][ingredients]}{{1}{cat's eye}{2}{iron shards}{3}{fragment of might}}
+#var {crafting[enchanting][recipies][minor acid aggression][ingredients]}{{1}{bronze shards}{2}{morganite}{3}{fragment of might}}
+#var {crafting[enchanting][recipies][minor terminator][ingredients]}{{1}{cat's eye dust}{2}{eye of flame}{3}{fragment of might}}
+#var {crafting[enchanting][recipies][minor electric protection][ingredients]}{{1}{bronze shards}{2}{cat's eye}{3}{fragment of rage}}
+#var {crafting[enchanting][recipies][minor smarts][ingredients]}{{1}{cat's eye}{2}{iron shards}{3}{fragment of shadow}}
+#var {crafting[enchanting][recipies][minor clever thief][ingredients]}{{1}{eye of flame}{2}{iron shards}{3}{fragment of shadow}}
+#var {crafting[enchanting][recipies][minor electric aggression][ingredients]}{{1}{bronze shards}{2}{cat's eye}{3}{fragment of rage}}
+#var {crafting[enchanting][recipies][minor wolf][ingredients]}{{1}{eye of flame}{2}{garnet dust}{3}{fragment of soul}}
+#var {crafting[enchanting][recipies][minor mental protection][ingredients]}{{1}{alexandrite}{2}{steel shards}{3}{fragment of rage}}
+#var {crafting[enchanting][recipies][minor scholar][ingredients]}{{1}{cat's eye dust}{2}{garnet}{3}{fragment of soul}}
+#var {crafting[enchanting][recipies][minor suave thief][ingredients]}{{1}{eye of frost}{2}{garnet dust}{3}{fragment of soul}}
+#var {crafting[enchanting][recipies][minor insight][ingredients]}{{1}{garnet}{2}{garnet dust}{3}{fragment of soul}}
+#var {crafting[enchanting][recipies][minor mental aggression][ingredients]}{{1}{alexandrite}{2}{steel shards}{3}{fragment of rage}}
+#var {crafting[enchanting][recipies][minor energy protection][ingredients]}{{1}{garnet}{2}{steel shards}{3}{fragment of soul}}
+#var {crafting[enchanting][recipies][minor energy aggression][ingredients]}{{1}{garnet}{2}{steel shards}{3}{fragment of soul}}
+#var {crafting[enchanting][recipies][minor assault protection][ingredients]}{{1}{alexandrite}{2}{silver shards}{3}{fragment of the unseen}}
+#var {crafting[enchanting][recipies][minor persuasiveness][ingredients]}{{1}{alexandrite dust}{2}{garnet}{3}{fragment of the unseen}}
+#var {crafting[enchanting][recipies][minor barbarian][ingredients]}{{1}{alexandrite}{2}{alexandrite dust}{3}{fragment of the unseen}}
+#var {crafting[enchanting][recipies][minor assault aggression][ingredients]}{{1}{eye of earth}{2}{silver shards}{3}{fragment of the unseen}}
+#var {crafting[enchanting][recipies][minor elements protection][ingredients]}{{1}{eye of flame}{2}{eye of frost}{3}{fragment of the unseen}}
+#var {crafting[enchanting][recipies][minor jackal][ingredients]}{{1}{alexandrite}{2}{alexandrite dust}{3}{fragment of ascension}}
+#var {crafting[enchanting][recipies][minor elements aggression][ingredients]}{{1}{eye of flame}{2}{eye of frost}{3}{fragment of the unseen}}
+#var {crafting[enchanting][recipies][minor poison protection][ingredients]}{{1}{roan's tears}{2}{silver shards}{3}{fragment of ascension}}
+#var {crafting[enchanting][recipies][minor thespian][ingredients]}{{1}{beryl}{2}{garnet dust}{3}{fragment of ascension}}
+#var {crafting[enchanting][recipies][minor poison aggression][ingredients]}{{1}{roan's tears}{2}{silver shards}{3}{fragment of ascension}}
+#var {crafting[enchanting][recipies][minor detective][ingredients]}{{1}{eye of earth}{2}{pyrite dust}{3}{fragment of blasting}}
+#var {crafting[enchanting][recipies][minor thief at large][ingredients]}{{1}{pyrite}{2}{pyrite dust}{3}{fragment of blasting}}
+#var {crafting[enchanting][recipies][minor radiation protection][ingredients]}{{1}{pyrite}{2}{silver shards}{3}{fragment of damnation}}
+#var {crafting[enchanting][recipies][minor devouring protection][ingredients]}{{1}{eye of earth}{2}{silver shards}{3}{fragment of willy}}
+#var {crafting[enchanting][recipies][minor radiation aggression][ingredients]}{{1}{pyrite}{2}{silver shards}{3}{fragment of damnation}}
+#var {crafting[enchanting][recipies][minor elephant][ingredients]}{{1}{pyrite dust}{2}{roan's tears}{3}{fragment of willy}}
+#var {crafting[enchanting][recipies][minor devouring aggression][ingredients]}{{1}{beryl}{2}{silver shards}{3}{fragment of willy}}
+#var {crafting[enchanting][recipies][minor abbot][ingredients]}{{1}{pyrite}{2}{tourmaline dust}{3}{fragment of destruction}}
+#var {crafting[enchanting][recipies][minor domination protection][ingredients]}{{1}{roan's tears}{2}{silver shards}{3}{fragment of destruction}}
+#var {crafting[enchanting][recipies][minor agent][ingredients]}{{1}{beryl dust}{2}{tourmaline}{3}{fragment of compassion}}
+#var {crafting[enchanting][recipies][minor athlete][ingredients]}{{1}{beryl}{2}{tourmaline dust}{3}{fragment of knowledge}}
+#var {crafting[enchanting][recipies][minor irradiation aggression][ingredients]}{{1}{gold shards}{2}{tourmaline}{3}{fragment of compassion}}
+#var {crafting[enchanting][recipies][minor domination aggression][ingredients]}{{1}{roan's tears}{2}{silver shards}{3}{fragment of destruction}}
+#var {crafting[enchanting][recipies][minor irradiation protection][ingredients]}{{1}{gold shards}{2}{tourmaline}{3}{fragment of compassion}}
+#var {crafting[enchanting][recipies][minor koala][ingredients]}{{1}{eye of air}{2}{tourmaline dust}{3}{fragment of knowledge}}
+#var {crafting[enchanting][recipies][minor despot][ingredients]}{{1}{amethyst dust}{2}{tourmaline}{3}{fragment of knowledge}}
+#var {crafting[enchanting][recipies][standard might][ingredients]}{{1}{topaz}{2}{topaz dust}{3}{essence of light}}
+#var {crafting[enchanting][recipies][standard blades aggression][ingredients]}{{1}{amethyst}{2}{gold shards}{3}{essence of light}}
+#var {crafting[enchanting][recipies][standard blades protection][ingredients]}{{1}{gold shards}{2}{topaz}{3}{essence of light}}
+#var {crafting[enchanting][recipies][standard crushing protection][ingredients]}{{1}{mithril shards}{2}{topaz}{3}{essence of water}}
+#var {crafting[enchanting][recipies][standard agility][ingredients]}{{1}{eye of air}{2}{topaz dust}{3}{essence of light}}
+#var {crafting[enchanting][recipies][standard crushing aggression][ingredients]}{{1}{amethyst}{2}{mithril shards}{3}{essence of water}}
+#var {crafting[enchanting][recipies][standard health][ingredients]}{{1}{happy ed's tears}{2}{hematite dust}{3}{essence of shadow}}
+#var {crafting[enchanting][recipies][standard flame protection][ingredients]}{{1}{core of flame}{2}{mithril shards}{3}{essence of light}}
+#var {crafting[enchanting][recipies][standard flame aggression][ingredients]}{{1}{core of flame}{2}{mithril shards}{3}{essence of light}}
+#var {crafting[enchanting][recipies][standard endurance][ingredients]}{{1}{happy ed's tears}{2}{hematite dust}{3}{essence of shadow}}
+#var {crafting[enchanting][recipies][standard acid protection][ingredients]}{{1}{amethyst}{2}{mithril shards}{3}{essence of might}}
+#var {crafting[enchanting][recipies][standard acid aggression][ingredients]}{{1}{amethyst}{2}{mithril shards}{3}{essence of might}}
+#var {crafting[enchanting][recipies][standard frost protection][ingredients]}{{1}{core of frost}{2}{mithril shards}{3}{essence of water}}
+#var {crafting[enchanting][recipies][standard lion][ingredients]}{{1}{heliodor dust}{2}{topaz}{3}{essence of might}}
+#var {crafting[enchanting][recipies][standard spirit][ingredients]}{{1}{topaz}{2}{hematite dust}{3}{essence of rejuvenation}}
+#var {crafting[enchanting][recipies][standard terminator][ingredients]}{{1}{heliodor}{2}{heliodor dust}{3}{essence of might}}
+#var {crafting[enchanting][recipies][standard frost aggression][ingredients]}{{1}{core of frost}{2}{mithril shards}{3}{essence of water}}
+#var {crafting[enchanting][recipies][standard electric protection][ingredients]}{{1}{core of flame}{2}{titanium shards}{3}{essence of rage}}
+#var {crafting[enchanting][recipies][standard smarts][ingredients]}{{1}{core of frost}{2}{hematite dust}{3}{essence of shadow}}
+#var {crafting[enchanting][recipies][standard clever thief][ingredients]}{{1}{happy ed's tears}{2}{heliodor dust}{3}{essence of shadow}}
+#var {crafting[enchanting][recipies][standard electric aggression][ingredients]}{{1}{core of flame}{2}{titanium shards}{3}{essence of rage}}
+#var {crafting[enchanting][recipies][standard excessive health][ingredients]}{{1}{heliodor}{2}{hematite dust}{3}{essence of rejuvenation}}
+#var {crafting[enchanting][recipies][standard wolf][ingredients]}{{1}{heliodor}{2}{heliodor dust}{3}{essence of soul}}
+#var {crafting[enchanting][recipies][standard mental protection][ingredients]}{{1}{core of frost}{2}{titanium shards}{3}{essence of rage}}
+#var {crafting[enchanting][recipies][standard scholar][ingredients]}{{1}{hematite}{2}{hematite dust}{3}{essence of soul}}
+#var {crafting[enchanting][recipies][standard mental aggression][ingredients]}{{1}{core of frost}{2}{titanium shards}{3}{essence of rage}}
+#var {crafting[enchanting][recipies][standard insight][ingredients]}{{1}{hematite}{2}{peridot dust}{3}{essence of soul}}
+#var {crafting[enchanting][recipies][standard suave thief][ingredients]}{{1}{heliodor dust}{2}{hematite}{3}{essence of soul}}
+#var {crafting[enchanting][recipies][standard energy protection][ingredients]}{{1}{peridot}{2}{titanium shards}{3}{essence of soul}}
+#var {crafting[enchanting][recipies][standard energy aggression][ingredients]}{{1}{peridot}{2}{titanium shards}{3}{essence of soul}}
+#var {crafting[enchanting][recipies][standard excessive spirit][ingredients]}{{1}{peridot}{2}{peridot dust}{3}{essence of soul}}
+#var {crafting[enchanting][recipies][standard assault protection][ingredients]}{{1}{core of earth}{2}{ebon shards}{3}{essence of the unseen}}
+#var {crafting[enchanting][recipies][standard persuasiveness][ingredients]}{{1}{hematite}{2}{peridot dust}{3}{essence of the unseen}}
+#var {crafting[enchanting][recipies][standard barbarian][ingredients]}{{1}{heliodor}{2}{peridot dust}{3}{essence of the unseen}}
+#var {crafting[enchanting][recipies][standard assault aggression][ingredients]}{{1}{core of earth}{2}{ebon shards}{3}{essence of the unseen}}
+#var {crafting[enchanting][recipies][standard elements protection][ingredients]}{{1}{core of flame}{2}{core of frost}{3}{essence of the unseen}}
+#var {crafting[enchanting][recipies][standard jackal][ingredients]}{{1}{heliodor dust}{2}{peridot}{3}{essence of ascension}}
+#var {crafting[enchanting][recipies][standard health and spirit][ingredients]}{{1}{heliodor}{2}{peridot dust}{3}{essence of the unseen}}
+#var {crafting[enchanting][recipies][standard poison protection][ingredients]}{{1}{core of earth}{2}{ebon shards}{3}{essence of ascension}}
+#var {crafting[enchanting][recipies][standard elements aggression][ingredients]}{{1}{core of flame}{2}{core of frost}{3}{essence of the unseen}}
+#var {crafting[enchanting][recipies][standard thespian][ingredients]}{{1}{peridot}{2}{peridot dust}{3}{essence of ascension}}
+#var {crafting[enchanting][recipies][standard detective][ingredients]}{{1}{heliodor dust}{2}{peridot}{3}{essence of blasting}}
+#var {crafting[enchanting][recipies][standard poison aggression][ingredients]}{{1}{core of earth}{2}{ebon shards}{3}{essence of ascension}}
+#var {crafting[enchanting][recipies][standard radiation protection][ingredients]}{{1}{adamantium shards}{2}{pearl}{3}{essence of damnation}}
+#var {crafting[enchanting][recipies][standard thief at large][ingredients]}{{1}{pearl}{2}{peridot dust}{3}{essence of blasting}}
+#var {crafting[enchanting][recipies][standard devouring protection][ingredients]}{{1}{adamantium shards}{2}{core of earth}{3}{essence of willy}}
+#var {crafting[enchanting][recipies][standard radiation aggression][ingredients]}{{1}{adamantium shards}{2}{pearl}{3}{essence of damnation}}
+#var {crafting[enchanting][recipies][standard elephant][ingredients]}{{1}{pearl}{2}{pearl dust}{3}{essence of willy}}
+#var {crafting[enchanting][recipies][standard spirit and excessive health][ingredients]}{{1}{peridot}{2}{pearl dust}{3}{essence of damnation}}
+#var {crafting[enchanting][recipies][standard devouring aggression][ingredients]}{{1}{adamantium shards}{2}{core of earth}{3}{essence of willy}}
+#var {crafting[enchanting][recipies][standard domination protection][ingredients]}{{1}{core of air}{2}{obsidian shards}{3}{essence of destruction}}
+#var {crafting[enchanting][recipies][standard abbot][ingredients]}{{1}{core of air}{2}{peridot dust}{3}{essence of destruction}}
+#var {crafting[enchanting][recipies][standard agent][ingredients]}{{1}{opal}{2}{opal dust}{3}{essence of compassion}}
+#var {crafting[enchanting][recipies][standard athlete][ingredients]}{{1}{opal}{2}{pearl dust}{3}{essence of knowledge}}
+#var {crafting[enchanting][recipies][standard health and excessive spirit][ingredients]}{{1}{opal}{2}{pearl dust}{3}{essence of destruction}}
+#var {crafting[enchanting][recipies][standard irradiation aggression][ingredients]}{{1}{core of air}{2}{obsidian shards}{3}{essence of compassion}}
+#var {crafting[enchanting][recipies][standard domination aggression][ingredients]}{{1}{core of air}{2}{adamantium shards}{3}{essence of destruction}}
+#var {crafting[enchanting][recipies][standard irradiation protection][ingredients]}{{1}{core of air}{2}{obsidian shards}{3}{essence of compassion}}
+#var {crafting[enchanting][recipies][standard koala][ingredients]}{{1}{opal}{2}{opal dust}{3}{essence of knowledge}}
+#var {crafting[enchanting][recipies][standard despot][ingredients]}{{1}{ghoti's tears}{2}{pearl dust}{3}{essence of knowledge}}
+#var {crafting[enchanting][recipies][standard excessive health and spirit][ingredients]}{{1}{pearl}{2}{opal dust}{3}{essence of knowledge}}
+#var {crafting[enchanting][recipies][major blades aggression][ingredients]}{{1}{ghoti's tears}{2}{obsidian shards}{3}{heart of light}}
+#var {crafting[enchanting][recipies][major might][ingredients]}{{1}{opal}{2}{opal dust}{3}{heart of light}}
+#var {crafting[enchanting][recipies][major blades protection][ingredients]}{{1}{ghoti's tears}{2}{obsidian shards}{3}{heart of light}}
+#var {crafting[enchanting][recipies][major crushing protection][ingredients]}{{1}{ghoti's tears}{2}{nethernium shards}{3}{heart of water}}
+#var {crafting[enchanting][recipies][major agility][ingredients]}{{1}{star of flame}{2}{opal dust}{3}{heart of light}}
+#var {crafting[enchanting][recipies][major crushing aggression][ingredients]}{{1}{ghoti's tears}{2}{nethernium shards}{3}{heart of water}}
+#var {crafting[enchanting][recipies][major health][ingredients]}{{1}{star of flame}{2}{opal dust}{3}{heart of shadow}}
+#var {crafting[enchanting][recipies][major flame protection][ingredients]}{{1}{star of flame}{2}{nethernium shards}{3}{heart of light}}
+#var {crafting[enchanting][recipies][major flame aggression][ingredients]}{{1}{star of flame}{2}{nethernium shards}{3}{heart of light}}
+#var {crafting[enchanting][recipies][major endurance][ingredients]}{{1}{star of flame}{2}{opal dust}{3}{heart of shadow}}
+#var {crafting[enchanting][recipies][major frost protection][ingredients]}{{1}{star of frost}{2}{voidstone shards}{3}{heart of water}}
+#var {crafting[enchanting][recipies][major frost aggression][ingredients]}{{1}{star of frost}{2}{voidstone shards}{3}{heart of water}}
+#var {crafting[enchanting][recipies][major acid protection][ingredients]}{{1}{shansabyk's tears}{2}{voidstone shards}{3}{heart of might}}
+#var {crafting[enchanting][recipies][major lion][ingredients]}{{1}{diamond dust}{2}{diamond}{3}{heart of might}}
+#var {crafting[enchanting][recipies][major acid aggression][ingredients]}{{1}{shansabyk's tears}{2}{voidstone shards}{3}{heart of might}}
+#var {crafting[enchanting][recipies][major spirit][ingredients]}{{1}{diamond}{2}{opal dust}{3}{heart of rejuvenation}}
+#var {crafting[enchanting][recipies][major terminator][ingredients]}{{1}{diamond dust}{2}{star of frost}{3}{heart of might}}
+#var {crafting[enchanting][recipies][major smarts][ingredients]}{{1}{diamond dust}{2}{diamond}{3}{heart of shadow}}
+#var {crafting[enchanting][recipies][major electric protection][ingredients]}{{1}{shansabyk's tears}{2}{voidstone shards}{3}{heart of rage}}
+#var {crafting[enchanting][recipies][major clever thief][ingredients]}{{1}{diamond dust}{2}{star of flame}{3}{heart of shadow}}
+#var {crafting[enchanting][recipies][major electric aggression][ingredients]}{{1}{shansabyk's tears}{2}{voidstone shards}{3}{heart of rage}}
+#var {crafting[enchanting][recipies][major excessive health][ingredients]}{{1}{diamond}{2}{opal dust}{3}{heart of rejuvenation}}
+#var {crafting[enchanting][recipies][major mental protection][ingredients]}{{1}{phasemetal shards}{2}{emerald}{3}{heart of rage}}
+#var {crafting[enchanting][recipies][major scholar][ingredients]}{{1}{diamond}{2}{diamond dust}{3}{heart of soul}}
+#var {crafting[enchanting][recipies][major wolf][ingredients]}{{1}{emerald}{2}{emerald dust}{3}{heart of soul}}
+#var {crafting[enchanting][recipies][major mental aggression][ingredients]}{{1}{phasemetal shards}{2}{emerald}{3}{heart of rage}}
+#var {crafting[enchanting][recipies][major suave thief][ingredients]}{{1}{diamond dust}{2}{star of frost}{3}{heart of soul}}
+#var {crafting[enchanting][recipies][major insight][ingredients]}{{1}{emerald}{2}{emerald dust}{3}{heart of soul}}
+#var {crafting[enchanting][recipies][major energy protection][ingredients]}{{1}{phasemetal shards}{2}{star of air}{3}{heart of soul}}
+#var {crafting[enchanting][recipies][major excessive spirit][ingredients]}{{1}{emerald dust}{2}{shansabyk's tears}{3}{heart of soul}}
+#var {crafting[enchanting][recipies][major persuasiveness][ingredients]}{{1}{emerald dust}{2}{star of frost}{3}{heart of the unseen}}
+#var {crafting[enchanting][recipies][major energy aggression][ingredients]}{{1}{phasemetal shards}{2}{star of air}{3}{heart of soul}}
+#var {crafting[enchanting][recipies][major assault protection][ingredients]}{{1}{phasemetal shards}{2}{star of air}{3}{heart of the unseen}}
+#var {crafting[enchanting][recipies][major barbarian][ingredients]}{{1}{emerald}{2}{emerald dust}{3}{heart of the unseen}}
+#var {crafting[enchanting][recipies][major assault aggression][ingredients]}{{1}{phasemetal shards}{2}{star of air}{3}{heart of the unseen}}
+#var {crafting[enchanting][recipies][major jackal][ingredients]}{{1}{sapphire}{2}{sapphire dust}{3}{heart of ascension}}
+#var {crafting[enchanting][recipies][major elements protection][ingredients]}{{1}{star of flame}{2}{star of frost}{3}{heart of the unseen}}
+#var {crafting[enchanting][recipies][major thespian][ingredients]}{{1}{emerald dust}{2}{sapphire}{3}{heart of ascension}}
+#var {crafting[enchanting][recipies][major elements aggression][ingredients]}{{1}{star of flame}{2}{star of frost}{3}{heart of the unseen}}
+#var {crafting[enchanting][recipies][major poison protection][ingredients]}{{1}{phasemetal shards}{2}{star of air}{3}{heart of ascension}}
+#var {crafting[enchanting][recipies][major poison aggression][ingredients]}{{1}{phasemetal shards}{2}{star of air}{3}{heart of ascension}}
+#var {crafting[enchanting][recipies][major detective][ingredients]}{{1}{sapphire}{2}{sapphire dust}{3}{heart of blasting}}
+#var {crafting[enchanting][recipies][major radiation protection][ingredients]}{{1}{phasemetal shards}{2}{sapphire}{3}{heart of damnation}}
+#var {crafting[enchanting][recipies][major thief at large][ingredients]}{{1}{emerald}{2}{sapphire dust}{3}{heart of blasting}}
+#var {crafting[enchanting][recipies][major radiation aggression][ingredients]}{{1}{phasemetal shards}{2}{sapphire}{3}{heart of damnation}}
+#var {crafting[enchanting][recipies][major devouring protection][ingredients]}{{1}{phasemetal shards}{2}{star of earth}{3}{heart of willy}}
+#var {crafting[enchanting][recipies][major elephant][ingredients]}{{1}{ruby dust}{2}{star of earth}{3}{heart of willy}}
+#var {crafting[enchanting][recipies][major spirit and excessive health][ingredients]}{{1}{star of earth}{2}{sapphire dust}{3}{heart of damnation}}
+#var {crafting[enchanting][recipies][major devouring aggression][ingredients]}{{1}{phasemetal shards}{2}{star of earth}{3}{heart of willy}}
+#var {crafting[enchanting][recipies][major domination protection][ingredients]}{{1}{cancer's tears}{2}{chaostone shards}{3}{heart of destruction}}
+#var {crafting[enchanting][recipies][major abbot][ingredients]}{{1}{ruby}{2}{ruby dust}{3}{heart of destruction}}
+#var {crafting[enchanting][recipies][major athlete][ingredients]}{{1}{ruby}{2}{ruby dust}{3}{heart of knowledge}}
+#var {crafting[enchanting][recipies][major agent][ingredients]}{{1}{sapphire}{2}{sapphire dust}{3}{heart of compassion}}
+#var {crafting[enchanting][recipies][major domination aggression][ingredients]}{{1}{cancer's tears}{2}{chaostone shards}{3}{heart of destruction}}
+#var {crafting[enchanting][recipies][major irradiation aggression][ingredients]}{{1}{chaostone shards}{2}{ruby}{3}{heart of compassion}}
+#var {crafting[enchanting][recipies][major irradiation protection][ingredients]}{{1}{chaostone shards}{2}{ruby}{3}{heart of compassion}}
+#var {crafting[enchanting][recipies][major koala][ingredients]}{{1}{cancer's tears}{2}{sapphire dust}{3}{heart of knowledge}}
+#var {crafting[enchanting][recipies][major despot][ingredients]}{{1}{ruby}{2}{ruby dust}{3}{heart of knowledge}}
+#var {crafting[enchanting][recipies][major excessive health and spirit][ingredients]}{{1}{cancer's tears}{2}{ruby dust}{3}{heart of knowledge}}
+

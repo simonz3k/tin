@@ -1,0 +1,34 @@
+#NOP gagged lines
+#class {gags} {open}
+
+/* Jedi gags */
+#class {gag_guild} {open}
+
+	#gag {Force and deflect some};
+	#gag {lose focus and miss};
+
+
+#class {gag_guild} {close}
+
+
+
+
+/* Equipment gags */
+#class {gag_eq} {open}
+
+	#gag {armour glimmers}
+	#gag {cocoon absorbs part};
+	#gag {Headband warms you};
+	#gag {the headband hypnotizes};
+	#gag {sparks fly from the bracers};
+	#gag {bracers flare brightly};
+	#gag {greenstone amulet feels warm};
+	#gag {you phase out of harms way};
+#class {gag_eq} {close}
+
+#gag {^{1|2|3|4|5|6|7|8|9|10} of Hearts};
+#gag {^{The|A} {1|2|3|4|5|6|7|8|9|10|card|gardener|Gardener} {arrives|leaves|admires|wanders|sits|works|straightens}};
+#gag {You greedily stuff it into your satchel};
+
+
+#class {gags} {close}

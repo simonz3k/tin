@@ -1,0 +1,37 @@
+#NOP      ############  Variables for Farming ###############
+
+#VAR {crafting[farming][soil][dark]}		{{pale}{1}{light}{2}{dark}{3}{black}{4}};
+#VAR {crafting[farming][soil][gold]}		{{few}{1}{some}{2}{many}{3}{swath}{4}};
+#VAR {crafting[farming][soil][white]}		{{few}{1}{some}{2}{many}{3}{swath}{4}};
+#VAR {crafting[farming][soil][glisten]}		{{yellow }{1}{yellow-green}{2}{green-yellow}{3}{green}{4}};
+#VAR {crafting[farming][soil][water]}		{{bone dry}{1}{somewhat dry}{2}{damp}{3}{soaked}{4}};
+#VAR {crafting[farming][soil][bugs]}		{{virtually no}{1}{some}{2}{many}{3}{innumerable}{4}};
+#VAR {crafting[farming][soil][weeds]}		{{very few}{1}{few}{2}{a bunch}{3}{a lot}{4}};
+#VAR {crafting[farming][soil][mushrooms]}	{{very few}{1}{few}{2}{a bunch}{3}{a lot}{4}};
+
+
+#VAR {crafting[farming][nutrients][air][items]}			{{detroit}{}{genlab}{}{ryogi-pei}{}{serinth}{}};
+#var {crafting[farming][nutrients][fertilizer][items]}		{{alphabet}{}{happy ed's}{}{hippie}{}{smurfy}{}};
+#var {crafting[farming][nutrients][neutralizer][items]}		{{burns brand}{}{cowville}{}{der'thalas}{}{garou}{}};
+#var {crafting[farming][nutrients][pesticide][items]}		{{ant cave}{}{hunch}{}{mount perplexus}{}{murus faralain}{}};
+#var {crafting[farming][nutrients][water][items]}		{{atlantis}{}{gulf of mexico}{}{r'lyeh}{}{wayhaven}{}};
+
+#VAR {crafting[farming][nutrients][air][cmd]}		{aerate %s %s air};
+#VAR {crafting[farming][nutrients][fertilizer][cmd]}	{fertilize %s %s fertilizer};
+#VAR {crafting[farming][nutrients][neutralizer][cmd]}	{spread %s %s neutralizer};
+#VAR {crafting[farming][nutrients][pesticide][cmd]}	{spray %s %s pesticide};
+#VAR {crafting[farming][nutrients][water][cmd]}		{water %s %s};
+
+
+#var {crafting[farming][tools][contristometer][type]} {{1}{I}{2}{II}{3}{III}{4}{IV}};
+#var {crafting[farming][tools][contristometer][level]} {{1}{simple}{2}{standard}{1}{complex}};
+
+#var {crafting[farming][tools][goblin][color]} {{1}{blue}{2}{green}{3}{orange}{4}{red}};
+#var {crafting[farming][tools][goblin][size]} {{1}{tiny}{2}{medium-sized}{1}{large}};
+
+#var {crafting[farming][tools][hygrometer][level]} {{1}{simple}{2}{standard}{1}{complex}};
+
+#var {crafting[farming][tools][nutriometer][type]} {{1}{I}{2}{II}{3}{III}{4}{IV}};
+#var {crafting[farming][tools][nutriometer][mark]} {{1}{I}{2}{II}{3}{III}};
+
+#var {crafting[farming][tools][oximeter][level]} {{1}{simple}{2}{standard}{1}{complex}};

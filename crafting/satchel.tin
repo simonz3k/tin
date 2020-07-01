@@ -1,0 +1,166 @@
+#class {satchel} {open}
+
+#VAR {crafting[quality][specific]} {{1}{legendary}{2}{superior}{3}{good}{4}{average}{5}{poor}};
+#VAR {crafting[quality][transmute]} {{4}{superior}{3}{good}{2}{average}{2}{poor}};
+#VAR {crafting[quality][all]} {{best}{worst}{all}{any}${crafting[quality][specific]}};
+#VAR {crafting[limit][default]} {10};
+
+#ALIAS {stc}
+{
+    #ACTION {^%%*%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|} 
+    {
+        #FORMAT {crafting[ingredient]} {%l} {%%1};
+        #VAR {satchel[$crafting[ingredient]][total]} {%%4};
+        #VAR {satchel[$crafting[ingredient]][subtotal][1]} {%%7};
+        #VAR {satchel[$crafting[ingredient]][subtotal][2]} {%%10};
+        #VAR {satchel[$crafting[ingredient]][subtotal][3]} {%%13};
+        #VAR {satchel[$crafting[ingredient]][subtotal][4]} {%%16};
+        #VAR {satchel[$crafting[ingredient]][subtotal][5]} {%%19};
+        .CleanIngredient $crafting[ingredient];
+    };
+
+    #ACTION {You have %%d/%%d items in your satchel.}
+    {
+        #UNACTION {^%%*%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|};
+        #UNACTION {You have %%d/%%d items in your satchel.};
+    };
+
+    #SEND {!stashlist %0};
+};
+
+#ALIAS {.CleanIngredient}
+{
+    #REGEX {%0} {{fragment|essence}}
+    {
+        #FOREACH {$crafting[quality][specific][]} {i}
+        {
+            #IF {$satchel[%0][subtotal][$i] >= 5}
+            {
+                #SEND {!unstash2 5 $crafting[quality][specific][$i] %0};
+                #SEND {!assemble %0};
+                #SEND {!stash all};
+            };
+        };
+    }
+    {
+        #IF {$crafting[limit][%0] > 0}
+        {
+            #VAR {crafting[limit][current]} {$crafting[limit][%0]};
+        }
+        {
+            #VAR {crafting[limit][current]} {$crafting[limit][default]};
+        }
+        #MATH {crafting[delta]} {$satchel[%0][total] - $crafting[limit][current]};
+        #IF {$crafting[delta] > 0} 
+        {
+            #$crafting[delta] {!unstash2 worst %0};
+            #VAR {satchel[%0][total]} {$crafting[limit][current]};
+        };
+    };
+};
+
+#alias {setlimit} {
+	#showme setting the crafting limit for %1 from $crafting[limit][%1] to %2;
+	#VAR {crafting[limit][%1]} {%2};
+}
+
+#variable {minemats} {
+	{copper}{{1}{copper ore}{2}{copper shards}{3}{aquamarine}{4}{aquamarine dust}{5}{morganite}{6}{morganite dust}{7}{tiger's eye}{8}{tiger's eye dust}}
+	{bronze}{{1}{bronze ore}{2}{bronze shards}{3}{cat's eye}{4}{cat's eye dust}{5}{garnet}{6}{garnet dust}{7}{eye of flame}}
+	{iron}{{1}{iron ore}{2}{iron shards}{3}{garnet}{4}{garnet dust}{5}{alexandrite}{6}{alexandrite dust}{7}{eye of frost}}
+	{steel}{{1}{steel ore}{2}{steel shards}{3}{cat's eye}{4}{cat's eye dust}{5}{eye of frost}{6}{eye of flame}}
+	{silver}{{1}{silver ore}{2}{silver shards}{3}{pyrite}{4}{pyrite dust}{5}{tourmaline}{6}{tourmaline dust}{7}{beryl}{8}{beryl dust}{9}{eye of earth}{10}{roan's tears}}
+	{gold}{{1}{gold ore}{2}{gold shards}{3}{amethyst}{4}{amethyst dust}{5}{topaz}{6}{topaz dust}{7}{happy ed's tears}{8}{eye of air}}
+	{mithril}{{1}{mithril ore}{2}{mithril shards}{3}{heliodor}{4}{heliodor dust}{5}{hematite}{6}{hematite dust}{7}{core of flame}}
+	{titanium}{{1}{titanium ore}{2}{titanium shards}{3}{peridot}{4}{peridot dust}{5}{core of frost}}
+	{ebon}{{1}{ebon ore}{2}{ebon shards}{3}{heliodor}{4}{heliodor dust}{5}{peridot}{6}{peridot dust}{7}{core of earth}}
+	{adamantium}{{1}{adamantium ore}{2}{adamantium shards}{3}{pearl}{4}{pearl dust}{5}{core of air}}
+	{obsidian}{{1}{obsidian ore}{2}{obsidian shards}{3}{opal}{4}{opal dust}{5}{pearl}{6}{pearl dust}{7}{ghoti's tears}}
+	{nethernium}{{1}{nethernium ore}{2}{nethernium shards}{3}{opal}{4}{opal dust}{5}{ghoti's tears}{6}{star of flame}}
+	{voidstone}{{1}{voidstone ore}{2}{voidstone shards}{3}{diamond}{4}{diamond dust}{5}{shansabyk's tears}{6}{star of frost}}
+	{phasemetal}{{1}{phasemetal ore}{2}{phasemetal shards}{3}{emerald}{4}{emerald dust}{5}{sapphire}{6}{sapphire dust}{7}{star of earth}{8}{star of air}}
+	{chaostone}{{1}{chaostone ore}{2}{chaostone shards}{3}{ruby}{4}{ruby dust}{5}{emerald}{6}{emerald dust}{7}{sapphire}{8}{sapphire dust}{9}{cancer's tears}}
+};
+
+#NOP pull all non-legendary mats for an ore type and put them in a box
+#alias {matbox} {
+	!keep all;
+	#foreach {$minemats[%1][%*]} {name} {
+		!us all poor $name;
+		!us all average $name;
+		!us all good $name;
+		!us all superior $name;
+	}
+	!put all in box;
+};	
+
+#NOP check the amounts of each mat for a specific ore type
+#alias {sg} {#foreach {$minemats[%1][%*]} {name} {!st $name}};
+
+#NOP check to see what ore(s) a mining mat comes from
+#NOP check to see what ore(s) a mining mat comes from
+#alias {mlist} {
+	#foreach {$minemats[]} {level} {
+		#foreach {$minemats[$level][]} {index} {
+			#if {"$minemats[$level][$index]" == "%*%1%*"}{
+				#showme $level:$minemats[$level][$index];
+			}
+		}
+	}
+};
+
+#NOP Trigger for transmuting alias ptran
+#act {You unstash %1 } {#var {trcount} {%1}};
+
+#NOP main alias to pull all the ores of a specific quantity for the ore I'm pxping on and transmute them automagically
+#NOP right now the ore type is static, but could be made to function with a dynamic ore based on imput with the alias
+#alias {ptran} {
+        #var {trcount} {0};
+        #var {mat} {%1};
+		#var {type} {%2};
+
+        #delay {1} {
+                _ptran {poor} {average} {2} {$mat} {$type};
+                #delay {5} {
+                        _ptran {average} {good} {2} {$mat} {$type};
+                        #delay {5} {
+                                _ptran {good} {superior} {3} {$mat} {$type};
+                                #delay {5} {
+                                        _ptran {superior} {legendary} {4} {$mat} {$type};
+                                }
+                        }
+                }
+        }
+};
+
+#NOP sub alias for the ptran alias that does the actual unstashing and transmuting
+#alias {_ptran} {
+        !us all %1 $mat $type;
+
+        #delay {2} {
+
+                #math {trnum} {$trcount/%3};
+
+                #loop {$trnum} {1} {x} {
+                        #showme $x more times to run;
+                        !transmute %3 $mat $type quality to %2;
+                }
+        };
+
+        #delay {2} {!stash all};
+};
+
+#alias {mtran} {
+	#var mat = %1;
+	#var type = %2;
+
+		#delay {1} {!us all worst %1 %2;};
+		#delay {2} {!us all worst %1 %2;};
+		#delay {3} {!tk;!us all worst %1 %2;};
+		#delay {4} {!us all worst %1 %2;};
+		#delay {5} {transmute all %1 %2 quality to legendary;stash all};
+		
+		
+}
+
+#class {satchel} {close}

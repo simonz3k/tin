@@ -1,0 +1,48 @@
+#class {db} {open}
+
+#	initialize connection to sql database
+#RUN sql sqlite3 /home/scott/tintin-desktop/db/3k;
+
+#	create an event in the 'sql' session to display output in the 3k session
+#sql #EVENT {RECEIVED LINE} {#3k #show <129>From #sql:<099>%1};
+
+#	set the query timeout to 30 seconds so that actions that do a lot of writes don't get datbase lock errors
+#sql .timeout 30000;
+
+
+#	alias to hide sql output from #3k session
+#alias {hidesql}
+{
+    #var hide_sql 1;
+    #SHOW <129>[<069>Hiding SQL Output<129>]<099>
+}
+
+#	alias to show sql output in #3k session
+#alias {showsql}
+{
+    #var hide_sql 0;
+    #SHOW <129>[<169>Showing SQL Output<129>]<099>
+}
+
+
+#	trigger to capture prefixed sql output and display in #3k session
+#action {^From #sql:%*}
+{
+    #IF {"%1" == "#3k%*"}
+    {
+        %1;
+        #IF {$hide_sql}
+        {
+            #line gag
+        }
+    };
+    #ELSEIF {$hide_sql}
+    {
+        #line gag
+    }
+}
+
+#	switch back to the 3k session
+#3k
+
+#class {db} {close}

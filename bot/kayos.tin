@@ -1,0 +1,47 @@
+#class {bot} {open}
+
+#var no_loop 1
+#var {botpath} {e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;s;s;s;s;s;s;s;.stop};
+#var {botpath2} {enter;n;w;e;e;n;grab cell;s;w;s;out;#map goto $bnum;.stop};
+
+#act {^=M=A {robotic lion|robotic hound|robotic tiger|robotic velociraptor|TANK|refugee|demon soldier|flameroller|tornado of Kayos energy|time-lost pirate|small imp}} {
+	#var mobname mob;
+	_check_mob;
+}
+
+#NOP #var key_cnt 1
+#act {^=I= An intricate digital key} {!get key;}
+
+#NOP Bunker Tags
+#var bunker_cnt 1
+#act {A squat bunker.} {
+	#map set roomsymbol <148>B<088>;
+	#map get roomnote rnote;
+	#if {"$rnote" !=  "bu[0-9]"} {
+		#showme Rnote was set to $rnote, bunker count is $bunker_cnt;
+		#map set {roomnote} {bu${bunker_cnt}};
+		#math {bunker_cnt} {${bunker_cnt} + 1};#showme bunker count was updated;
+		#map dig {enter} {10002};
+	};
+	!unlock bunker;
+}
+
+#act {A scorch-marked landing pad.} {
+	#map set roomsymbol <128>P<088>;
+	#map set {roomnote} {pad}
+}
+
+#act {A silver homing beacon.} {
+	#map set roomsymbol <188>B<088>;
+	#map set {roomnote} {beacon}
+}
+
+#alias {bb} {
+	#map get {roomvnum} {bnum};
+	#path load botpath2;
+	{..};
+}
+
+#act {#END OF PATH} {#bell} {1}
+
+#class {bot} {close}
