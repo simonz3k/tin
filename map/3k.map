@@ -8,7 +8,7 @@ CB
 
 F 9
 
-I 6543
+I 1578
 
 L ▪ ╹ ╺ ┗ ╻ ┃ ┏ ┣ ╸ ┛ ━ ┻ ┓ ┫ ┳ ╋ X
 
@@ -7725,6 +7725,7 @@ E { 1574} {w} {w} {8} {0} {} {1.000}
 E { 1575} {s} {s} {4} {0} {} {1.000}
 E { 1855} {e} {e} {2} {0} {} {1.000}
 E { 1865} {n} {n} {1} {0} {} {1.000}
+E { 1857} {ne} {ne} {3} {0} {} {1.000}
 
 R { 1579} {0} {<118>} {} { } {} {} {} {} {} {1.000}
 
@@ -9143,6 +9144,7 @@ E { 1858} {e} {e} {2} {0} {} {1.000}
 E { 1859} {ne} {ne} {3} {0} {} {1.000}
 E { 1861} {n} {n} {1} {0} {} {1.000}
 E { 1865} {w} {w} {8} {0} {} {1.000}
+E { 1578} {sw} {sw} {12} {0} {} {1.000}
 
 R { 1858} {0} {} {Hills (n,s,w)} { } {Hills This is a hilly area with an occasional tree.  There are some footprints of a humanoid style here.  The earth is very muddy in this area, and the ground makes a strange sucking sound whenever you take a step.  Further to the south you notice that the hills continue.  To the east, steep cliffs stretch down to meet the foaming waves of the ocean.  A strong breeze gusts in from the sea. } {Mud} {} {} {} {1.000}
 E { 1856} {s} {s} {4} {0} {} {1.000}
