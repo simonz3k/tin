@@ -29,14 +29,9 @@
 
 #act {^%1 dealt the killing blow to} {
 	#if {$tank == 1} {
-		#if {$cact == 1} {
-			!get corpse
-		}{
-			!wrap;		
-			!focus absorb energy;
-			!get coins;
-
-		};
+		!wrap;		
+		!focus absorb energy;
+		!get coins;
 	};
 	#NOP !get all;
 	!hp;
