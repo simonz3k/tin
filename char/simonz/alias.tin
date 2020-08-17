@@ -9,12 +9,26 @@
 #alias {fol} {follow}
 #alias {ga} {get all}
 #alias {gac} {get all from corpse}
-#alias {cl} {ctell}
+#alias {ct} {ctell}
 #alias {pth} {ptell -h}
 #alias {th} {tellhist}
-#alias {rem} {remove}
+#alias {rem} {remove}#
+#alias {boomshout} {
+	!shout This death brought to you by one of The Guilds That Go Boom!  Decorating 3k's landscape since who knows when.
+}
+#alias {
+	!shout WITCHES!!!  We used to do it on broomsticks with demons.  Then we did it in the garden with hoes.  Now we do it in other guilds. =/
+}
+#alias {cac} {!shout 4 670sp charms @ CoT, ping me in 1999!}
 
+#NOP repair aliases for lightweapons
+#alias {rstaff} {!repair green\;lightstaff};
+#alias {rsaber} {!repair green\;lightsaber};
+#alias {rdag}   {!repair green\;lightdaggers};
+#alias {rb1}    {!repair jade\;teepo blaster};
+#alias {rb2}	{!repair white\;offhand blaster};
 
+#NOP draw aliases for lightweapons
 #alias {bs1} {
 	sheath;
 	draw teepo blaster;
@@ -25,24 +39,21 @@
 	draw teepo blaster;
 	#delay {2} {focus mode /snap shot};
 }
-#alias {ls2} {
-	sheath;
-	draw lightsaber;
-	#delay {2} {focus mode /guide};
-}
-
-#alias {ls2f} {
-	sheath;
-	draw lightsaber;
-	focus mode /flurry;
-}
-
 #alias {ls1} {
 	sheath;
 	draw lightstaff;
 	#delay {2} {focus mode /guide};
 }
-
+#alias {ls2} {
+	sheath;
+	draw lightsaber;
+	#delay {2} {focus mode /guide};
+}
+#alias {ls2f} {
+	sheath;
+	draw lightsaber;
+	focus mode /flurry;
+}
 #alias {ls3} {
 	sheath;
 	draw lightdaggers;
@@ -59,35 +70,33 @@
 	#var hib;
 }
 
-#alias {brod} {
-	!buy rod;
-	!put rod in backpack;
-}
-
+#NOP alias for auto-filling my backpack with cells
 #alias {bcell} {
 	#2 !smr backpack;
 	#10 {!buy cell;!put cell in backpack};
 	#2 {!eb;!smuggle backpack}
 	!keep cell;
 }
-
+#NOP alias for fixing display of cells on my hpbar
 #alias {ccf} {
 	#2 !smr backpack;
 	#2 {!eb;!smuggle backpack};
 	!keep cell;
 }
-	
+
 #alias {rf} {
 	!unwrap;
 	!focus release force;
 }
 
+#NOP alias for logging things to my chat file
 #alias {clog} {
 	#format {timestamp} {%t} {<108>[<268>%H<108>:<268>%M<108>]<088> };
 	#line log {./logs/3k.chat} {$timestamp\};
 	#line log {./logs/3k.chat} {<110>Notif:<088> %1};
 };
 
+#NOP aliases for picking up mobs in the land
 #alias {landon} {
 	#switch {"%1"} {
 		#case {"w"} {
@@ -118,31 +127,7 @@
 	#unact {^=M= A Small Horse Herd} {!k herd};
 };
 
-#alias {mwatch} {
-	#showme Now watching for %1;
-	#act {%1} {clog {<110>%1 is available for training<088>}};
-}
-
-#alias {crem} {#showme 1 es rejuv,damn,unseen};
-
-#alias {mgo} {miner 8;..};
-#alias {pgo} {miner 7;mig nethernium voidstone;..};
-
 #alias {eprot} {!focus maintain for rpoison;!focus maintain for rstun;!focus maintain for emet;};
-
-#alias {fdon} {
-	#act {Holocron Fragment [%*]} {
-#showme triggered on %0 var1 %1;
-		#var holonum %1;
-		#$holonum get fragment from backpack;
-		!sm backpack;
-		#delay {3} {#$holonum {unkeep fragment;donate fragment}};
-		#unact {Holocron Fragment [%*]};
-	};
-	!smr backpack;
-	!exa backpack;
-
-};
 
 #alias {pathdump} {
 	#path save forward pathtmp;
@@ -153,8 +138,7 @@
 	#path load $pathtmp;
 	!tell %2 $pathto;
 	#unvar pathtmp;
-	#unvar pathto;
-	
+	#unvar pathto;	
 }
 
 #alias {edet} {!ei %0;!(learn details %0;}
