@@ -1,0 +1,6 @@
+#NOP parent file for loading crafting modules
+
+#read ./crafting/satchel.tin;
+#read ./crafting/ctrigs.tin;
+#read ./crafting/calias.tin;
+#read ./crafting/enchanter.tin;

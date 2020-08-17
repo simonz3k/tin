@@ -98,7 +98,6 @@
 #alias {sg} {#foreach {$minemats[%1][%*]} {name} {!st $name}};
 
 #NOP check to see what ore(s) a mining mat comes from
-#NOP check to see what ore(s) a mining mat comes from
 #alias {mlist} {
 	#foreach {$minemats[]} {level} {
 		#foreach {$minemats[$level][]} {index} {
@@ -109,58 +108,6 @@
 	}
 };
 
-#NOP Trigger for transmuting alias ptran
-#act {You unstash %1 } {#var {trcount} {%1}};
 
-#NOP main alias to pull all the ores of a specific quantity for the ore I'm pxping on and transmute them automagically
-#NOP right now the ore type is static, but could be made to function with a dynamic ore based on imput with the alias
-#alias {ptran} {
-        #var {trcount} {0};
-        #var {mat} {%1};
-		#var {type} {%2};
-
-        #delay {1} {
-                _ptran {poor} {average} {2} {$mat} {$type};
-                #delay {5} {
-                        _ptran {average} {good} {2} {$mat} {$type};
-                        #delay {5} {
-                                _ptran {good} {superior} {3} {$mat} {$type};
-                                #delay {5} {
-                                        _ptran {superior} {legendary} {4} {$mat} {$type};
-                                }
-                        }
-                }
-        }
-};
-
-#NOP sub alias for the ptran alias that does the actual unstashing and transmuting
-#alias {_ptran} {
-        !us all %1 $mat $type;
-
-        #delay {2} {
-
-                #math {trnum} {$trcount/%3};
-
-                #loop {$trnum} {1} {x} {
-                        #showme $x more times to run;
-                        !transmute %3 $mat $type quality to %2;
-                }
-        };
-
-        #delay {2} {!stash all};
-};
-
-#alias {mtran} {
-	#var mat = %1;
-	#var type = %2;
-
-		#delay {1} {!us all worst %1 %2;};
-		#delay {2} {!us all worst %1 %2;};
-		#delay {3} {!tk;!us all worst %1 %2;};
-		#delay {4} {!us all worst %1 %2;};
-		#delay {5} {transmute all %1 %2 quality to legendary;stash all};
-		
-		
-}
 
 #class {satchel} {close}

@@ -20,9 +20,7 @@
 #read ./mip/miphp.tin;
 #read ./mip/graph.tin;
 #read ./map/mapper.tin;
-#read ./crafting/satchel.tin;
-#read ./crafting/ctrigs.tin;
-#read ./crafting/enchanter.tin;
+#read ./crafting/crafting.tin;
 #read ./char/simonz/trigs.tin;
 #read ./char/simonz/alias.tin;
 #read ./char/simonz/gag.tin;
