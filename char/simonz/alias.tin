@@ -97,6 +97,7 @@
 };
 
 #NOP aliases for picking up mobs in the land
+#NOP I can pass an arg w or h, and I'll only pick up wolf packs or herds.  Default with no arg is all
 #alias {landon} {
 	#switch {"%1"} {
 		#case {"w"} {
@@ -131,14 +132,18 @@
 
 #alias {pathdump} {
 	#path save forward pathtmp;
+	#map get {roomvnum} {vnum};
+	#map goto 1;
 	#map find {roomnote} %1;
 	#path save forward pathto;
 	#replace {pathto} {;} {,};
 	#showme $pathto;
 	#path load $pathtmp;
 	!tell %2 $pathto;
+	#map goto $vnum;
 	#unvar pathtmp;
-	#unvar pathto;	
+	#unvar pathto;
+	#unvar vnum;
 }
 
 #alias {edet} {!ei %0;!(learn details %0;}
