@@ -1,5 +1,5 @@
 #alias {ttest} {
-
+#NOP test
     #ACTION {^%%*%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|} 
     {
         #FORMAT {crafting[ingredient]} {%l} {%%1};
