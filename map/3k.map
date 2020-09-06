@@ -8,7 +8,7 @@ CB
 
 F 9
 
-I 1578
+I 6912
 
 L ▪ ╹ ╺ ┗ ╻ ┃ ┏ ┣ ╸ ┛ ━ ┻ ┓ ┫ ┳ ╋ X
 
@@ -17124,7 +17124,7 @@ R { 3605} {0} {} {Bedroom (closet,n)} { } {You have entered someone's bedroom, t
 E { 3600} {n} {n} {1} {0} {} {1.000}
 E { 3607} {closet} {closet} {0} {0} {} {1.000}
 
-R { 3606} {0} {<118>} {A portal chamber (nw,portal,se,ne,sw)} {P} { Round: 0  $world   Uptime: 3.0 days  Reboot: 8.8 days  Lag: 0.10  Idle: [00:00:02]/900   =S=A portal chamber (nw,portal,se,ne,sw)                       =S=         @         A huge swirling vortex exists here.  Through the vortex is the world which you are familiar with.  But this one is a plane of four elements, fire, earth, air and water.  The surroundings suit this plane well.  The area to the southeast of here, it almost looks like the chamber is a cave made from earth, while the northeast part of the chamber is missing completely for some strange reason.  The chamber is completely engulfed in flames to the northwest while the southwestern corner of the chamber is a huge puddle of water.  This place looks like it could be kind of dangerous. } {Mage Tower} {} {} {} {1.000}
+R { 3606} {0} {<118>} {A portal chamber (nw,portal,se,ne,sw)} {P} { Round: 0  $world   Uptime: 3.0 days  Reboot: 8.8 days  Lag: 0.10  Idle: [00:00:02]/900   =S=A portal chamber (nw,portal,se,ne,sw)                       =S=         @         A huge swirling vortex exists here.  Through the vortex is the world which you are familiar with.  But this one is a plane of four elements, fire, earth, air and water.  The surroundings suit this plane well.  The area to the southeast of here, it almost looks like the chamber is a cave made from earth, while the northeast part of the chamber is missing completely for some strange reason.  The chamber is completely engulfed in flames to the northwest while the southwestern corner of the chamber is a huge puddle of water.  This place looks like it could be kind of dangerous. } {Mage Tower} {aoe} {} {} {1.000}
 E { 3600} {portal} {portal} {0} {0} {} {1.000}
 E { 3608} {nw} {nw} {9} {0} {} {1.000}
 E { 3612} {se} {se} {6} {0} {} {1.000}
@@ -30314,7 +30314,7 @@ E { 6435} {e} {e} {2} {0} {} {1.000}
 R { 6490} {0} {<118>} {} { } {} {} {} {} {} {1.000}
 E { 6449} {e} {e} {2} {0} {} {1.000}
 
-R { 6491} {0} {} {A Pathway of Earth (n,out)} { } {The pathway here is made of gravel. The shadows recede into the background as if summoned there. Looking to the north, you notice that a bit more life fills the area to the north.  A fair sized tree grows impossibly in the sunless environment. There appears to be a sign carved into its trunk. } {Mud} {dftree} {} {} {1.000}
+R { 6491} {0} {} {A Pathway of Earth (n,out)} { } {The pathway here is made of gravel. The shadows recede into the background as if summoned there. Looking to the north, you notice that a bit more life fills the area to the north.  A fair sized tree grows impossibly in the sunless environment. There appears to be a sign carved into its trunk. } {Mud} {tree} {} {} {1.000}
 E { 2701} {out} {out} {0} {0} {} {1.000}
 E { 6492} {n} {n} {1} {0} {} {1.000}
 
@@ -32100,7 +32100,7 @@ E { 6909} {sw} {sw} {12} {0} {} {1.000}
 
 R { 6911} {0} {<118>} {} { } {} {} {} {} {} {1.000}
 
-R { 6912} {0} {} {Beside a dark chasm (n)} { } {Darkness consuming, pressing, devouring.  The light fades under the assault, and shadows dance free.  Shadow-shrouded trees loom out of the darkness like sentinels of doom, their branches clawed and grasping.  Dropping suddenly, a chasm of darkness, as deep as it is black.  Sloughing though the air comes the biting call of a nearby Swoop. } {Night of Colour} {noce} {} {} {1.000}
+R { 6912} {0} {} {Beside a dark chasm (n)} { } {Darkness consuming, pressing, devouring.  The light fades under the assault, and shadows dance free.  Shadow-shrouded trees loom out of the darkness like sentinels of doom, their branches clawed and grasping.  Dropping suddenly, a chasm of darkness, as deep as it is black.  Sloughing though the air comes the biting call of a nearby Swoop. } {Night of Colour} {noc2} {} {} {1.000}
 E { 6913} {n} {n} {1} {0} {} {1.000}
 
 R { 6913} {0} {} {Beside a light chasm (ne,nw,n,s,w,e)} { } {Though night is well advanced, light seems to softly glow from nothing, or everything\; perhaps both at once.  Endless forest, covering the land completely, filled with light and life.  Sudden drop, bottomless chasm, fine spray of mist fills the air.  A moon like no other, nothing but luminescence is hovering between it and you.  Almost silent, but the soft pad pad pad pad belies a Hostile close by. } {Night of Colour} {} {} {} {1.000}
