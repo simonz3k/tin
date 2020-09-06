@@ -17,7 +17,7 @@
 #read ./bot_load.tin;
 #read ./mbot_load.tin;
 #read ./mip/mip.tin;
-#read ./mip/miphp.tin;
+#read ./char/simonx/miphp.tin;
 #read ./mip/graph.tin;
 #read ./map/mapper.tin;
 #read ./crafting/satchel.tin;

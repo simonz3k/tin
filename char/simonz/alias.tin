@@ -5,21 +5,22 @@
 #NOP alias {mipon} {#read ./mip/mip.tin}
 #NOP alias {mipoff} {#class mip kill}
 
-#alias {dg} {divvy gold}
-#alias {fol} {follow}
-#alias {ga} {get all}
-#alias {gac} {get all from corpse}
-#alias {ct} {ctell}
-#alias {pth} {ptell -h}
-#alias {th} {tellhist}
-#alias {rem} {remove}#
+#alias {dg} {divvy gold};
+#alias {fol} {follow};
+#alias {ga} {get all};
+#alias {gac} {get all from corpse};
+#alias {ct} {ctell};
+#alias {pth} {ptell -h};
+#alias {th} {tellhist};
+#alias {rem} {remove}#;
 #alias {boomshout} {
 	!shout This death brought to you by one of The Guilds That Go Boom!  Decorating 3k's landscape since who knows when.
-}
-#alias {
+};
+
+#alias {wit} {
 	!shout WITCHES!!!  We used to do it on broomsticks with demons.  Then we did it in the garden with hoes.  Now we do it in other guilds. =/
-}
-#alias {cac} {!shout 4 670sp charms @ CoT, ping me in 1999!}
+};
+#alias {cac} {!shout 4 670sp charms @ CoT, ping me in 1999!};
 
 #NOP repair aliases for lightweapons
 #alias {rstaff} {!repair green\;lightstaff};

@@ -78,9 +78,8 @@
 }
 	
 #alias {rf} {
-	!drop corpse;
+	!unwrap;
 	!focus release force;
-	!get coins;
 }
 
 #alias {clog} {
