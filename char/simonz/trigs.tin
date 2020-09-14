@@ -287,5 +287,6 @@ gxr;
 
 #act {[%* {reconnects|disconnects}]} {clog {%0}};
 
+#act {Your coffin flashes as its capacity expands!} {clog {%0}};
 
 #class {trigs} {close}

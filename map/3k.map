@@ -6,9 +6,9 @@ CP <138>
 CR 
 CB 
 
-F 9
+F 8
 
-I 6912
+I 6118
 
 L ▪ ╹ ╺ ┗ ╻ ┃ ┏ ┣ ╸ ┛ ━ ┻ ┓ ┫ ┳ ╋ X
 
@@ -17742,6 +17742,7 @@ E { 3747} {e} {e} {2} {0} {} {1.000}
 
 R { 3753} {0} {<118>} {} { } {} {} {} {} {} {1.000}
 E { 3747} {w} {w} {8} {0} {} {1.000}
+E { 3756} {n} {n} {1} {0} {} {1.000}
 
 R { 3754} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains Before you stretches a vast expanse of destruction and desolation.  You've got to wonder how anything could survive way out here.  The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  To the north you vaguely make out the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3751} {s} {s} {4} {0} {} {1.000}
@@ -17752,8 +17753,11 @@ E { 3759} {e} {e} {2} {0} {} {1.000}
 R { 3755} {0} {<118>} {} { } {} {} {} {} {} {1.000}
 E { 3751} {e} {e} {2} {0} {} {1.000}
 
-R { 3756} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3756} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains You wonder if you'll ever find the end of this rolling expanse.  Huge clouds of dust and ash rise in the distance as you look around.  A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.   } {Mud} {} {} {} {1.000}
 E { 3751} {w} {w} {8} {0} {} {1.000}
+E { 3759} {n} {n} {1} {0} {} {1.000}
+E { 3753} {s} {s} {4} {0} {} {1.000}
+E { 7076} {e} {e} {2} {0} {} {1.000}
 
 R { 3757} {0} {} {Desolate plains (s,n,w,e)} { } {Desolate plains You've got to wonder how anything could survive way out here.  You see a bright flash of light far in the distance. It takes a very long time for the sound of the explosion to reach you.  Before you stretches a vast expanse of destruction and desolation.  To the east, south and north you almost miss the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3754} {s} {s} {4} {0} {} {1.000}
@@ -17764,9 +17768,11 @@ E { 3762} {e} {e} {2} {0} {} {1.000}
 R { 3758} {0} {<118>} {} { } {} {} {} {} {} {1.000}
 E { 3754} {e} {e} {2} {0} {} {1.000}
 
-R { 3759} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3759} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  You've got to wonder how anything could survive way out here.  A foul wind whips by you as you survey this desolate landscape.  To the west, east and south you barely sense the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3754} {w} {w} {8} {0} {} {1.000}
 E { 3762} {n} {n} {1} {0} {} {1.000}
+E { 3756} {s} {s} {4} {0} {} {1.000}
+E { 3771} {e} {e} {2} {0} {} {1.000}
 
 R { 3760} {0} {} {Desolate plains (s,n,w,e)} { } {Desolate plains Before you stretches a vast expanse of destruction and desolation.  You wonder if you'll ever find the end of this rolling expanse.  You see a bright flash of light far in the distance. It takes a very long time for the sound of the explosion to reach you.   } {Mud} {} {} {} {1.000}
 E { 3757} {s} {s} {4} {0} {} {1.000}
@@ -17793,9 +17799,11 @@ E { 3769} {e} {e} {2} {0} {} {1.000}
 R { 3764} {0} {<118>} {} { } {} {} {} {} {} {1.000}
 E { 3760} {e} {e} {2} {0} {} {1.000}
 
-R { 3765} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3765} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  You can hear the roar of some far off motor. Who'd be way out here?  Huge clouds of dust and ash rise in the distance as you look around.  To the north, west and east you sort of see the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3760} {w} {w} {8} {0} {} {1.000}
 E { 3762} {s} {s} {4} {0} {} {1.000}
+E { 3772} {e} {e} {2} {0} {} {1.000}
+E { 3769} {n} {n} {1} {0} {} {1.000}
 
 R { 3766} {0} {<118>} {} { } {} {} {} {} {} {1.000}
 E { 3763} {u} {u} {16} {0} {} {1.000}
@@ -17806,8 +17814,11 @@ E { 3763} {e} {e} {2} {0} {} {1.000}
 R { 3768} {0} {<118>} {} { } {} {} {} {} {} {1.000}
 E { 3763} {s} {s} {4} {0} {} {1.000}
 
-R { 3769} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3769} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains A foul wind whips by you as you survey this desolate landscape.  Could it be your imagination, or is that the smell of burning flesh?  You see a bright flash of light far in the distance. It takes a very long time for the sound of the explosion to reach you.  To the south and east you make out the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3763} {w} {w} {8} {0} {} {1.000}
+E { 7164} {e} {e} {2} {0} {} {1.000}
+E { 3765} {s} {s} {4} {0} {} {1.000}
+E { 7167} {n} {n} {1} {0} {} {1.000}
 
 R { 3770} {0} {} {Desolate plains (s,n,w,e)} { } {Desolate plains You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  You've got to wonder how anything could survive way out here.  Huge clouds of dust and ash rise in the distance as you look around.  To the south, west and east you sort of detect the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3762} {w} {w} {8} {0} {} {1.000}
@@ -17815,11 +17826,17 @@ E { 3771} {s} {s} {4} {0} {} {1.000}
 E { 3772} {n} {n} {1} {0} {} {1.000}
 E { 3773} {e} {e} {2} {0} {} {1.000}
 
-R { 3771} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3771} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  You've got to wonder how anything could survive way out here.  Huge clouds of dust and ash rise in the distance as you look around.  To the south and north you detect the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3770} {n} {n} {1} {0} {} {1.000}
+E { 3759} {w} {w} {8} {0} {} {1.000}
+E { 7076} {s} {s} {4} {0} {} {1.000}
+E { 3775} {e} {e} {2} {0} {} {1.000}
 
-R { 3772} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3772} {0} {} {Desolate plains (n,e,s,w)} { } {Desolate plains You wonder if you'll ever find the end of this rolling expanse.  You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  Huge clouds of dust and ash rise in the distance as you look around.  To the south and west you vaguely make out the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3770} {s} {s} {4} {0} {} {1.000}
+E { 7164} {n} {n} {1} {0} {} {1.000}
+E { 3774} {e} {e} {2} {0} {} {1.000}
+E { 3765} {w} {w} {8} {0} {} {1.000}
 
 R { 3773} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains Could it be your imagination, or is that the smell of burning flesh?  A foul wind whips by you as you survey this desolate landscape.  The ground under your feet cracks and snaps as you walk. The dirt is jet  $world   Uptime: 9.4 days  Reboot: 2.4 days  Lag: 0.00  Idle: [00:00:01]/900   black, with soot, ash, and pieces of bone strewn throughout.  To the west you vaguely detect the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3770} {w} {w} {8} {0} {} {1.000}
@@ -17827,11 +17844,19 @@ E { 3774} {n} {n} {1} {0} {} {1.000}
 E { 3775} {s} {s} {4} {0} {} {1.000}
 E { 3776} {e} {e} {2} {0} {} {1.000}
 
-R { 3774} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3774} {0} {} {Wastelands (u,d,e)} { } {			Wastelands Before you sits a massive structure, well, it looks massive because you're standing so close. It appears to be made out of shiny steel and plastic and looks rather new. The rest of the surrounding area appears to be desolate and empty. } {Mud} {} {} {} {1.000}
 E { 3773} {s} {s} {4} {0} {} {1.000}
+E { 3778} {e} {e} {2} {0} {} {1.000}
+E { 7160} {u} {u} {16} {0} {} {1.000}
+E { 7161} {d} {d} {32} {0} {} {1.000}
+E { 7162} {n} {n} {1} {0} {} {1.000}
+E { 3772} {w} {w} {8} {0} {} {1.000}
 
-R { 3775} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3775} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  The clouds above you move in over the sun and block out its light.  You can hear the roar of some far off motor. Who'd be way out here?  To the west and north you make out the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3773} {n} {n} {1} {0} {} {1.000}
+E { 3771} {w} {w} {8} {0} {} {1.000}
+E { 7078} {s} {s} {4} {0} {} {1.000}
+E { 3777} {e} {e} {2} {0} {} {1.000}
 
 R { 3776} {0} {} {Desolate plains (s,n,w,e)} { } {Desolate plains The clouds above you move in over the sun and block out its light.  You've got to wonder how anything could survive way out here.  A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  To the west you barely see the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3773} {w} {w} {8} {0} {} {1.000}
@@ -17839,11 +17864,17 @@ E { 3777} {s} {s} {4} {0} {} {1.000}
 E { 3778} {n} {n} {1} {0} {} {1.000}
 E { 3779} {e} {e} {2} {0} {} {1.000}
 
-R { 3777} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3777} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains Could it be your imagination, or is that the smell of burning flesh?  You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  A foul wind whips by you as you survey this desolate landscape.   } {Mud} {} {} {} {1.000}
 E { 3776} {n} {n} {1} {0} {} {1.000}
+E { 3775} {w} {w} {8} {0} {} {1.000}
+E { 7080} {s} {s} {4} {0} {} {1.000}
+E { 3780} {e} {e} {2} {0} {} {1.000}
 
-R { 3778} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3778} {0} {} {Desolate plains (n,w,s,e)} { } {Desolate plains You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  The clouds above you move in over the sun and block out its light.  You wonder if you'll ever find the end of this rolling expanse.  To the south and east you barely detect the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3776} {s} {s} {4} {0} {} {1.000}
+E { 3781} {e} {e} {2} {0} {} {1.000}
+E { 7159} {n} {n} {1} {0} {} {1.000}
+E { 3774} {w} {w} {8} {0} {} {1.000}
 
 R { 3779} {0} {} {Desolate plains (s,n,w,e)} { } {Desolate plains Before you stretches a vast expanse of destruction and desolation.  Could it be your imagination, or is that the smell of burning flesh?  You see a bright flash of light far in the distance. It takes a very long time for the sound of the explosion to reach you.  To the south and east you barely detect the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3776} {w} {w} {8} {0} {} {1.000}
@@ -17851,12 +17882,17 @@ E { 3780} {s} {s} {4} {0} {} {1.000}
 E { 3781} {n} {n} {1} {0} {} {1.000}
 E { 3782} {e} {e} {2} {0} {} {1.000}
 
-R { 3780} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3780} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains Could it be your imagination, or is that the smell of burning flesh?  The clouds above you move in over the sun and block out its light.  You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  To the east you vaguely sense the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3779} {n} {n} {1} {0} {} {1.000}
+E { 3777} {w} {w} {8} {0} {} {1.000}
+E { 7082} {s} {s} {4} {0} {} {1.000}
+E { 3784} {e} {e} {2} {0} {} {1.000}
 
-R { 3781} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3781} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  The clouds above you move in over the sun and block out its light.  You've got to wonder how anything could survive way out here.  To the north you just barely see the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3779} {s} {s} {4} {0} {} {1.000}
 E { 3783} {e} {e} {2} {0} {} {1.000}
+E { 5939} {n} {n} {1} {0} {} {1.000}
+E { 3778} {w} {w} {8} {0} {} {1.000}
 
 R { 3782} {0} {} {Desolate plains (n,s,w,e)} { } { Round: 0 Desolate plains You see a bright flash of light far in the distance. It takes a very long time for the sound of the explosion to reach you.  A foul wind whips by you as you survey this desolate landscape.  You wonder if you'll ever find the end of this rolling expanse.  To the north and west you barely sense the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3779} {w} {w} {8} {0} {} {1.000}
@@ -17870,8 +17906,11 @@ E { 5937} {n} {n} {1} {0} {} {1.000}
 E { 3781} {w} {w} {8} {0} {} {1.000}
 E { 3786} {e} {e} {2} {0} {} {1.000}
 
-R { 3784} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3784} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  You wonder if you'll ever find the end of this rolling expanse.  A foul wind whips by you as you survey this desolate landscape.  To the west and east you just barely see the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3782} {n} {n} {1} {0} {} {1.000}
+E { 3780} {w} {w} {8} {0} {} {1.000}
+E { 7084} {s} {s} {4} {0} {} {1.000}
+E { 3787} {e} {e} {2} {0} {} {1.000}
 
 R { 3785} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  You can hear the roar of some far off motor. Who'd be way out here?  Huge clouds of dust and ash rise in the distance as you look around.  To the north and west you barely detect the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3782} {w} {w} {8} {0} {} {1.000}
@@ -17879,12 +17918,17 @@ E { 3786} {n} {n} {1} {0} {} {1.000}
 E { 3787} {s} {s} {4} {0} {} {1.000}
 E { 3788} {e} {e} {2} {0} {} {1.000}
 
-R { 3786} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3786} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains You see a bright flash of light far in the distance. It takes a very long time for the sound of the explosion to reach you.  Before you stretches a vast expanse of destruction and desolation.  You wonder if you'll ever find the end of this rolling expanse.  To the south and east you barely sense the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3785} {s} {s} {4} {0} {} {1.000}
 E { 3783} {w} {w} {8} {0} {} {1.000}
+E { 3789} {e} {e} {2} {0} {} {1.000}
+E { 5940} {n} {n} {1} {0} {} {1.000}
 
-R { 3787} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3787} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains Before you stretches a vast expanse of destruction and desolation.  You see a bright flash of light far in the distance. It takes a very long time for the sound of the explosion to reach you.  You've got to wonder how anything could survive way out here.  To the west and east you vaguely sense the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3785} {n} {n} {1} {0} {} {1.000}
+E { 3784} {w} {w} {8} {0} {} {1.000}
+E { 7086} {s} {s} {4} {0} {} {1.000}
+E { 3790} {e} {e} {2} {0} {} {1.000}
 
 R { 3788} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains Huge clouds of dust and ash rise in the distance as you look around.  You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  You've got to wonder how anything could survive way out here.  To the west you barely detect the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3785} {w} {w} {8} {0} {} {1.000}
@@ -17892,11 +17936,17 @@ E { 3789} {n} {n} {1} {0} {} {1.000}
 E { 3790} {s} {s} {4} {0} {} {1.000}
 E { 3791} {e} {e} {2} {0} {} {1.000}
 
-R { 3789} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3789} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains Huge clouds of dust and ash rise in the distance as you look around.  You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  You can hear the roar of some far off motor. Who'd be way out here?  To the east you sense the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3788} {s} {s} {4} {0} {} {1.000}
+E { 3792} {e} {e} {2} {0} {} {1.000}
+E { 5962} {n} {n} {1} {0} {} {1.000}
+E { 3786} {w} {w} {8} {0} {} {1.000}
 
-R { 3790} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3790} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains You can hear the roar of some far off motor. Who'd be way out here?  The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  Huge clouds of dust and ash rise in the distance as you look around.  To the east and west you vaguely detect the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3788} {n} {n} {1} {0} {} {1.000}
+E { 3787} {w} {w} {8} {0} {} {1.000}
+E { 7110} {s} {s} {4} {0} {} {1.000}
+E { 3793} {e} {e} {2} {0} {} {1.000}
 
 R { 3791} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains You wonder if you'll ever find the end of this rolling expanse.  You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  The clouds above you move in over the sun and block out its light.  To the south you vaguely make out the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3788} {w} {w} {8} {0} {} {1.000}
@@ -17904,12 +17954,17 @@ E { 3792} {n} {n} {1} {0} {} {1.000}
 E { 3793} {s} {s} {4} {0} {} {1.000}
 E { 3794} {e} {e} {2} {0} {} {1.000}
 
-R { 3792} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3792} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains You wonder if you'll ever find the end of this rolling expanse.  Before you stretches a vast expanse of destruction and desolation.  You see a bright flash of light far in the distance. It takes a very long time for the sound of the explosion to reach you.  To the north and east you see the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3791} {s} {s} {4} {0} {} {1.000}
 E { 5959} {n} {n} {1} {0} {} {1.000}
+E { 3795} {e} {e} {2} {0} {} {1.000}
+E { 3789} {w} {w} {8} {0} {} {1.000}
 
-R { 3793} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3793} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  Huge clouds of dust and ash rise in the distance as you look around.  You wonder if you'll ever find the end of this rolling expanse.  To the south and west you detect the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3791} {n} {n} {1} {0} {} {1.000}
+E { 3790} {w} {w} {8} {0} {} {1.000}
+E { 7111} {s} {s} {4} {0} {} {1.000}
+E { 3796} {e} {e} {2} {0} {} {1.000}
 
 R { 3794} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains You see a bright flash of light far in the distance. It takes a very long time for the sound of the explosion to reach you.  You wonder if you'll ever find the end of this rolling expanse.  The clouds above you move in over the sun and block out its light.  To the west and south you sense the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3791} {w} {w} {8} {0} {} {1.000}
@@ -17917,12 +17972,17 @@ E { 3795} {n} {n} {1} {0} {} {1.000}
 E { 3796} {s} {s} {4} {0} {} {1.000}
 E { 3797} {e} {e} {2} {0} {} {1.000}
 
-R { 3795} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3795} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains You've got to wonder how anything could survive way out here.  A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  A foul wind whips by you as you survey this desolate landscape.  To the north and west you see the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3794} {s} {s} {4} {0} {} {1.000}
 E { 5961} {n} {n} {1} {0} {} {1.000}
+E { 3798} {e} {e} {2} {0} {} {1.000}
+E { 3792} {w} {w} {8} {0} {} {1.000}
 
-R { 3796} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3796} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains A foul wind whips by you as you survey this desolate landscape.  You can hear the roar of some far off motor. Who'd be way out here?  The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  To the east and north you sense the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3794} {n} {n} {1} {0} {} {1.000}
+E { 3793} {w} {w} {8} {0} {} {1.000}
+E { 7112} {s} {s} {4} {0} {} {1.000}
+E { 3799} {e} {e} {2} {0} {} {1.000}
 
 R { 3797} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains  $world   Uptime: 9.4 days  Reboot: 2.4 days  Lag: 0.00  Idle: [00:00:01]/900   You've got to wonder how anything could survive way out here.  You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  A foul wind whips by you as you survey this desolate landscape.  To the south and west you make out the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3794} {w} {w} {8} {0} {} {1.000}
@@ -17930,12 +17990,17 @@ E { 3798} {n} {n} {1} {0} {} {1.000}
 E { 3799} {s} {s} {4} {0} {} {1.000}
 E { 3800} {e} {e} {2} {0} {} {1.000}
 
-R { 3798} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3798} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains Before you stretches a vast expanse of destruction and desolation.  You've got to wonder how anything could survive way out here.  A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  To the south you see the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3797} {s} {s} {4} {0} {} {1.000}
 E { 5963} {n} {n} {1} {0} {} {1.000}
+E { 3801} {e} {e} {2} {0} {} {1.000}
+E { 3795} {w} {w} {8} {0} {} {1.000}
 
-R { 3799} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3799} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains Could it be your imagination, or is that the smell of burning flesh?  You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  A foul wind whips by you as you survey this desolate landscape.  To the east you almost miss the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3797} {n} {n} {1} {0} {} {1.000}
+E { 3796} {w} {w} {8} {0} {} {1.000}
+E { 7113} {s} {s} {4} {0} {} {1.000}
+E { 3802} {e} {e} {2} {0} {} {1.000}
 
 R { 3800} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  A foul wind whips by you as you survey this desolate landscape.  You can hear the roar of some far off motor. Who'd be way out here?  To the north and west you sense the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3797} {w} {w} {8} {0} {} {1.000}
@@ -17943,12 +18008,17 @@ E { 3801} {n} {n} {1} {0} {} {1.000}
 E { 3802} {s} {s} {4} {0} {} {1.000}
 E { 3803} {e} {e} {2} {0} {} {1.000}
 
-R { 3801} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3801} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  Before you stretches a vast expanse of destruction and desolation.  You can hear the roar of some far off motor. Who'd be way out here?  To the west you sort of see the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3800} {s} {s} {4} {0} {} {1.000}
 E { 5965} {n} {n} {1} {0} {} {1.000}
+E { 3804} {e} {e} {2} {0} {} {1.000}
+E { 3798} {w} {w} {8} {0} {} {1.000}
 
-R { 3802} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3802} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains You see a bright flash of light far in the distance. It takes a very long time for the sound of the explosion to reach you.  Could it be your imagination, or is that the smell of burning flesh?  A foul wind whips by you as you survey this desolate landscape.   } {Mud} {} {} {} {1.000}
 E { 3800} {n} {n} {1} {0} {} {1.000}
+E { 3799} {w} {w} {8} {0} {} {1.000}
+E { 7114} {s} {s} {4} {0} {} {1.000}
+E { 3805} {e} {e} {2} {0} {} {1.000}
 
 R { 3803} {0} {} {Desolate plains (n,w,s,e)} { } {Desolate plains The clouds above you move in over the sun and block out its light.  You wonder if you'll ever find the end of this rolling expanse.  You see a bright flash of light far in the distance. It takes a very long time for the sound of the explosion to reach you.   } {Mud} {} {} {} {1.000}
 E { 3800} {w} {w} {8} {0} {} {1.000}
@@ -17956,12 +18026,17 @@ E { 3804} {n} {n} {1} {0} {} {1.000}
 E { 3805} {s} {s} {4} {0} {} {1.000}
 E { 3806} {e} {e} {2} {0} {} {1.000}
 
-R { 3804} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3804} {0} {} {Acid Eaten Forests (n,s,w,e)} { } {Acid Eaten Forests Leaves rustle softly in a faint wind, a portent of the storm to come.  A storm which will only drown this area in more toxic rains.  You've got to wonder how people could let such beauty be destroyed so completely.  The ground is sodden and bare, the life-giving minerals leeched out of it by punishing acidic rains.   } {Mud} {} {} {} {1.000}
 E { 3803} {s} {s} {4} {0} {} {1.000}
 E { 5966} {n} {n} {1} {0} {} {1.000}
+E { 3807} {e} {e} {2} {0} {} {1.000}
+E { 3801} {w} {w} {8} {0} {} {1.000}
 
-R { 3805} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3805} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains You wonder if you'll ever find the end of this rolling expanse.  Huge clouds of dust and ash rise in the distance as you look around.  The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.   } {Mud} {} {} {} {1.000}
 E { 3803} {n} {n} {1} {0} {} {1.000}
+E { 3802} {w} {w} {8} {0} {} {1.000}
+E { 7115} {s} {s} {4} {0} {} {1.000}
+E { 3808} {e} {e} {2} {0} {} {1.000}
 
 R { 3806} {0} {} {Acid Eaten Forests (n,s,w,e)} { } {Acid Eaten Forests Leaves rustle softly in a faint wind, a portent of the storm to come.  A storm which will only drown this area in more toxic rains.  Yellowed leaves cling to drooping branches in this twisted forest.  Drops of water fall from the leaves above and stain your clothes a dark sickly color, a sure sign of the pollution they carry.  To the east you sort of detect the continuation of the wasteland.   } {Mud} {} {} {} {1.000}
 E { 3803} {w} {w} {8} {0} {} {1.000}
@@ -17969,12 +18044,17 @@ E { 3807} {n} {n} {1} {0} {} {1.000}
 E { 3808} {s} {s} {4} {0} {} {1.000}
 E { 3809} {e} {e} {2} {0} {} {1.000}
 
-R { 3807} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3807} {0} {} {Acid Eaten Forests (n,s,w,e)} { } {Acid Eaten Forests You can only imagine how beautiful these forests must have once been, before man and his progress shattered everything.  Dark clouds blanket the sky, blotting out the sun and only making this desolate forest that much more depressing.  Strips of bark litter the forest floor, fallen from tree trunks nearby and leaving bare patches that gape like open wounds.  It is a sad state that these forests have fallen to.   } {Mud} {} {} {} {1.000}
 E { 3806} {s} {s} {4} {0} {} {1.000}
 E { 5975} {n} {n} {1} {0} {} {1.000}
+E { 3811} {e} {e} {2} {0} {} {1.000}
+E { 3804} {w} {w} {8} {0} {} {1.000}
 
-R { 3808} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3808} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains You've got to wonder how anything could survive way out here.  A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  A foul wind whips by you as you survey this desolate landscape.   } {Mud} {} {} {} {1.000}
 E { 3806} {n} {n} {1} {0} {} {1.000}
+E { 3805} {w} {w} {8} {0} {} {1.000}
+E { 7116} {s} {s} {4} {0} {} {1.000}
+E { 3810} {e} {e} {2} {0} {} {1.000}
 
 R { 3809} {0} {} {Acid Eaten Forests (s,n,w,e)} { } {Acid Eaten Forests Weak and sagging trees march along the hillsides.  Drops of water fall from the leaves above and stain your clothes a dark sickly color, a sure sign of the pollution they carry.  Soft, dark earth gives way beneath your feet as you travel through the sickly forests of the northeast.  Since the late twentieth century there have been warnings about the effects of acid rain, but now with the mass increase in industrialization and the radiation, the deforestation is at an all time high.  To the west and north you see the continuation of the wasteland.  } {Mud} {} {} {} {1.000}
 E { 3806} {w} {w} {8} {0} {} {1.000}
@@ -17982,11 +18062,16 @@ E { 3810} {s} {s} {4} {0} {} {1.000}
 E { 3811} {n} {n} {1} {0} {} {1.000}
 E { 3812} {e} {e} {2} {0} {} {1.000}
 
-R { 3810} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3810} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  Could it be your imagination, or is that the smell of burning flesh?  The clouds above you move in over the sun and block out its light.  To the west and south you barely see the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3809} {n} {n} {1} {0} {} {1.000}
+E { 3808} {w} {w} {8} {0} {} {1.000}
+E { 7117} {s} {s} {4} {0} {} {1.000}
+E { 3814} {e} {e} {2} {0} {} {1.000}
 
-R { 3811} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3811} {0} {} {Acid Eaten Forests (s,w,e)} { } {Acid Eaten Forests Yellowed leaves cling to drooping branches in this twisted forest.  The trees around you almost seem to cry out in agony as their limbs weaken under the relentless assault of industry's by-products.  Drops of water fall from the leaves above and stain your clothes a dark sickly color, a sure sign of the pollution they carry.  To the west you barely detect the continuation of the wasteland.  Lake Erie stretches its filth ridden arms out to the north and east. } {Mud} {} {} {} {1.000}
 E { 3809} {s} {s} {4} {0} {} {1.000}
+E { 3813} {e} {e} {2} {0} {} {1.000}
+E { 3807} {w} {w} {8} {0} {} {1.000}
 
 R { 3812} {0} {} {Acid Eaten Forests (n,s,w,e)} { } {Acid Eaten Forests Yellowed leaves cling to drooping branches in this twisted forest.  Leaves rustle softly in a faint wind, a portent of the storm to come.  A storm which will only drown this area in more toxic rains.  You've got to wonder how people could let such beauty be destroyed so completely.  To the east you almost miss the continuation of the wasteland.   } {Mud} {} {} {} {1.000}
 E { 3809} {w} {w} {8} {0} {} {1.000}
@@ -17994,11 +18079,17 @@ E { 3813} {n} {n} {1} {0} {} {1.000}
 E { 3814} {s} {s} {4} {0} {} {1.000}
 E { 3815} {e} {e} {2} {0} {} {1.000}
 
-R { 3813} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3813} {0} {} {Acid Eaten Forests (n,s,w,e)} { } {Acid Eaten Forests Soft, dark earth gives way beneath your feet as you travel through the sickly forests of the northeast.  Since the late twentieth century there have been warnings about the effects of acid rain, but now with the mass increase in industrialization and the radiation, the deforestation is at an all time high.  You've got to wonder how people could let such beauty be destroyed so completely.  Yellowed leaves cling to drooping branches in this twisted forest.  To the south you barely see the continuation of the wasteland.  The pollution filled waters of Lake Erie stretch out to the north and west. } {Mud} {} {} {} {1.000}
 E { 3812} {s} {s} {4} {0} {} {1.000}
+E { 3817} {e} {e} {2} {0} {} {1.000}
+E { 7137} {n} {n} {1} {0} {} {1.000}
+E { 3811} {w} {w} {8} {0} {} {1.000}
 
-R { 3814} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3814} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  Huge clouds of dust and ash rise in the distance as you look around.  You've got to wonder how anything could survive way out here.  To the east you sort of detect the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3812} {n} {n} {1} {0} {} {1.000}
+E { 3810} {w} {w} {8} {0} {} {1.000}
+E { 7118} {s} {s} {4} {0} {} {1.000}
+E { 3816} {e} {e} {2} {0} {} {1.000}
 
 R { 3815} {0} {} {Acid Eaten Forests (s,n,w,e)} { } {Acid Eaten Forests The trees around you almost seem to cry out in agony as their limbs weaken under the relentless assault of industry's by-products.  The ground is sodden and bare, the life-giving minerals leeched out of it by punishing acidic rains.  Drops of water fall from the leaves above and stain your clothes a dark sickly color, a sure sign of the pollution they carry.  To the north you sort of see the continuation of the wasteland.   } {Mud} {} {} {} {1.000}
 E { 3812} {w} {w} {8} {0} {} {1.000}
@@ -18006,11 +18097,17 @@ E { 3816} {s} {s} {4} {0} {} {1.000}
 E { 3817} {n} {n} {1} {0} {} {1.000}
 E { 3818} {e} {e} {2} {0} {} {1.000}
 
-R { 3816} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3816} {0} {} {Desolate plains (n,e,w,s)} { } {Desolate plains You see a bright flash of light far in the distance. It takes a very long time for the sound of the explosion to reach you.  You can hear the roar of some far off motor. Who'd be way out here?  Huge clouds of dust and ash rise in the distance as you look around.  To the west you make out the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3815} {n} {n} {1} {0} {} {1.000}
+E { 3814} {w} {w} {8} {0} {} {1.000}
+E { 3820} {e} {e} {2} {0} {} {1.000}
+E { 7119} {s} {s} {4} {0} {} {1.000}
 
-R { 3817} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3817} {0} {} {Acid Eaten Forests (n,s,w,e)} { } {Acid Eaten Forests You can only imagine how beautiful these forests must have once been, before man and his progress shattered everything.  The trees around you almost seem to cry out in agony as their limbs weaken under the relentless assault of industry's by-products.  The ground is sodden and bare, the life-giving minerals leeched out of it by punishing acidic rains.   } {Mud} {} {} {} {1.000}
 E { 3815} {s} {s} {4} {0} {} {1.000}
+E { 3819} {e} {e} {2} {0} {} {1.000}
+E { 7136} {n} {n} {1} {0} {} {1.000}
+E { 3813} {w} {w} {8} {0} {} {1.000}
 
 R { 3818} {0} {} {The Appalachian Mountains (n,s,w,e)} { } {The Appalachian Mountains Gigantic clouds of dust and pollution flow over the mountains here.  Huge stumps of old trees surround you here. It looks like something must have come through here and cut everything down.  It looks like it has taken a long time to destroy this forest.  To the north you vaguely make out the continuation of the Appalachians.  The radioactive wreckage of Pittsburgh lie to the east. } {Mud} {} {} {} {1.000}
 E { 3815} {w} {w} {8} {0} {} {1.000}
@@ -18018,11 +18115,17 @@ E { 3819} {n} {n} {1} {0} {} {1.000}
 E { 3820} {s} {s} {4} {0} {} {1.000}
 E { 3821} {e} {e} {2} {0} {} {1.000}
 
-R { 3819} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3819} {0} {} {The Appalachian Mountains (n,w,e,s)} { } {The Appalachian Mountains The mountains around you rise and fall in a never ending pattern.  The trees here look like the pollution and smog have just about killed them off. You wonder if anything will grow here again.  There is a mist that covers the ground here. It smells of sulfur.   } {Mud} {} {} {} {1.000}
 E { 3818} {s} {s} {4} {0} {} {1.000}
+E { 3822} {e} {e} {2} {0} {} {1.000}
+E { 7135} {n} {n} {1} {0} {} {1.000}
+E { 3817} {w} {w} {8} {0} {} {1.000}
 
-R { 3820} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3820} {0} {} {The Appalachian Mountains (n,w,s,e)} { } {The Appalachian Mountains The mountains rise up around you and cast huge shadows over the valleys and cliffs that make up this incredible mountain range.  You've got to wonder how anything could survive way out here.  Gigantic clouds of dust and pollution flow over the mountains here.  To the north and east you sense the continuation of the Appalachians.   } {Mud} {} {} {} {1.000}
 E { 3818} {n} {n} {1} {0} {} {1.000}
+E { 3816} {w} {w} {8} {0} {} {1.000}
+E { 7120} {s} {s} {4} {0} {} {1.000}
+E { 3823} {e} {e} {2} {0} {} {1.000}
 
 R { 3821} {0} {} {Valley Entrance (n,s,w,e,enter)} { } {You are very close to the city here. Its wretched smells and horrid sounds envelope you. Many people would probably think twice before venturing into this city. } {Mud} {} {} {} {1.000}
 E { 3818} {w} {w} {8} {0} {} {1.000}
@@ -18031,11 +18134,18 @@ E { 3823} {s} {s} {4} {0} {} {1.000}
 E { 3824} {e} {e} {2} {0} {} {1.000}
 E { 3825} {enter} {enter} {0} {0} {} {1.000}
 
-R { 3822} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3822} {0} {} {The Appalachian Mountains (n,s,w,e,enter)} {b} {The Appalachian Mountains It looks like you're in the mountains, high above the surrounding areas. You can hear the roar of some far off motor. Who'd be way out here?  The trees here look like the pollution and smog have just about killed them off. You wonder if anything will grow here again.  To the west you just make out the continuation of the Appalachians.  The radioactive wreckage of Pittsburgh lie to the south. } {Mud} {} {} {} {1.000}
 E { 3821} {s} {s} {4} {0} {} {1.000}
+E { 3826} {e} {e} {2} {0} {} {1.000}
+E { 7132} {n} {n} {1} {0} {} {1.000}
+E { 3819} {w} {w} {8} {0} {} {1.000}
+E { 7134} {enter} {enter} {0} {0} {} {1.000}
 
-R { 3823} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3823} {0} {} {The Appalachian Mountains (n,s,w,e)} { } {The Appalachian Mountains The trees here look like the pollution and smog have just about killed them off. You wonder if anything will grow here again.  You've got to wonder how anything could survive way out here.  The mountains around you rise and fall in a never ending pattern.  To the south and west you see the continuation of the Appalachians.  The radioactive wreckage of Pittsburgh lie to the north. } {Mud} {} {} {} {1.000}
 E { 3821} {n} {n} {1} {0} {} {1.000}
+E { 3820} {w} {w} {8} {0} {} {1.000}
+E { 7121} {s} {s} {4} {0} {} {1.000}
+E { 3827} {e} {e} {2} {0} {} {1.000}
 
 R { 3824} {0} {} {The Appalachian Mountains (n,s,w,e)} { } {The Appalachian Mountains You've got to wonder how anything could survive way out here.  Huge mountains rise up before you here. They look steep and dangerous.  The trees here are impressively tall. They tower above you hundreds of feet, but for every tree there is a stump next to it.  To the north and east you just make out the continuation of the Appalachians.  The radioactive wreckage of Pittsburgh lie to the west. } {Mud} {} {} {} {1.000}
 E { 3821} {w} {w} {8} {0} {} {1.000}
@@ -18045,11 +18155,17 @@ E { 3828} {e} {e} {2} {0} {} {1.000}
 
 R { 3825} {0} {<118>} {} { } {} {} {} {} {} {1.000}
 
-R { 3826} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3826} {0} {} {The Appalachian Mountains (n,s,w,e)} { } {The Appalachian Mountains Huge mountains rise up before you here. They look steep and dangerous.  The trees here are impressively tall. They tower above you hundreds of feet, but for every tree there is a stump next to it.  You've got to wonder how anything could survive way out here.  To the north, west and south you detect the continuation of the Appalachians.   } {Mud} {} {} {} {1.000}
 E { 3824} {s} {s} {4} {0} {} {1.000}
+E { 3829} {e} {e} {2} {0} {} {1.000}
+E { 7127} {n} {n} {1} {0} {} {1.000}
+E { 3822} {w} {w} {8} {0} {} {1.000}
 
-R { 3827} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3827} {0} {} {The Appalachian Mountains (n,s,w,e)} { } {The Appalachian Mountains The trees here are impressively tall. They tower above you hundreds of feet, but for every tree there is a stump next to it.  It looks like it has taken a long time to destroy this forest.  It looks like you're in the mountains, high above the surrounding areas.   } {Mud} {} {} {} {1.000}
 E { 3824} {n} {n} {1} {0} {} {1.000}
+E { 3823} {w} {w} {8} {0} {} {1.000}
+E { 7122} {s} {s} {4} {0} {} {1.000}
+E { 3830} {e} {e} {2} {0} {} {1.000}
 
 R { 3828} {0} {} {The Appalachian Mountains (n,s,w,e)} { } {The Appalachian Mountains There is a mist that covers the ground here. It smells of sulfur.  Huge mountains rise up before you here. They look steep and dangerous.  The trees here look like the pollution and smog have just about killed them off. You wonder if anything will grow here again.  To the south and north you barely sense the continuation of the Appalachians.   } {Mud} {} {} {} {1.000}
 E { 3824} {w} {w} {8} {0} {} {1.000}
@@ -18057,12 +18173,18 @@ E { 3829} {n} {n} {1} {0} {} {1.000}
 E { 3830} {s} {s} {4} {0} {} {1.000}
 E { 3831} {e} {e} {2} {0} {} {1.000}
 
-R { 3829} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3829} {0} {} {The Appalachian Mountains (n,s,e,w)} { } {The Appalachian Mountains It looks like it has taken a long time to destroy this forest.  The trees here are impressively tall. They tower above you hundreds of feet, but for every tree there is a stump next to it.  The mountains around you rise and fall in a never ending pattern.  To the south you vaguely sense the continuation of the Appalachians.   } {Mud} {} {} {} {1.000}
 E { 3828} {s} {s} {4} {0} {} {1.000}
 E { 3832} {e} {e} {2} {0} {} {1.000}
+E { 6490} {n} {n} {1} {0} {} {1.000}
+E { 3826} {w} {w} {8} {0} {} {1.000}
 
-R { 3830} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3830} {0} {} {The Appalachian Mountains (enter,w,e,s,n)} {t} {The Appalachian Mountains The mountains rise up around you and cast huge shadows over the valleys and cliffs that make up this incredible mountain range.  You've got to wonder how anything could survive way out here.  The mountains around you rise and fall in a never ending pattern.  To the south and west you vaguely sense the continuation of the Appalachians.   } {Mud} {} {} {} {1.000}
 E { 3828} {n} {n} {1} {0} {} {1.000}
+E { 3827} {w} {w} {8} {0} {} {1.000}
+E { 7123} {enter} {enter} {0} {0} {} {1.000}
+E { 3833} {e} {e} {2} {0} {} {1.000}
+E { 7124} {s} {s} {4} {0} {} {1.000}
 
 R { 3831} {0} {} {The Appalachian Mountains (n,s,w,e)} { } {The Appalachian Mountains The mountains rise up around you and cast huge shadows over the valleys and cliffs that make up this incredible mountain range.  You've got to wonder how anything could survive way out here.  Gigantic clouds of dust and pollution flow over the mountains here.  To the south and north you barely detect the continuation of the Appalachians.   } {Mud} {} {} {} {1.000}
 E { 3828} {w} {w} {8} {0} {} {1.000}
@@ -18076,10 +18198,13 @@ E { 3835} {e} {e} {2} {0} {} {1.000}
 E { 6449} {n} {n} {1} {0} {} {1.000}
 E { 3829} {w} {w} {8} {0} {} {1.000}
 
-R { 3833} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3833} {0} {} {The Appalachian Mountains (n,e,s,w)} { } {The Appalachian Mountains Gigantic clouds of dust and pollution flow over the mountains here.  Huge stumps of old trees surround you here. It looks like something must have come through here and cut everything down.  There is a mist that covers the ground here. It smells of sulfur.  To the west you barely detect the continuation of the Appalachians.   } {Mud} {} {} {} {1.000}
 E { 3831} {n} {n} {1} {0} {} {1.000}
+E { 3830} {w} {w} {8} {0} {} {1.000}
+E { 3836} {e} {e} {2} {0} {} {1.000}
+E { 7125} {s} {s} {4} {0} {} {1.000}
 
-R { 3834} {0} {} {Acid Eaten Forests (n,s,w,e)} { } {Acid Eaten Forests Soft, dark earth gives way beneath your feet as you travel through the sickly forests of the northeast.  Since the late twentieth century there have been warnings about the effects of acid rain, but now with the mass increase in industrialization and the radiation, the deforestation is at an all time high.  Drops of water fall from the leaves above and stain your clothes a dark sickly color, a sure sign of the pollution they carry.  Dark clouds blanket the sky, blotting out the sun and only making this desolate forest that much more depressing.   } {Mud} {} {} {} {1.000}
+R { 3834} {0} {} {Acid Eaten Forests (n,s,w,e)} {T} {Acid Eaten Forests Soft, dark earth gives way beneath your feet as you travel through the sickly forests of the northeast.  Since the late twentieth century there have been warnings about the effects of acid rain, but now with the mass increase in industrialization and the radiation, the deforestation is at an all time high.  Drops of water fall from the leaves above and stain your clothes a dark sickly color, a sure sign of the pollution they carry.  Dark clouds blanket the sky, blotting out the sun and only making this desolate forest that much more depressing.   } {Mud} {} {} {} {1.000}
 E { 3831} {w} {w} {8} {0} {} {1.000}
 E { 3835} {n} {n} {1} {0} {} {1.000}
 E { 3836} {s} {s} {4} {0} {} {1.000}
@@ -18091,8 +18216,10 @@ E { 6434} {n} {n} {1} {0} {} {1.000}
 E { 3838} {e} {e} {2} {0} {} {1.000}
 E { 3832} {w} {w} {8} {0} {} {1.000}
 
-R { 3836} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3836} {0} {} {Coastal Wastelands (n,s,w)} { } {Coastal Wastelands The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  Before you stretches a vast expanse of destruction and desolation.  Could it be your imagination, or is that the smell of burning flesh?  Delaware bay stretches out to the east. } {Mud} {} {} {} {1.000}
 E { 3834} {n} {n} {1} {0} {} {1.000}
+E { 3833} {w} {w} {8} {0} {} {1.000}
+E { 7126} {s} {s} {4} {0} {} {1.000}
 
 R { 3837} {0} {} {Acid Eaten Forests (n,w,e)} { } {Acid Eaten Forests Strips of bark litter the forest floor, fallen from tree trunks nearby and leaving bare patches that gape like open wounds.  It is a sad state that these forests have fallen to.  Yellowed leaves cling to drooping branches in this twisted forest.  You can only imagine how beautiful these forests must have once been, before man and his progress shattered everything.  To the east and west you vaguely make out the continuation of the wasteland.  The remains of the city of brotherly love can be seen strewn across the horizon. } {Mud} {} {} {} {1.000}
 E { 3834} {w} {w} {8} {0} {} {1.000}
@@ -18111,7 +18238,7 @@ E { 3837} {w} {w} {8} {0} {} {1.000}
 E { 3840} {s} {s} {4} {0} {} {1.000}
 E { 3841} {n} {n} {1} {0} {} {1.000}
 
-R { 3840} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3840} {0} {} {Acid Eaten Forests (n)} { } {Acid Eaten Forests Soft, dark earth gives way beneath your feet as you travel through the sickly forests of the northeast.  Since the late twentieth century there have been warnings about the effects of acid rain, but now with the mass increase in industrialization and the radiation, the deforestation is at an all time high.  Drops of water fall from the leaves above and stain your clothes a dark sickly color, a sure sign of the pollution they carry.  The ground is sodden and bare, the life-giving minerals leeched out of it by punishing acidic rains.  To the north you sort of detect the continuation of the wasteland.  The tranquil waters of Delaware Bay stretch out towards the mainland to the west, while the waters of the Atlantic reach for the horizon in the east. } {Mud} {} {} {} {1.000}
 E { 3839} {n} {n} {1} {0} {} {1.000}
 
 R { 3841} {0} {} {Acid Eaten Forests (n,s,w)} { } {Acid Eaten Forests You've got to wonder how people could let such beauty be destroyed so completely.  Dark clouds blanket the sky, blotting out the sun and only making this desolate forest that much more depressing.  The trees around you almost seem to cry out in agony as their limbs weaken under the relentless assault of industry's by-products.  The waves of the Atlantic wash up against the Delaware shore. } {Mud} {} {} {} {1.000}
@@ -27861,11 +27988,17 @@ E { 5941} {n} {n} {1} {0} {} {1.000}
 E { 5942} {w} {w} {8} {0} {} {1.000}
 E { 5943} {e} {e} {2} {0} {} {1.000}
 
-R { 5939} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 5939} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains You wonder if you'll ever find the end of this rolling expanse.  A foul wind whips by you as you survey this desolate landscape.  You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  To the east you make out the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 5937} {e} {e} {2} {0} {} {1.000}
+E { 5942} {n} {n} {1} {0} {} {1.000}
+E { 3781} {s} {s} {4} {0} {} {1.000}
+E { 7159} {w} {w} {8} {0} {} {1.000}
 
-R { 5940} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 5940} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains You can hear the roar of some far off motor. Who'd be way out here?  You see a bright flash of light far in the distance. It takes a very long time for the sound of the explosion to reach you.  Before you stretches a vast expanse of destruction and desolation.  To the east you detect the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 5937} {w} {w} {8} {0} {} {1.000}
+E { 5962} {e} {e} {2} {0} {} {1.000}
+E { 5943} {n} {n} {1} {0} {} {1.000}
+E { 3786} {s} {s} {4} {0} {} {1.000}
 
 R { 5941} {0} {} {Rolling Hills (e,s,n,w)} { } {Rolling Hills Gently rolling hills stretch out towards the horizon.  The soft ground is a comfort beneath your feet, a sure sign that life will continue to flourish here, even if it is only scrubgrass.  Blades of grass sway gently in the wind, struggling to survive in the dusty and dry heartland of North America.   } {Mud} {} {} {} {1.000}
 E { 5938} {s} {s} {4} {0} {} {1.000}
@@ -27873,15 +28006,23 @@ E { 5944} {e} {e} {2} {0} {} {1.000}
 E { 5945} {n} {n} {1} {0} {} {1.000}
 E { 5946} {w} {w} {8} {0} {} {1.000}
 
-R { 5942} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 5942} {0} {} {Rolling Hills (n,w,s,e)} { } {Rolling Hills The sun dips behind some clouds, hidden behind the dark promise of rain. Blades of grass sway gently in the wind, struggling to survive in the dusty and dry heartland of North America.  Gently rolling hills stretch out towards the horizon.   } {Mud} {} {} {} {1.000}
 E { 5938} {e} {e} {2} {0} {} {1.000}
+E { 5946} {n} {n} {1} {0} {} {1.000}
+E { 7158} {w} {w} {8} {0} {} {1.000}
+E { 5939} {s} {s} {4} {0} {} {1.000}
 
-R { 5943} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 5943} {0} {} {Rolling Hills (n,s,e,w)} { } {Rolling Hills Tufts of grass sprout from the gently rolling hills.  Each looks as though it would be considered a weed elsewhere, but out here where water is scarce and the sun bakes the earth, they are a sight for sore eyes.  Gently rolling hills stretch out towards the horizon.  The sun dips behind some clouds, hidden behind the dark promise of rain.  To the west you barely see the continuation of the hills.   } {Mud} {} {} {} {1.000}
 E { 5938} {w} {w} {8} {0} {} {1.000}
+E { 5960} {e} {e} {2} {0} {} {1.000}
+E { 5944} {n} {n} {1} {0} {} {1.000}
+E { 5940} {s} {s} {4} {0} {} {1.000}
 
-R { 5944} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 5944} {0} {} {Rolling Hills (n,s,e,w)} { } {Rolling Hills Clouds roll across the sky, carrying with them the faint promise of much needed rain.  Tufts of grass sprout from the gently rolling hills.  Each looks as though it would be considered a weed elsewhere, but out here where water is scarce and the sun bakes the earth, they are a sight for sore eyes.  Gently rolling hills stretch out towards the horizon.  To the south, west and east you vaguely detect the continuation of the hills.   } {Mud} {} {} {} {1.000}
 E { 5941} {w} {w} {8} {0} {} {1.000}
 E { 5947} {n} {n} {1} {0} {} {1.000}
+E { 5954} {e} {e} {2} {0} {} {1.000}
+E { 5943} {s} {s} {4} {0} {} {1.000}
 
 R { 5945} {0} {} {Rolling Hills (e,s,n,w)} { } {Rolling Hills The soft ground is a comfort beneath your feet, a sure sign that life will continue to flourish here, even if it is only scrubgrass.  Gently rolling hills stretch out towards the horizon.  Tufts of grass sprout from the gently rolling hills.  Each looks as though it would be considered a weed elsewhere, but out here where water is scarce and the sun bakes the earth, they are a sight for sore eyes.  To the south you see the continuation of the hills.  The remains of Minneapolis stretch across the horizon. } {Mud} {} {} {} {1.000}
 E { 5941} {s} {s} {4} {0} {} {1.000}
@@ -27889,8 +28030,11 @@ E { 5947} {e} {e} {2} {0} {} {1.000}
 E { 5948} {n} {n} {1} {0} {} {1.000}
 E { 5949} {w} {w} {8} {0} {} {1.000}
 
-R { 5946} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 5946} {0} {} {Rolling Hills (n,w,s,e)} { } {Rolling Hills Wind rustles through the grass and carries with it the hint of searing heat from nearby.  The desolation seen in the grasslands has only been spared in the hills because of the tentative hold that the plants have here.  Clouds roll across the sky, carrying with them the faint promise of much needed rain.  You stand atop a small hill staring out over the countryside.   } {Mud} {} {} {} {1.000}
 E { 5941} {e} {e} {2} {0} {} {1.000}
+E { 5949} {n} {n} {1} {0} {} {1.000}
+E { 7157} {w} {w} {8} {0} {} {1.000}
+E { 5942} {s} {s} {4} {0} {} {1.000}
 
 R { 5947} {0} {} {Rolling Hills (d,n,s,w,e)} { } {Rolling Hills Gently rolling hills stretch out towards the horizon.  The sun dips behind some clouds, hidden behind the dark promise of rain.  Tufts of grass sprout from the gently rolling hills.  Each looks as though it would be considered a weed elsewhere, but out here where water is scarce and the sun bakes the earth, they are a sight for sore eyes.  To the north and west you just barely see the continuation of the hills.   } {Mud} {} {} {} {1.000}
 E { 5945} {w} {w} {8} {0} {} {1.000}
@@ -27905,9 +28049,11 @@ E { 5951} {e} {e} {2} {0} {} {1.000}
 E { 6145} {n} {n} {1} {0} {} {1.000}
 E { 6146} {w} {w} {8} {0} {} {1.000}
 
-R { 5949} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 5949} {0} {} {Rolling Hills (n,w,s,e)} { } {Rolling Hills The sun dips behind some clouds, hidden behind the dark promise of rain. Wind rustles through the grass and carries with it the hint of searing heat from nearby.  The desolation seen in the grasslands has only been spared in the hills because of the tentative hold that the plants have here.  Small, rolling hills covered in scraggly grass and weeds march towards the horizon in every direction.  To the east and south you sort of see the continuation of the hills.   } {Mud} {} {} {} {1.000}
 E { 5945} {e} {e} {2} {0} {} {1.000}
 E { 6146} {n} {n} {1} {0} {} {1.000}
+E { 7156} {w} {w} {8} {0} {} {1.000}
+E { 5946} {s} {s} {4} {0} {} {1.000}
 
 R { 5950} {0} {<118>} {} { } {} {} {} {} {} {1.000}
 E { 5947} {u} {u} {16} {0} {} {1.000}
@@ -27930,9 +28076,11 @@ E { 5956} {e} {e} {2} {0} {} {1.000}
 E { 6143} {n} {n} {1} {0} {} {1.000}
 E { 5951} {w} {w} {8} {0} {} {1.000}
 
-R { 5954} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 5954} {0} {} {Rolling Hills (n,s,e,w)} { } {Rolling Hills Clouds roll across the sky, carrying with them the faint promise of much needed rain.  You stand atop a small hill staring out over the countryside.  Wind rustles through the grass and carries with it the hint of searing heat from nearby.  The desolation seen in the grasslands has only been spared in the hills because of the tentative hold that the plants have here.   } {Mud} {} {} {} {1.000}
 E { 5952} {n} {n} {1} {0} {} {1.000}
 E { 5957} {e} {e} {2} {0} {} {1.000}
+E { 5960} {s} {s} {4} {0} {} {1.000}
+E { 5944} {w} {w} {8} {0} {} {1.000}
 
 R { 5955} {0} {} {Rolling Hills (n,s,w)} { } {Rolling Hills The sun dips behind some clouds, hidden behind the dark promise of rain. Gently rolling hills stretch out towards the horizon.  Wind rustles through the grass and carries with it the hint of searing heat from nearby.  The desolation seen in the grasslands has only been spared in the hills because of the tentative hold that the plants have here.  To the north and west you almost miss the continuation of the hills.  Lake Michigan stretches out to the east, a gently rippling expanse of water. } {Mud} {} {} {} {1.000}
 E { 5952} {w} {w} {8} {0} {} {1.000}
@@ -27961,8 +28109,11 @@ E { 5961} {e} {e} {2} {0} {} {1.000}
 E { 3792} {s} {s} {4} {0} {} {1.000}
 E { 5962} {w} {w} {8} {0} {} {1.000}
 
-R { 5960} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 5960} {0} {} {Rolling Hills (n,s,e,w)} { } {Rolling Hills Small, rolling hills covered in scraggly grass and weeds march towards the horizon in every direction.  Blades of grass sway gently in the wind, struggling to survive in the dusty and dry heartland of North America.  The sun dips behind some clouds, hidden behind the dark promise of rain.  To the west you detect the continuation of the hills.  } {Mud} {} {} {} {1.000}
 E { 5958} {e} {e} {2} {0} {} {1.000}
+E { 5962} {s} {s} {4} {0} {} {1.000}
+E { 5954} {n} {n} {1} {0} {} {1.000}
+E { 5943} {w} {w} {8} {0} {} {1.000}
 
 R { 5961} {0} {} {Desolate plains (e,enter,w,s)} { } {Desolate plains You see a bright flash of light far in the distance. It takes a very long time for the sound of the explosion to reach you.  The clouds above you move in over the sun and block out its light.  You wonder if you'll ever find the end of this rolling expanse.  The sprawling city of Chicago curves around the southern end of Lake Michigan, braving the harsh winds and acid rain to provide homes for millions.  The entrance to that city's airport lies just ahead.  $world   Uptime: 5.2 days  Reboot: 2.2 days  Lag: 0.00  Idle: [00:00:02]/3600   } {Mud} {} {} {} {1.000}
 E { 5959} {w} {w} {8} {0} {} {1.000}
@@ -27970,8 +28121,11 @@ E { 5963} {e} {e} {2} {0} {} {1.000}
 E { 5964} {enter} {enter} {0} {0} {} {1.000}
 E { 3795} {s} {s} {4} {0} {} {1.000}
 
-R { 5962} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 5962} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains You can hear the roar of some far off motor. Who'd be way out here?  You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  A foul wind whips by you as you survey this desolate landscape.  To the east and south you vaguely detect the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 5959} {e} {e} {2} {0} {} {1.000}
+E { 3789} {s} {s} {4} {0} {} {1.000}
+E { 5960} {n} {n} {1} {0} {} {1.000}
+E { 5940} {w} {w} {8} {0} {} {1.000}
 
 R { 5963} {0} {} {Acid Eaten Forests (s,w,e)} { } {Acid Eaten Forests Dark clouds blanket the sky, blotting out the sun and only making this desolate forest that much more depressing.  Drops of water fall from the leaves above and stain your clothes a dark sickly color, a sure sign of the pollution they carry.  Strips of bark litter the forest floor, fallen from tree trunks nearby and leaving bare patches that gape like open wounds.  It is a sad state that these forests have fallen to.  To the east you vaguely detect the continuation of the wasteland.  Wind swept Lake Michigan stretches off towards the northern horizon. } {Mud} {} {} {} {1.000}
 E { 5961} {w} {w} {8} {0} {} {1.000}
@@ -28658,8 +28812,11 @@ E { 6115} {s} {s} {4} {0} {} {1.000}
 R { 6117} {0} {<118>} {} { } {} {} {} {} {} {1.000}
 E { 6115} {n} {n} {1} {0} {} {1.000}
 
-R { 6118} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 6118} {0} {} {Coastal Wastelands (n,s,w,e)} { } {Coastal Wastelands The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  A foul wind whips by you as you survey this desolate landscape.  You've got to wonder how anything could survive way out here.  To the south and east you almost miss the continuation of the wasteland.  You see the skyscrapers of Atlanta tower to the north. } {Mud} {} {} {} {1.000}
 E { 6115} {w} {w} {8} {0} {} {1.000}
+E { 7252} {e} {e} {2} {0} {} {1.000}
+E { 7256} {n} {n} {1} {0} {} {1.000}
+E { 7253} {s} {s} {4} {0} {} {1.000}
 
 R { 6119} {0} {<118>} {} { } {} {} {} {} {} {1.000}
 E { 6084} {s} {s} {4} {0} {} {1.000}
@@ -28758,20 +28915,31 @@ E { 6092} {n} {n} {1} {0} {} {1.000}
 
 R { 6140} {0} {<118>} {} { } {} {} {} {} {} {1.000}
 
-R { 6141} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 6141} {0} {} {Rolling Hills (n,s,w)} { } {Rolling Hills Tufts of grass sprout from the gently rolling hills.  Each looks as though it would be considered a weed elsewhere, but out here where water is scarce and the sun bakes the earth, they are a sight for sore eyes.  Small, rolling hills covered in scraggly grass and weeds march towards the horizon in every direction.  The sun dips behind some clouds, hidden behind the dark promise of rain.  To the west and north you just make out the continuation of the hills.  The chill waters of Lake Michigan stretch out to the east. } {Mud} {} {} {} {1.000}
 E { 5956} {s} {s} {4} {0} {} {1.000}
+E { 7138} {n} {n} {1} {0} {} {1.000}
+E { 6143} {w} {w} {8} {0} {} {1.000}
 
-R { 6142} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 6142} {0} {} {Rolling Hills (w)} { } {Rolling Hills Gently rolling hills stretch out towards the horizon.  Tufts of grass sprout from the gently rolling hills.  Each looks as though it would be considered a weed elsewhere, but out here where water is scarce and the sun bakes the earth, they are a sight for sore eyes.  The sun dips behind some clouds, hidden behind the dark promise of rain.  Lake Michigan stretches out to the east, a gently rippling expanse of water. } {Mud} {} {} {} {1.000}
 E { 5956} {w} {w} {8} {0} {} {1.000}
 
-R { 6143} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 6143} {0} {} {Rolling Hills (n,s,e,w)} { } {Rolling Hills The sun dips behind some clouds, hidden behind the dark promise of rain. Wind rustles through the grass and carries with it the hint of searing heat from nearby.  The desolation seen in the grasslands has only been spared in the hills because of the tentative hold that the plants have here.  Small, rolling hills covered in scraggly grass and weeds march towards the horizon in every direction.  To the west and east you almost miss the continuation of the hills.   } {Mud} {} {} {} {1.000}
 E { 5953} {s} {s} {4} {0} {} {1.000}
+E { 6141} {e} {e} {2} {0} {} {1.000}
+E { 7139} {n} {n} {1} {0} {} {1.000}
+E { 6144} {w} {w} {8} {0} {} {1.000}
 
-R { 6144} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 6144} {0} {} {Rolling Hills (n,s,e,w)} { } {Rolling Hills Wind rustles through the grass and carries with it the hint of searing heat from nearby.  The desolation seen in the grasslands has only been spared in the hills because of the tentative hold that the plants have here.  The soft ground is a comfort beneath your feet, a sure sign that life will continue to flourish here, even if it is only scrubgrass.  You stand atop a small hill staring out over the countryside.  To the south you vaguely make out the continuation of the hills.   } {Mud} {} {} {} {1.000}
 E { 5951} {s} {s} {4} {0} {} {1.000}
+E { 6143} {e} {e} {2} {0} {} {1.000}
+E { 7146} {n} {n} {1} {0} {} {1.000}
+E { 6145} {w} {w} {8} {0} {} {1.000}
 
-R { 6145} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 6145} {0} {} {Rolling Hills (n,s,e,w)} { } {Rolling Hills Wind rustles through the grass and carries with it the hint of searing heat from nearby.  The desolation seen in the grasslands has only been spared in the hills because of the tentative hold that the plants have here.  Gently rolling hills stretch out towards the horizon.  Clouds roll across the sky, carrying with them the faint promise of much needed rain.   } {Mud} {} {} {} {1.000}
 E { 5948} {s} {s} {4} {0} {} {1.000}
+E { 6144} {e} {e} {2} {0} {} {1.000}
+E { 7149} {n} {n} {1} {0} {} {1.000}
+E { 6147} {w} {w} {8} {0} {} {1.000}
 
 R { 6146} {0} {} {Rolling Hills (n,s,w,e)} { } {Rolling Hills The soft ground is a comfort beneath your feet, a sure sign that life will continue to flourish here, even if it is only scrubgrass.  Wind rustles through the grass and carries with it the hint of searing heat from nearby.  The desolation seen in the grasslands has only been spared in the hills because of the tentative hold that the plants have here.  You stand atop a small hill staring out over the countryside.  To the south and west you barely detect the continuation of the hills.   } {Mud} {} {} {} {1.000}
 E { 5948} {e} {e} {2} {0} {} {1.000}
@@ -28779,8 +28947,11 @@ E { 6147} {n} {n} {1} {0} {} {1.000}
 E { 5949} {s} {s} {4} {0} {} {1.000}
 E { 6148} {w} {w} {8} {0} {} {1.000}
 
-R { 6147} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 6147} {0} {} {Rolling Hills (n,s,e,w)} { } {Rolling Hills Clouds roll across the sky, carrying with them the faint promise of much needed rain.  Blades of grass sway gently in the wind, struggling to survive in the dusty and dry heartland of North America.  You stand atop a small hill staring out over the countryside.   } {Mud} {} {} {} {1.000}
 E { 6146} {s} {s} {4} {0} {} {1.000}
+E { 6145} {e} {e} {2} {0} {} {1.000}
+E { 7150} {n} {n} {1} {0} {} {1.000}
+E { 7155} {w} {w} {8} {0} {} {1.000}
 
 R { 6148} {0} {<118>} {} { } {} {} {} {} {} {1.000}
 E { 6146} {e} {e} {2} {0} {} {1.000}
@@ -30302,17 +30473,27 @@ E { 6433} {e} {e} {2} {0} {} {1.000}
 E { 6435} {s} {s} {4} {0} {} {1.000}
 E { 6488} {w} {w} {8} {0} {} {1.000}
 
-R { 6487} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 6487} {0} {} {Acid Eaten Forests (s,e)} { } {Acid Eaten Forests Yellowed leaves cling to drooping branches in this twisted forest.  You can only imagine how beautiful these forests must have once been, before man and his progress shattered everything.  Leaves rustle softly in a faint wind, a portent of the storm to come.  A storm which will only drown this area in more toxic rains.  The cold, grey waters of Lake Ontario stretch out to the north and west. } {Mud} {} {} {} {1.000}
 E { 6485} {e} {e} {2} {0} {} {1.000}
+E { 6488} {s} {s} {4} {0} {} {1.000}
 
-R { 6488} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 6488} {0} {} {Acid Eaten Forests (n,s,w,e)} { } {Acid Eaten Forests You've got to wonder how people could let such beauty be destroyed so completely.  Yellowed leaves cling to drooping branches in this twisted forest.  The trees around you almost seem to cry out in agony as their limbs weaken under the relentless assault of industry's by-products.  To the north you sense the continuation of the wasteland.   } {Mud} {} {} {} {1.000}
 E { 6486} {e} {e} {2} {0} {} {1.000}
+E { 6489} {s} {s} {4} {0} {} {1.000}
+E { 6487} {n} {n} {1} {0} {} {1.000}
+E { 7129} {w} {w} {8} {0} {} {1.000}
 
-R { 6489} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 6489} {0} {} {The Appalachian Mountains (n,s,w,e)} { } {The Appalachian Mountains The trees here look like the pollution and smog have just about killed them off. You wonder if anything will grow here again.  You can hear the roar of some far off motor. Who'd be way out here?  It looks like you're in the mountains, high above the surrounding areas.  To the east and west you barely sense the continuation of the Appalachians.   } {Mud} {} {} {} {1.000}
 E { 6435} {e} {e} {2} {0} {} {1.000}
+E { 6490} {s} {s} {4} {0} {} {1.000}
+E { 6488} {n} {n} {1} {0} {} {1.000}
+E { 7128} {w} {w} {8} {0} {} {1.000}
 
-R { 6490} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 6490} {0} {} {The Appalachian Mountains (n,s,e,w)} { } {The Appalachian Mountains It looks like you're in the mountains, high above the surrounding areas. You can hear the roar of some far off motor. Who'd be way out here?  Huge stumps of old trees surround you here. It looks like something must have come through here and cut everything down.  To the south and west you barely detect the continuation of the Appalachians.   } {Mud} {} {} {} {1.000}
 E { 6449} {e} {e} {2} {0} {} {1.000}
+E { 3829} {s} {s} {4} {0} {} {1.000}
+E { 6489} {n} {n} {1} {0} {} {1.000}
+E { 7127} {w} {w} {8} {0} {} {1.000}
 
 R { 6491} {0} {} {A Pathway of Earth (n,out)} { } {The pathway here is made of gravel. The shadows recede into the background as if summoned there. Looking to the north, you notice that a bit more life fills the area to the north.  A fair sized tree grows impossibly in the sunless environment. There appears to be a sign carved into its trunk. } {Mud} {tree} {} {} {1.000}
 E { 2701} {out} {out} {0} {0} {} {1.000}
@@ -33408,6 +33589,809 @@ E { 3669} {w} {w} {8} {0} {} {1.000}
 
 R { 7075} {0} {} {} { } {} {} {} {} {} {1.000}
 E { 6518} {n} {n} {1} {0} {} {1.000}
+
+R { 7076} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  You can hear the roar of some far off motor. Who'd be way out here?  Before you stretches a vast expanse of destruction and desolation.  To the north and south you vaguely detect the continuation of the plains.   } {Mud} {} {} {} {1.000}
+E { 3756} {w} {w} {8} {0} {} {1.000}
+E { 3771} {n} {n} {1} {0} {} {1.000}
+E { 7077} {s} {s} {4} {0} {} {1.000}
+E { 7078} {e} {e} {2} {0} {} {1.000}
+
+R { 7077} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7076} {n} {n} {1} {0} {} {1.000}
+
+R { 7078} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  You wonder if you'll ever find the end of this rolling expanse.  Huge clouds of dust and ash rise in the distance as you look around.  To the south, east and north you make out the continuation of the plains.   } {Mud} {} {} {} {1.000}
+E { 7076} {w} {w} {8} {0} {} {1.000}
+E { 3775} {n} {n} {1} {0} {} {1.000}
+E { 7079} {s} {s} {4} {0} {} {1.000}
+E { 7080} {e} {e} {2} {0} {} {1.000}
+
+R { 7079} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7078} {n} {n} {1} {0} {} {1.000}
+
+R { 7080} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  You can hear the roar of some far off motor. Who'd be way out here?  The clouds above you move in over the sun and block out its light.  To the north you sort of detect the continuation of the plains.   } {Mud} {} {} {} {1.000}
+E { 7078} {w} {w} {8} {0} {} {1.000}
+E { 3777} {n} {n} {1} {0} {} {1.000}
+E { 7081} {s} {s} {4} {0} {} {1.000}
+E { 7082} {e} {e} {2} {0} {} {1.000}
+
+R { 7081} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7080} {n} {n} {1} {0} {} {1.000}
+
+R { 7082} {0} {} {Desolate plains (n,s,w,e)} { } {HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:           GXP: 79.72 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.825064  FXP: 8.71 W:    19%   (1/10) [][][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 =M=Simonz's 8D8 Smelting Droid Alfred. >  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:01]/3600   HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:           GXP: 79.72 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.825064  FXP: 8.71 W:    19%   (1/10) [][][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 =S=Desolate plains (n,s,w,e)                                   =S=    W ---*--- E Desolate plains You wonder if you'll ever find the end of this rolling expanse.  A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  Before you stretches a vast expanse of destruction and desolation.  To the north, east and west you see the continuation of the plains.   } {Mud} {} {} {} {1.000}
+E { 7080} {w} {w} {8} {0} {} {1.000}
+E { 3780} {n} {n} {1} {0} {} {1.000}
+E { 7083} {s} {s} {4} {0} {} {1.000}
+E { 7084} {e} {e} {2} {0} {} {1.000}
+
+R { 7083} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7082} {n} {n} {1} {0} {} {1.000}
+
+R { 7084} {0} {} {Desolate plains (n,s,w,e,road)} {G} {Desolate plains The clouds above you move in over the sun and block out its light.  A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  Could it be your imagination, or is that the smell of burning flesh?  A dusty road leads off from here towards some kind of compound. } {Mud} {} {} {} {1.000}
+E { 7082} {w} {w} {8} {0} {} {1.000}
+E { 3784} {n} {n} {1} {0} {} {1.000}
+E { 7085} {s} {s} {4} {0} {} {1.000}
+E { 7086} {e} {e} {2} {0} {} {1.000}
+E { 7087} {road} {road} {0} {0} {} {1.000}
+
+R { 7085} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7084} {n} {n} {1} {0} {} {1.000}
+
+R { 7086} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains The clouds above you move in over the sun and block out its light.  You wonder if you'll ever find the end of this rolling expanse.  The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  To the west you barely see the continuation of the plains.   } {Mud} {} {} {} {1.000}
+E { 7084} {w} {w} {8} {0} {} {1.000}
+E { 3787} {n} {n} {1} {0} {} {1.000}
+E { 7109} {s} {s} {4} {0} {} {1.000}
+E { 7110} {e} {e} {2} {0} {} {1.000}
+
+R { 7087} {0} {} {Entrance to GenCorps (n,road)} { } {You stand in the gateway to a large courtyard of some type. To your left and right an extremely tall electric fence stretches into the distance. To the north there is a large glass covered building and to the south is a narrow paved road. There is a sign bolted to the fence. } {Mud} {gencorps} {} {} {1.000}
+E { 7088} {n} {n} {1} {0} {} {1.000}
+E { 7084} {road} {road} {0} {0} {} {1.000}
+
+R { 7088} {0} {} {Compound Courtyard (n,s,w,e)} { } {HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824727  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 =M=Simonz's 8D8 Smelting Droid Alfred. =M=Compound Guard. > The cocoon is as strong as it'll ever be! >  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:04]/3600   Rounds: 0 HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824727  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824727  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:05]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824727  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:06]/3600   HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824727  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824727  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 Guard says: Don't make me kill you.                                         You reach out with the Force and taunt Compound Guard. >  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:01]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824727  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:02]/3600   HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824727  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 The Force guides your actions. -> focus check /deflect You are 8.7091% to your next deflect level. Compound Guard gurgles in his own blood as he dies. You strike down your foe with a final strike. HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824727  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:03]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824727  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 All your corpses are already bigger than what is here. > You absorb the remaining energy from the corpse. > There is no coins here. > HP: 3366/3366 SP: 636/636 C:100.00% F:  0.00% D: 6/6| 19% [19259] E:  Def:CSsRPDFd  Wm:g Wc: 19%  Fdx:  8.71% Gx: 79.73% Gr:13 > =S=Compound Courtyard (n,w)=S= HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824727  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 GenCorp Body Armour. Ion Beam Emitter (enchanted). =M=Simonz's 8D8 Smelting Droid Alfred. > The cocoon is as strong as it'll ever be! >  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:04]/3600   Rounds: 0 HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824727  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824727  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:05]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824727  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 =S=Compound Courtyard (n,s,w,e)                                =S=    W ---*--- E You are standing in the middle of a large courtyard that forms the entrance to this strange compound. The ground is covered with little pebbles and stones, and there are many tire tracks and footprints in the soil. To the south you can see the entrance to this compound and to the north is a very large dark building. } {GenCorps} {} {} {} {1.000}
+E { 7087} {s} {s} {4} {0} {} {1.000}
+E { 7089} {n} {n} {1} {0} {} {1.000}
+E { 7090} {w} {w} {8} {0} {} {1.000}
+E { 7091} {e} {e} {2} {0} {} {1.000}
+
+R { 7089} {0} {} {Compound Courtyard (n,s,w,e)} { } {HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824806  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 GenCorp Body Armour. Ion Beam Emitter (enchanted). =M=Simonz's 8D8 Smelting Droid Alfred. > The cocoon is as strong as it'll ever be! >  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:03]/3600   Rounds: 0 HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824806  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 You allow your mind to relax and stop deflecting attacks. You don't want to control pain if you're not fighting. HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824806  FXP: 8.71 W:    19%   (1/10) [][][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:03]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824806  FXP: 8.71 W:    19%   (1/10) [][][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:04]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824806  FXP: 8.71 W:    19%   (1/10) [][][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:05]/3600   HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824806  FXP: 8.71 W:    19%   (1/10) [][][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:06]/3600   HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824806  FXP: 8.71 W:    19%   (1/10) [][][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 =S=Compound Courtyard (n,s,w,e)                                =S=    W ---*--- E To your north stands a huge entryway into the large black building. Above you, you can see the face of the building rising up into the sky. This compound's courtyard stretches out to the south. } {GenCorps} {} {} {} {1.000}
+E { 7088} {s} {s} {4} {0} {} {1.000}
+E { 7092} {w} {w} {8} {0} {} {1.000}
+E { 7093} {n} {n} {1} {0} {} {1.000}
+E { 7094} {e} {e} {2} {0} {} {1.000}
+
+R { 7090} {0} {} {Compound Courtyard (e,n)} { } {A huge mountain rises up to your west and a tall chain link fence blocks your way to the south. To the east the compound's courtyard continues, to the north looms a huge building covered in dark glass. } {GenCorps} {} {} {} {1.000}
+E { 7088} {e} {e} {2} {0} {} {1.000}
+E { 7092} {n} {n} {1} {0} {} {1.000}
+
+R { 7091} {0} {} {Compound Courtyard (n,w)} { } {HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824706  FXP: 8.71 W:    19%   (1/10) [][][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 =I= A Tome of 'Deep Delving', Volume I. =M=Simonz's 8D8 Smelting Droid Alfred. =M=M516 Patroller attacking you!. =M=Compound Guard attacking you!. > The cocoon is as strong as it'll ever be! > tome: Taken. > You smuggle away: A Tome of 'Deep Delving', Volume I You are currently smuggling 3/20 items. >  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:04]/3600   Rounds: 0 HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824706  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 The Force guides your actions. -> focus check /deflect You are 8.7091% to your next deflect level. M516 Patroller screeches in agony and falls to the ground, dead. You strike down your foe with a final strike. HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824706  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 You nimbly dodge Compound Guard's attack!  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:05]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824706  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 All your corpses are already bigger than what is here. > You absorb the remaining energy from the corpse. > There is no coins here. > HP: 3366/3366 SP: 636/636 C:100.00% F:  0.00% D: 6/6| 20% [19181] E:perfect  Def:CSsRPDFd  Wm:g Wc: 19%  Fdx:  8.71% Gx: 79.73% Gr:13 > =S=Compound Courtyard (w,s)=S= HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824706  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 =M=Simonz's 8D8 Smelting Droid Alfred. =M=Compound Guard attacking you!. > The cocoon is as strong as it'll ever be! >  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:06]/3600   Rounds: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:07]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824706  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824706  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 The Force guides your actions. -> focus check /deflect You are 8.7091% to your next deflect level. Compound Guard gasps for breath, then slumps into death. You strike down your foe with a final strike. HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824706  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 All your corpses are already bigger than what is here. > You absorb the remaining energy from the corpse. > There is no coins here. > HP: 3366/3366 SP: 636/636 C:100.00% F:  0.00% D: 6/6| 20% [19207] E:  Def:CSsRPDFd  Wm:g Wc: 19%  Fdx:  8.71% Gx: 79.73% Gr:13 > =S=Compound Courtyard (w,s)=S= HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824706  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 GenCorp Body Armour. Ion Beam Emitter (enchanted). =M=Simonz's 8D8 Smelting Droid Alfred. > The cocoon is as strong as it'll ever be! >  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:08]/3600   Rounds: 0 HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824706  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824706  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:09]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824706  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:10]/3600   HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824706  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824706  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 You have never been here before. M516 Patroller looks at you in disgust and charges forward to attack! =S=Compound Courtyard (n,w)                                    =S=    W ---*---   To the east a huge mountain rises up, and to the south is a tall fence. The ground cover here is very sparse, and it looks like all of the plant life that was here has been trampled. To your north looms a tall black building. } {GenCorps} {} {} {} {1.000}
+E { 7088} {w} {w} {8} {0} {} {1.000}
+E { 7094} {n} {n} {1} {0} {} {1.000}
+
+R { 7092} {0} {} {Compound Courtyard (e,s)} { } {HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:           GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.825006  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 =M=Simonz's 8D8 Smelting Droid Alfred. =M=Compound Guard attacking you!. > The cocoon is as strong as it'll ever be! >  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:03]/3600   Rounds: 0 HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.825006  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 The Force swells within you, and guides your swing. The Force guides your actions. -> focus check /deflect You are 8.7089% to your next deflect level. Compound Guard screeches in agony and falls to the ground, dead. You strike down your foe with a final strike. HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.825006  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:04]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.825006  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 All your corpses are already bigger than what is here. > You absorb the remaining energy from the corpse. > There is no coins here. > HP: 3366/3366 SP: 636/636 C:100.00% F:  0.00% D: 6/6| 24% [19051] E:  Def:CSsRPDFd  Wm:g Wc: 19%  Fdx:  8.71% Gx: 79.73% Gr:13 > =S=Compound Courtyard (e,n)=S= HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.825006  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 GenCorp Body Armour. Ion Beam Emitter (enchanted). =M=Simonz's 8D8 Smelting Droid Alfred. > The cocoon is as strong as it'll ever be! >  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:05]/3600   Rounds: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:06]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.825006  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.825006  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.825006  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:07]/3600   HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.825006  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.825006  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:01]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.825006  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 You have never been here before. M516 Patroller looks at you in disgust and charges forward to attack! =S=Compound Courtyard (e,s)                                    =S=      ---*--- E A gigantic building rises to the north, its black glass wall reflecting your image. To the west a huge cliff towers over you. You can see lots of activity in this courtyard. You wonder why everyone is so busy. } {GenCorps} {} {} {} {1.000}
+E { 7090} {s} {s} {4} {0} {} {1.000}
+E { 7089} {e} {e} {2} {0} {} {1.000}
+
+R { 7093} {0} {} {GenCorps Entry (n,s)} { } {You stand in a huge entryway. There are large concrete pillars to your left and right, and a large open dark glass door. There are huge windows that have the same tinted glass. There is some printing on one of the windows. } {GenCorps} {} {} {} {1.000}
+E { 7089} {s} {s} {4} {0} {} {1.000}
+E { 7095} {n} {n} {1} {0} {} {1.000}
+
+R { 7094} {0} {} {Compound Courtyard (w,s)} { } {The huge black glass building rises to your north. To the south and west the courtyard stretches out. A tall mountain cliff veers up to the east. The sky here is dark and overcast. Presumably from all of the distant pollution. } {GenCorps} {} {} {} {1.000}
+E { 7089} {w} {w} {8} {0} {} {1.000}
+E { 7091} {s} {s} {4} {0} {} {1.000}
+
+R { 7095} {0} {} {hallway (n,s)} { } {This is the reception area for GenCorps. There is a big black desk in one corner and many pictures on the wall. There is quite a bit of light coming through the dark tinted windows, and it's a good thing because all of the lights are off. There is a security camera aimed at you in one corner of the ceiling. } {GenCorps} {} {} {} {1.000}
+E { 7093} {s} {s} {4} {0} {} {1.000}
+E { 7096} {n} {n} {1} {0} {} {1.000}
+
+R { 7096} {0} {} {hallway (s,w,e)} { } {This is a large hallway leading off in many directions. The floor is nicely tiled so that when you walk your footsteps make an eerie echo. There is a small red flashing light in the middle of the ceiling, with no other illumination. It looks like someone probably knows that you are here. } {GenCorps} {} {} {} {1.000}
+E { 7095} {s} {s} {4} {0} {} {1.000}
+E { 7097} {w} {w} {8} {0} {} {1.000}
+E { 7098} {e} {e} {2} {0} {} {1.000}
+
+R { 7097} {0} {} {research lab (n,w,e)} { } {HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824627  FXP: 8.71 W:    19%   (1/10) [][][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 Psi Shield. Shock Helmet. Neuronal Armour. Kevlar Bracers. Spaser. =M=Simonz's 8D8 Smelting Droid Alfred. =M=GenCorps Officer attacking you!. > The cocoon is as strong as it'll ever be! >  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:03]/3600   Rounds: 0 HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824627  FXP: 8.71 W:    19%   (1/10) [][][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 The Force guides your actions. -> focus check /deflect You are 8.7091% to your next deflect level. Gencorps Officer gasps for breath, then slumps into death. The force field of mental energy fades away. You strike down your foe with a final strike. HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824627  FXP: 8.71 W:    19%   (1/10) [][][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 All your corpses are already bigger than what is here. >  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:04]/3600   HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824627  FXP: 8.71 W:    19%   (1/10) [][][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 You absorb the remaining energy from the corpse. > There is no coins here. > HP: 3366/3366 SP: 636/636 C:100.00% F:  0.00% D: 6/6| 15% [19323] E:  Def:SsRPD  Wm:g Wc: 19%  Fdx:  8.71% Gx: 79.73% Gr:13 > =S=hallway (s,w,e)=S= HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824627  FXP: 8.71 W:    19%   (1/10) [][][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 Psi Shield \x7B2\x7D. Shock Helmet \x7B2\x7D. Neuronal Armour \x7B2\x7D. Kevlar Bracers \x7B2\x7D. Spaser \x7B2\x7D. =M=Simonz's 8D8 Smelting Droid Alfred. > The cocoon is as strong as it'll ever be! > Rounds: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:05]/3600   HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824627  FXP: 8.71 W:    19%   (1/10) [][][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:06]/3600   HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824627  FXP: 8.71 W:    19%   (1/10) [][][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:07]/3600   You have never been here before. =S=research lab (n,w,e)                                        =S=    W ---*--- E This is a rather large room with big tables and lots of complicated looking testing and diagnostic equipment. It looks like GenCorps does some kind of equipment development from the looks of the diagrams on the walls and the equipment on the tables. There is a flashing red light in the center of the ceiling. It looks like the place is mostly deserted. } {GenCorps} {} {} {} {1.000}
+E { 7096} {e} {e} {2} {0} {} {1.000}
+E { 7099} {n} {n} {1} {0} {} {1.000}
+E { 7100} {w} {w} {8} {0} {} {1.000}
+
+R { 7098} {0} {} {hallway (w,e)} { } {The large hallway leads off to the east and west here. You can see that it continues for quite a distance in both directions. You can hear voices coming from down both halls, and the echo of your footsteps on the tiled floor mingles with other strange sounds that are reverberating down this hallway. There is a small red light near the floor that is flashing. } {GenCorps} {} {} {} {1.000}
+E { 7096} {w} {w} {8} {0} {} {1.000}
+E { 7106} {e} {e} {2} {0} {} {1.000}
+
+R { 7099} {0} {} {hallway (n,s)} { } {A long narrow hallway. To the south you can hear noises and see the flashing of some lights. To the north it is silent and dark. You can hear the echo of your shoes walking on the tiled floor. } {GenCorps} {} {} {} {1.000}
+E { 7097} {s} {s} {4} {0} {} {1.000}
+E { 7103} {n} {n} {1} {0} {} {1.000}
+
+R { 7100} {0} {} {research lab (e,n)} { } {HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 Psi Shield. Shock Helmet. Neuronal Armour. Kevlar Bracers. Spaser. =M=Simonz's 8D8 Smelting Droid Alfred. =M=GenCorps Officer attacking you! \x7B2\x7D. > The cocoon is as strong as it'll ever be! >  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:03]/3600   Rounds: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:04]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 The Force guides your actions. -> focus check /deflect You are 8.7093% to your next deflect level. Gencorps Officer gasps for breath, then slumps into death. The force field of mental energy fades away. You strike down your foe with a final strike. HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 The sticky cocoon absorbs part of the attack! Zelligar's Headband warms you with a radiant glow. All your corpses are already bigger than what is here. > You absorb the remaining energy from the corpse. > There is no coins here. > HP: 3366/3366 SP: 636/636 C:100.00% F:  0.00% D: 6/6| 14% [19488] E:perfect  Def:CSsRPDFd  Wm:g Wc: 19%  Fdx:  8.71% Gx: 79.73% Gr:13 > =S=research lab (e,n)=S= HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 Psi Shield \x7B2\x7D. Shock Helmet \x7B2\x7D. Neuronal Armour \x7B2\x7D. Kevlar Bracers \x7B2\x7D. Spaser \x7B2\x7D. =M=Simonz's 8D8 Smelting Droid Alfred. =M=GenCorps Officer attacking you!. > The cocoon is as strong as it'll ever be! >  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:05]/3600   Rounds: 0 HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 The Force guides your actions. -> focus check /deflect You are 8.7093% to your next deflect level. You completely VAPORIZED Gencorps Officer.                                  HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    12%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 1 A bolt of pure energy flies out of the sky striking Gencorps Officer! Gencorps Officer gasps for breath, then slumps into death. The force field of mental energy fades away.  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:06]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    12%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 1 All your corpses are already bigger than what is here. > You absorb the remaining energy from the corpse. > There is no coins here. > HP: 3366/3366 SP: 636/636 C:100.00% F:  0.00% D: 6/6| 13% [19520] E:  Def:CSsRPDFd  Wm:g Wc: 19%  Fdx:  8.71% Gx: 79.73% Gr:13 > =S=research lab (e,n)=S= HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    12%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 1 Psi Shield \x7B3\x7D. Shock Helmet \x7B3\x7D. Neuronal Armour \x7B3\x7D. Kevlar Bracers \x7B3\x7D. Spaser \x7B3\x7D. =M=Simonz's 8D8 Smelting Droid Alfred. > The cocoon is as strong as it'll ever be! >  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:07]/3600   Rounds: 0 HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    12%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    12%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:08]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    12%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:09]/3600   You cannot go west. > HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    12%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    12%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:01]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    12%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:02]/3600   HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    12%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    12%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:03]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    12%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:04]/3600   HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    12%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    12%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:05]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    12%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:06]/3600    $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:07]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    12%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    12%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 You allow your mind to relax and stop deflecting attacks. You don't want to control pain if you're not fighting. HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    12%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824549  FXP: 8.71 W:    19%   (1/10) [][][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:08]/3600   =S=research lab (n,w,e)                                        =S=    W ---*--- E This is a rather large room with big tables and lots of complicated looking testing and diagnostic equipment. It looks like GenCorps does some kind of equipment development from the looks of the diagrams on the walls and the equipment on the tables. There is a flashing red light in the center of the ceiling. It looks like the place is mostly deserted. } {GenCorps} {} {} {} {1.000}
+E { 7097} {e} {e} {2} {0} {} {1.000}
+E { 7101} {n} {n} {1} {0} {} {1.000}
+
+R { 7101} {0} {} {hallway (w,s)} { } {This is a short narrow hallway. It turns to the west and south near the center of it. There isn't much light, and the light that is here seems to be coming from the other rooms near here. You can hear sounds coming from both directions. } {GenCorps} {} {} {} {1.000}
+E { 7100} {s} {s} {4} {0} {} {1.000}
+E { 7102} {w} {w} {8} {0} {} {1.000}
+
+R { 7102} {0} {} {research lab (e)} { } {HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    21%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824470  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 Psi Shield. Shock Helmet. Neuronal Armour. Kevlar Bracers. Spaser. =M=Simonz's 8D8 Smelting Droid Alfred. =M=GenCorps Officer attacking you! \x7B2\x7D. > The cocoon is as strong as it'll ever be! >  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:04]/3600   Rounds: 1 HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824470  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 The Force guides your actions. -> focus check /deflect You are 8.7095% to your next deflect level. You completely ATOMIZED Gencorps Officer.                                   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    16%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824470  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 1  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:05]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    16%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824470  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 1  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:06]/3600   HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    16%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824470  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 1 The Force guides your actions. -> focus check /deflect You are 8.7095% to your next deflect level. Gencorps Officer screeches in agony and falls to the ground, dead. The force field of mental energy fades away. You strike down your foe with a final strike. HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    16%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824470  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:07]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    16%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824470  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 All your corpses are already bigger than what is here. > You absorb the remaining energy from the corpse. > There is no coins here. > HP: 3366/3366 SP: 636/636 C:100.00% F:  0.00% D: 6/6|  8% [19584] E:perfect  Def:CSsRPDFd  Wm:g Wc: 19%  Fdx:  8.71% Gx: 79.74% Gr:13 > =S=research lab (e)=S= HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    16%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824470  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 Psi Shield \x7B2\x7D. Shock Helmet \x7B2\x7D. Neuronal Armour \x7B2\x7D. Kevlar Bracers \x7B2\x7D. Spaser \x7B2\x7D. =M=Simonz's 8D8 Smelting Droid Alfred. =M=GenCorps Officer attacking you!. > The cocoon is as strong as it'll ever be! >  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:08]/3600   Rounds: 1  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:09]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:    16%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824470  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824470  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 The Force guides your actions. -> focus check /deflect You are 8.7095% to your next deflect level. Gencorps Officer gurgles in his own blood as he dies. The force field of mental energy fades away. You strike down your foe with a final strike. HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824470  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 All your corpses are already bigger than what is here. > You absorb the remaining energy from the corpse. > There is no coins here. > HP: 3366/3366 SP: 636/636 C:100.00% F:  0.00% D: 6/6|  8% [19616] E:  Def:CSsRPDFd  Wm:g Wc: 19%  Fdx:  8.71% Gx: 79.74% Gr:13 > =S=research lab (e)=S= HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824470  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 Psi Shield \x7B3\x7D. Shock Helmet \x7B3\x7D. Neuronal Armour \x7B3\x7D. Kevlar Bracers \x7B3\x7D. Spaser \x7B3\x7D. =M=Simonz's 8D8 Smelting Droid Alfred. > The cocoon is as strong as it'll ever be! >  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:10]/3600   Rounds: 0 HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824470  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824470  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:11]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824470  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:12]/3600    $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:13]/3600   HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824470  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.824470  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0 HP:3366/3366 SP: 628/ 636 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 79.73 H:   100%    S:    98%    G1:   100%    G2:   0%    Fdr: 0.824470  FXP: 8.71 W:    19%   (1/10) [FD][CP][D] [LFS][GFS][RS][RP][EM][] [TK] [/] Round: 0  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:14]/3600   =S=research lab (e)                                            =S=      ---*--- E This seems to be another part of the research lab that you were in before. There are many lab benches with all kinds of diagnostic equipment on them. There is a little red light flashing in the middle of the ceiling, and there is a narrow doorway leading to the west, it looks like something could be stored in there. } {GenCorps} {} {} {} {1.000}
+E { 7101} {e} {e} {2} {0} {} {1.000}
+
+R { 7103} {0} {} {hallway (e,s)} { } {You've walked into a large room filled with tables and drawing boards. It looks like this is the concept and development department. There are all kinds of diagrams and charts hanging from the walls. It looks like someone has been working very hard on something rather important. } {GenCorps} {} {} {} {1.000}
+E { 7099} {s} {s} {4} {0} {} {1.000}
+E { 7104} {e} {e} {2} {0} {} {1.000}
+
+R { 7104} {0} {} {hallway (e,w)} { } {This room is very large. There are counters and workbenches everywhere. You can tell that some very frantic work has been going on here recently by the look of how there are papers and planning equipment strewn about across the room. There is a large diagram hanging from one wall and a large chart hanging from another. } {GenCorps} {} {} {} {1.000}
+E { 7103} {w} {w} {8} {0} {} {1.000}
+E { 7105} {e} {e} {2} {0} {} {1.000}
+
+R { 7105} {0} {} {hallway (w)} { } {This is a large clear plastic tube. You can feel the air blowing by you. It looks like it is some kind of pneumatic elevator. There are a few lights within the shaft, and you can see that the shaft of this elevator rises to the second floor. It looks very dark to the west. There is a button on the wall just inside the tube. } {GenCorps} {} {} {} {1.000}
+E { 7104} {w} {w} {8} {0} {} {1.000}
+
+R { 7106} {0} {} {hallway (w,e)} { } {This hallway continues in both directions. The walls and floor look the same as the rest of the building has. You can hear some muffled sounds coming from both directions, and there is a little red light flashing near the floor. } {GenCorps} {} {} {} {1.000}
+E { 7098} {w} {w} {8} {0} {} {1.000}
+E { 7107} {e} {e} {2} {0} {} {1.000}
+
+R { 7107} {0} {} {hallway (w,e)} { } {The hallway continues in both directions from here. There is a small red light flashing near the floor. The walls and floor look to be constructed like the rest of the building. You can hear muffled sounds coming from the east, and there is a large metallic door leading to the south. } {GenCorps} {} {} {} {1.000}
+E { 7106} {w} {w} {8} {0} {} {1.000}
+E { 7108} {e} {e} {2} {0} {} {1.000}
+
+R { 7108} {0} {} {hallway (w)} { } {This room is rather large, and has a few couches and tables scattered around. You can see that this is a place where someone comes to relax. There is a small flashing red light in the center of the ceiling and a door leading to the west. } {GenCorps} {} {} {} {1.000}
+E { 7107} {w} {w} {8} {0} {} {1.000}
+
+R { 7109} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7086} {n} {n} {1} {0} {} {1.000}
+
+R { 7110} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  The clouds above you move in over the sun and block out its light.  You wonder if you'll ever find the end of this rolling expanse.  To the south you vaguely make out the continuation of the plains.   } {Mud} {} {} {} {1.000}
+E { 7086} {w} {w} {8} {0} {} {1.000}
+E { 3790} {n} {n} {1} {0} {} {1.000}
+E { 7168} {s} {s} {4} {0} {} {1.000}
+E { 7111} {e} {e} {2} {0} {} {1.000}
+
+R { 7111} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  A foul wind whips by you as you survey this desolate landscape.  Could it be your imagination, or is that the smell of burning flesh?  To the west you vaguely make out the continuation of the plains.   } {Mud} {} {} {} {1.000}
+E { 3793} {n} {n} {1} {0} {} {1.000}
+E { 7110} {w} {w} {8} {0} {} {1.000}
+E { 7169} {s} {s} {4} {0} {} {1.000}
+E { 7112} {e} {e} {2} {0} {} {1.000}
+
+R { 7112} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  Huge clouds of dust and ash rise in the distance as you look around.  You can hear the roar of some far off motor. Who'd be way out here?  To the south and east you sense the continuation of the plains.   } {Mud} {} {} {} {1.000}
+E { 3796} {n} {n} {1} {0} {} {1.000}
+E { 7111} {w} {w} {8} {0} {} {1.000}
+E { 7170} {s} {s} {4} {0} {} {1.000}
+E { 7113} {e} {e} {2} {0} {} {1.000}
+
+R { 7113} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains You wonder if you'll ever find the end of this rolling expanse.  The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  The clouds above you move in over the sun and block out its light.  To the east you just barely see the continuation of the plains.   } {Mud} {} {} {} {1.000}
+E { 3799} {n} {n} {1} {0} {} {1.000}
+E { 7112} {w} {w} {8} {0} {} {1.000}
+E { 7171} {s} {s} {4} {0} {} {1.000}
+E { 7114} {e} {e} {2} {0} {} {1.000}
+
+R { 7114} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains You see a bright flash of light far in the distance. It takes a very long time for the sound of the explosion to reach you.  You wonder if you'll ever find the end of this rolling expanse.  Before you stretches a vast expanse of destruction and desolation.  To the south, west and north you vaguely detect the continuation of the plains.   } {Mud} {} {} {} {1.000}
+E { 3802} {n} {n} {1} {0} {} {1.000}
+E { 7113} {w} {w} {8} {0} {} {1.000}
+E { 7172} {s} {s} {4} {0} {} {1.000}
+E { 7115} {e} {e} {2} {0} {} {1.000}
+
+R { 7115} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains The clouds above you move in over the sun and block out its light.  You wonder if you'll ever find the end of this rolling expanse.  You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  To the south and north you barely sense the continuation of the plains.  The city of Cincinatti lies nestled in the hills, out of sight and notice. } {Mud} {} {} {} {1.000}
+E { 3805} {n} {n} {1} {0} {} {1.000}
+E { 7114} {w} {w} {8} {0} {} {1.000}
+E { 7173} {s} {s} {4} {0} {} {1.000}
+E { 7116} {e} {e} {2} {0} {} {1.000}
+
+R { 7116} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  Before you stretches a vast expanse of destruction and desolation.  You can hear the roar of some far off motor. Who'd be way out here?  To the north and west you vaguely sense the continuation of the plains.   } {Mud} {} {} {} {1.000}
+E { 3808} {n} {n} {1} {0} {} {1.000}
+E { 7115} {w} {w} {8} {0} {} {1.000}
+E { 7174} {s} {s} {4} {0} {} {1.000}
+E { 7117} {e} {e} {2} {0} {} {1.000}
+
+R { 7117} {0} {} {Desolate plains (n,s,w,e,ladder)} { } {Desolate plains You see a bright flash of light far in the distance. It takes a very long time for the sound of the explosion to reach you.  You've got to wonder how anything could survive way out here.  Before you stretches a vast expanse of destruction and desolation.  A rusty ladder leads down through a small hole in the ground. } {Mud} {} {} {} {1.000}
+E { 3810} {n} {n} {1} {0} {} {1.000}
+E { 7116} {w} {w} {8} {0} {} {1.000}
+E { 7175} {s} {s} {4} {0} {} {1.000}
+E { 7118} {e} {e} {2} {0} {} {1.000}
+E { 7176} {ladder} {ladder} {0} {0} {} {1.000}
+
+R { 7118} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  You can hear the roar of some far off motor. Who'd be way out here?  The clouds above you move in over the sun and block out its light.   } {Mud} {} {} {} {1.000}
+E { 3814} {n} {n} {1} {0} {} {1.000}
+E { 7117} {w} {w} {8} {0} {} {1.000}
+E { 7177} {s} {s} {4} {0} {} {1.000}
+E { 7119} {e} {e} {2} {0} {} {1.000}
+
+R { 7119} {0} {} {The Appalachian Mountains (n,w,e,s)} { } {The Appalachian Mountains The trees here are impressively tall. They tower above you hundreds of feet, but for every tree there is a stump next to it.  The mountains around you rise and fall in a never ending pattern.  It looks like it has taken a long time to destroy this forest.  To the south and east you vaguely sense the continuation of the Appalachians.   } {Mud} {} {} {} {1.000}
+E { 3816} {n} {n} {1} {0} {} {1.000}
+E { 7118} {w} {w} {8} {0} {} {1.000}
+E { 7120} {e} {e} {2} {0} {} {1.000}
+E { 7178} {s} {s} {4} {0} {} {1.000}
+
+R { 7120} {0} {} {The Appalachian Mountains (n,s,e,w)} { } {The Appalachian Mountains Huge stumps of old trees surround you here. It looks like something must have come through here and cut everything down.  Gigantic clouds of dust and pollution flow over the mountains here.  There is a mist that covers the ground here. It smells of sulfur.  To the north and east you just make out the continuation of the Appalachians.   } {Mud} {} {} {} {1.000}
+E { 3820} {n} {n} {1} {0} {} {1.000}
+E { 7119} {w} {w} {8} {0} {} {1.000}
+E { 7179} {s} {s} {4} {0} {} {1.000}
+E { 7121} {e} {e} {2} {0} {} {1.000}
+
+R { 7121} {0} {} {The Appalachian Mountains (n,s,w,e)} { } {The Appalachian Mountains The mountains around you rise and fall in a never ending pattern.  You've got to wonder how anything could survive way out here.  Huge stumps of old trees surround you here. It looks like something must have come through here and cut everything down.  To the west and east you just barely see the continuation of the Appalachians.   } {Mud} {} {} {} {1.000}
+E { 3823} {n} {n} {1} {0} {} {1.000}
+E { 7120} {w} {w} {8} {0} {} {1.000}
+E { 7180} {s} {s} {4} {0} {} {1.000}
+E { 7122} {e} {e} {2} {0} {} {1.000}
+
+R { 7122} {0} {} {The Appalachian Mountains (n,s,w,e)} { } {The Appalachian Mountains Huge stumps of old trees surround you here. It looks like something must have come through here and cut everything down.  It looks like you're in the mountains, high above the surrounding areas.  You've got to wonder how anything could survive way out here.  To the east and south you almost miss the continuation of the Appalachians.   } {Mud} {} {} {} {1.000}
+E { 3827} {n} {n} {1} {0} {} {1.000}
+E { 7121} {w} {w} {8} {0} {} {1.000}
+E { 7181} {s} {s} {4} {0} {} {1.000}
+E { 7124} {e} {e} {2} {0} {} {1.000}
+
+R { 7123} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+
+R { 7124} {0} {} {The Appalachian Mountains (n,e,s,w)} { } {The Appalachian Mountains There is a mist that covers the ground here. It smells of sulfur.  Huge mountains rise up before you here. They look steep and dangerous.  The trees here look like the pollution and smog have just about killed them off. You wonder if anything will grow here again.  To the north, west and south you sort of detect the continuation of the Appalachians.   } {Mud} {} {} {} {1.000}
+E { 3830} {n} {n} {1} {0} {} {1.000}
+E { 7122} {w} {w} {8} {0} {} {1.000}
+E { 7125} {e} {e} {2} {0} {} {1.000}
+E { 7182} {s} {s} {4} {0} {} {1.000}
+
+R { 7125} {0} {} {Coastal Wastelands (n,w,e,s)} { } {Coastal Wastelands The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  Huge clouds of dust and ash rise in the distance as you look around.  You can hear the roar of some far-off motor. Who'd be way out here?  To the south you vaguely make out the continuation of the wasteland.   } {Mud} {} {} {} {1.000}
+E { 3833} {n} {n} {1} {0} {} {1.000}
+E { 7124} {w} {w} {8} {0} {} {1.000}
+E { 7126} {e} {e} {2} {0} {} {1.000}
+E { 7183} {s} {s} {4} {0} {} {1.000}
+
+R { 7126} {0} {} {Coastal Wastelands (n,s,e,w)} { } {Coastal Wastelands You wonder if you'll ever find the end of this rolling expanse.  The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  Before you stretches a vast expanse of destruction and desolation.  To the west, south and east you barely sense the continuation of the wasteland.   } {Mud} {} {} {} {1.000}
+E { 3836} {n} {n} {1} {0} {} {1.000}
+E { 7125} {w} {w} {8} {0} {} {1.000}
+E { 7184} {s} {s} {4} {0} {} {1.000}
+E { 7185} {e} {e} {2} {0} {} {1.000}
+
+R { 7127} {0} {} {The Appalachian Mountains (n,s,w,e)} { } {The Appalachian Mountains Huge mountains rise up before you here. They look steep and dangerous.  It looks like it has taken a long time to destroy this forest.  Huge stumps of old trees surround you here. It looks like something must have come through here and cut everything down.  To the east and north you make out the continuation of the Appalachians.   } {Mud} {} {} {} {1.000}
+E { 6490} {e} {e} {2} {0} {} {1.000}
+E { 7128} {n} {n} {1} {0} {} {1.000}
+E { 3826} {s} {s} {4} {0} {} {1.000}
+E { 7132} {w} {w} {8} {0} {} {1.000}
+
+R { 7128} {0} {} {The Appalachian Mountains (n,s,w,e)} { } {The Appalachian Mountains There is a mist that covers the ground here. It smells of sulfur.  The mountains around you rise and fall in a never ending pattern.  The trees here are impressively tall. They tower above you hundreds of feet, but for every tree there is a stump next to it.  To the south you barely sense the continuation of the Appalachians.   } {Mud} {} {} {} {1.000}
+E { 6489} {e} {e} {2} {0} {} {1.000}
+E { 7129} {n} {n} {1} {0} {} {1.000}
+E { 7131} {w} {w} {8} {0} {} {1.000}
+E { 7127} {s} {s} {4} {0} {} {1.000}
+
+R { 7129} {0} {} {Acid Eaten Forests (s,w,e)} { } {Acid Eaten Forests The trees around you almost seem to cry out in agony as their limbs weaken under the relentless assault of industry's by-products.  You can only imagine how beautiful these forests must have once been, before man and his progress shattered everything.  The ground is sodden and bare, the life-giving minerals leeched out of it by punishing acidic rains.  To the east and west you sense the continuation of the wasteland.  The waters of Lake Ontario stretch out to the north. } {Mud} {} {} {} {1.000}
+E { 6488} {e} {e} {2} {0} {} {1.000}
+E { 7128} {s} {s} {4} {0} {} {1.000}
+E { 7130} {w} {w} {8} {0} {} {1.000}
+
+R { 7130} {0} {} {Acid Eaten Forests (s,e)} { } {Acid Eaten Forests Dark clouds blanket the sky, blotting out the sun and only making this desolate forest that much more depressing.  Soft, dark earth gives way beneath your feet as you travel through the sickly forests of the northeast.  Since the late twentieth century there have been warnings about the effects of acid rain, but now with the mass increase in industrialization and the radiation, the deforestation is at an all time high.  You've got to wonder how people could let such beauty be destroyed so completely.  To the south you barely sense the continuation of the wasteland.  The southern end of Lake Ontario curls around to the west and north. } {Mud} {} {} {} {1.000}
+E { 7129} {e} {e} {2} {0} {} {1.000}
+E { 7131} {s} {s} {4} {0} {} {1.000}
+
+R { 7131} {0} {} {Acid Eaten Forests (n,s,w,e)} { } {Acid Eaten Forests Strips of bark litter the forest floor, fallen from tree trunks nearby and leaving bare patches that gape like open wounds.  It is a sad state that these forests have fallen to.  Dark clouds blanket the sky, blotting out the sun and only making this desolate forest that much more depressing.  You've got to wonder how people could let such beauty be destroyed so completely.   } {Mud} {} {} {} {1.000}
+E { 7130} {n} {n} {1} {0} {} {1.000}
+E { 7132} {s} {s} {4} {0} {} {1.000}
+E { 7133} {w} {w} {8} {0} {} {1.000}
+E { 7128} {e} {e} {2} {0} {} {1.000}
+
+R { 7132} {0} {} {The Appalachian Mountains (n,s,w,e)} { } {The Appalachian Mountains The trees here are impressively tall. They tower above you hundreds of feet, but for every tree there is a stump next to it.  You've got to wonder how anything could survive way out here.  It looks like you're in the mountains, high above the surrounding areas.  To the south you sort of detect the continuation of the Appalachians.   } {Mud} {} {} {} {1.000}
+E { 7131} {n} {n} {1} {0} {} {1.000}
+E { 7127} {e} {e} {2} {0} {} {1.000}
+E { 3822} {s} {s} {4} {0} {} {1.000}
+E { 7135} {w} {w} {8} {0} {} {1.000}
+
+R { 7133} {0} {} {Acid Eaten Forests (s,e)} { } {Acid Eaten Forests Dark clouds blanket the sky, blotting out the sun and only making this desolate forest that much more depressing.  You've got to wonder how people could let such beauty be destroyed so completely.  Leaves rustle softly in a faint wind, a portent of the storm to come.  A storm which will only drown this area in more toxic rains.  Lake Erie stretches out to the west.  To the north is Niagara Falls. } {Mud} {} {} {} {1.000}
+E { 7131} {e} {e} {2} {0} {} {1.000}
+E { 7135} {s} {s} {4} {0} {} {1.000}
+
+R { 7134} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+
+R { 7135} {0} {} {Acid Eaten Forests (n,s,w,e)} { } {Acid Eaten Forests The trees around you almost seem to cry out in agony as their limbs weaken under the relentless assault of industry's by-products.  Weak and sagging trees march along the hillsides.  You can only imagine how beautiful these forests must have once been, before man and his progress shattered everything.  To the north you vaguely make out the continuation of the wasteland.   } {Mud} {} {} {} {1.000}
+E { 7132} {e} {e} {2} {0} {} {1.000}
+E { 7133} {n} {n} {1} {0} {} {1.000}
+E { 3819} {s} {s} {4} {0} {} {1.000}
+E { 7136} {w} {w} {8} {0} {} {1.000}
+
+R { 7136} {0} {} {Acid Eaten Forests (s,e)} { } {Acid Eaten Forests You've got to wonder how people could let such beauty be destroyed so completely.  Weak and sagging trees march along the hillsides.  Strips of bark litter the forest floor, fallen from tree trunks nearby and leaving bare patches that gape like open wounds.  It is a sad state that these forests have fallen to.  To the south you sort of see the continuation of the wasteland.  The grimy waters of Lake Erie stretch out to the north and west. } {Mud} {} {} {} {1.000}
+E { 7135} {e} {e} {2} {0} {} {1.000}
+E { 3817} {s} {s} {4} {0} {} {1.000}
+
+R { 7137} {0} {} {Tree Stumps (s)} { } {Even though the trees here are impressively tall, with so many dead stumps and the almost complete lack of animal life, you'd swear you were looking at a petrified forest. You'd swear you had seen a spot of green, but everything seems to be the color of the dust clouds... } {Mud} {} {} {} {1.000}
+E { 3813} {s} {s} {4} {0} {} {1.000}
+
+R { 7138} {0} {} {Rolling Hills (s,w,e)} { } {Rolling Hills Wind rustles through the grass and carries with it the hint of searing heat from nearby.  The desolation seen in the grasslands has only been spared in the hills because of the tentative hold that the plants have here.  Gently rolling hills stretch out towards the horizon.  The soft ground is a comfort beneath your feet, a sure sign that life will continue to flourish here, even if it is only scrubgrass.  To the south and east you vaguely detect the continuation of the hills.  The chill waters of Lake Superior stretch out to the north as far as you can see. } {Mud} {} {} {} {1.000}
+E { 6141} {s} {s} {4} {0} {} {1.000}
+E { 7139} {w} {w} {8} {0} {} {1.000}
+E { 7140} {e} {e} {2} {0} {} {1.000}
+
+R { 7139} {0} {} {Rolling Hills (n,s,e,w)} { } {Rolling Hills Wind rustles through the grass and carries with it the hint of searing heat from nearby.  The desolation seen in the grasslands has only been spared in the hills because of the tentative hold that the plants have here.  Gently rolling hills stretch out towards the horizon.  The soft ground is a comfort beneath your feet, a sure sign that life will continue to flourish here, even if it is only scrubgrass.  To the south and east you vaguely sense the continuation of the hills.    $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:01]/3600   HP:3366/3366 SP: 636/ 636 GP1: 100/ 100 GP2:   0/ 100 E:           GXP: 79.75 H:   100%    S:   100%    G1:   100%    G2:   0%    Fdr: 0.822641  FXP: 8.71 W:    18%   (1/10) [][][D] [][][][][][] [TK] [/] Round: 0 } {Mud} {} {} {} {1.000}
+E { 7138} {e} {e} {2} {0} {} {1.000}
+E { 7145} {n} {n} {1} {0} {} {1.000}
+E { 6143} {s} {s} {4} {0} {} {1.000}
+E { 7146} {w} {w} {8} {0} {} {1.000}
+
+R { 7140} {0} {} {Rolling Hills (e,w)} { } {Rolling Hills Blades of grass sway gently in the wind, struggling to survive in the dusty and dry heartland of North America.  Gently rolling hills stretch out towards the horizon.  The soft ground is a comfort beneath your feet, a sure sign that life will continue to flourish here, even if it is only scrubgrass.  To the east you just make out the continuation of the hills.  The chill waters of Lake Superior stretch out to the north as far as you can see.  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:01]/3600   } {Mud} {} {} {} {1.000}
+E { 7138} {w} {w} {8} {0} {} {1.000}
+E { 7141} {e} {e} {2} {0} {} {1.000}
+
+R { 7141} {0} {} {Rolling Hills (w,n)} { } {Rolling Hills The soft ground is a comfort beneath your feet, a sure sign that life will continue to flourish here, even if it is only scrubgrass.  Tufts of grass sprout from the gently rolling hills.  Each looks as though it would be considered a weed elsewhere, but out here where water is scarce and the sun bakes the earth, they are a sight for sore eyes.  Gently rolling hills stretch out towards the horizon.  To the west you barely see the continuation of the hills.  The waters of Lake Huron ripple beneath a stiff northern wind to the east. } {Mud} {} {} {} {1.000}
+E { 7140} {w} {w} {8} {0} {} {1.000}
+E { 7142} {n} {n} {1} {0} {} {1.000}
+
+R { 7142} {0} {} {Rolling Hills (s,e)} { } {Rolling Hills Blades of grass sway gently in the wind, struggling to survive in the dusty and dry heartland of North America.  The sun dips behind some clouds, hidden behind the dark promise of rain.  Small, rolling hills covered in scraggly grass and weeds march towards the horizon in every direction.  To the east you make out the continuation of the hills.  The chill waters of Lake Superior stretch out towards Canada. } {Mud} {} {} {} {1.000}
+E { 7141} {s} {s} {4} {0} {} {1.000}
+E { 7143} {e} {e} {2} {0} {} {1.000}
+
+R { 7143} {0} {} {Rolling Hills (e,w)} { } {Rolling Hills Blades of grass sway gently in the wind, struggling to survive in the dusty and dry heartland of North America.  Gently rolling hills stretch out towards the horizon.  Clouds roll across the sky, carrying with them the faint promise of much needed rain.  To the west you barely see the continuation of the hills.  The chill waters of Lake Superior stretch out to the north as far as you can see. } {Mud} {} {} {} {1.000}
+E { 7142} {w} {w} {8} {0} {} {1.000}
+E { 7144} {e} {e} {2} {0} {} {1.000}
+
+R { 7144} {0} {} {Rolling Hills (w)} { } {Rolling Hills Wind rustles through the grass and carries with it the hint of searing heat from nearby.  The desolation seen in the grasslands has only been spared in the hills because of the tentative hold that the plants have here.  Clouds roll across the sky, carrying with them the faint promise of much needed rain.  You stand atop a small hill staring out over the countryside.  To the west you just barely see the continuation of the hills.  Lake Superior stretches out to the north towards Canada while the dark waters of Lake Huron lie to the east. } {Mud} {} {} {} {1.000}
+E { 7143} {w} {w} {8} {0} {} {1.000}
+
+R { 7145} {0} {} {Rolling Hills (s,w)} { } {Rolling Hills Blades of grass sway gently in the wind, struggling to survive in the dusty and dry heartland of North America.  The soft ground is a comfort beneath your feet, a sure sign that life will continue to flourish here, even if it is only scrubgrass.  Gently rolling hills stretch out towards the horizon.  To the south you vaguely sense the continuation of the hills.  Canada lies to the north across the chill waters of Lake Superior. } {Mud} {} {} {} {1.000}
+E { 7139} {s} {s} {4} {0} {} {1.000}
+E { 7147} {w} {w} {8} {0} {} {1.000}
+
+R { 7146} {0} {} {Rolling Hills (n,s,e,w)} { } {Rolling Hills Clouds roll across the sky, carrying with them the faint promise of much needed rain.  You stand atop a small hill staring out over the countryside.  Tufts of grass sprout from the gently rolling hills.  Each looks as though it would be considered a weed elsewhere, but out here where water is scarce and the sun bakes the earth, they are a sight for sore eyes.  To the west, south and north you sort of detect the continuation of the hills.    $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:01]/3600   } {Mud} {} {} {} {1.000}
+E { 7139} {e} {e} {2} {0} {} {1.000}
+E { 7147} {n} {n} {1} {0} {} {1.000}
+E { 6144} {s} {s} {4} {0} {} {1.000}
+E { 7149} {w} {w} {8} {0} {} {1.000}
+
+R { 7147} {0} {} {Rolling Hills (s,w,e)} { } {Rolling Hills Tufts of grass sprout from the gently rolling hills.  Each looks as though it would be considered a weed elsewhere, but out here where water is scarce and the sun bakes the earth, they are a sight for sore eyes.  Gently rolling hills stretch out towards the horizon.  The sun dips behind some clouds, hidden behind the dark promise of rain.  To the west you vaguely sense the continuation of the hills.  The chill waters of Lake Superior stretch out to the north. } {Mud} {} {} {} {1.000}
+E { 7145} {e} {e} {2} {0} {} {1.000}
+E { 7146} {s} {s} {4} {0} {} {1.000}
+E { 7148} {w} {w} {8} {0} {} {1.000}
+
+R { 7148} {0} {} {Rolling Hills (s,w,e)} { } {Rolling Hills The soft ground is a comfort beneath your feet, a sure sign that life will continue to flourish here, even if it is only scrubgrass.  Blades of grass sway gently in the wind, struggling to survive in the dusty and dry heartland of North America.  Small, rolling hills covered in scraggly grass and weeds march towards the horizon in every direction.  To the east and west you sense the continuation of the hills.  Lake Superior stretches out to the north towards Canada. } {Mud} {} {} {} {1.000}
+E { 7147} {e} {e} {2} {0} {} {1.000}
+E { 7149} {s} {s} {4} {0} {} {1.000}
+E { 7151} {w} {w} {8} {0} {} {1.000}
+
+R { 7149} {0} {} {Rolling Hills (n,s,e,w)} { } {Rolling Hills The soft ground is a comfort beneath your feet, a sure sign that life will continue to flourish here, even if it is only scrubgrass.  Gently rolling hills stretch out towards the horizon.  Blades of grass sway gently in the wind, struggling to survive in the dusty and dry heartland of North America.  To the south, east and north you make out the continuation of the hills.   } {Mud} {} {} {} {1.000}
+E { 7146} {e} {e} {2} {0} {} {1.000}
+E { 6145} {s} {s} {4} {0} {} {1.000}
+E { 7148} {n} {n} {1} {0} {} {1.000}
+E { 7150} {w} {w} {8} {0} {} {1.000}
+
+R { 7150} {0} {} {Rolling Hills (w,e,s,d,n)} { } {Rolling Hills Blades of grass sway gently in the wind, struggling to survive in the dusty and dry heartland of North America.  Small, rolling hills covered in scraggly grass and weeds march towards the horizon in every direction.  The soft ground is a comfort beneath your feet, a sure sign that life will continue to flourish here, even if it is only scrubgrass. To the east you almost miss the continuation of the hills.  A well travelled road winds its way down behind a nearby hill.  $world   Uptime: 4.9 days  Reboot: 5.1 days  Lag: 0.00  Idle: [00:00:01]/3600   } {Mud} {} {} {} {1.000}
+E { 7149} {e} {e} {2} {0} {} {1.000}
+E { 7151} {n} {n} {1} {0} {} {1.000}
+E { 7153} {w} {w} {8} {0} {} {1.000}
+E { 6147} {s} {s} {4} {0} {} {1.000}
+E { 7154} {d} {d} {32} {0} {} {1.000}
+
+R { 7151} {0} {} {Rolling Hills (s,w,e)} { } {Rolling Hills Gently rolling hills stretch out towards the horizon.  Wind rustles through the grass and carries with it the hint of searing heat from nearby.  The desolation seen in the grasslands has only been spared in the hills because of the tentative hold that the plants have here.  The sun dips behind some clouds, hidden behind the dark promise of rain.  To the west and east you almost miss the continuation of the hills.  The chill waters of Lake Superior stretch out to the north as far as you can see. } {Mud} {} {} {} {1.000}
+E { 7148} {e} {e} {2} {0} {} {1.000}
+E { 7150} {s} {s} {4} {0} {} {1.000}
+E { 7152} {w} {w} {8} {0} {} {1.000}
+
+R { 7152} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7151} {e} {e} {2} {0} {} {1.000}
+
+R { 7153} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7150} {e} {e} {2} {0} {} {1.000}
+
+R { 7154} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7150} {u} {u} {16} {0} {} {1.000}
+
+R { 7155} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 6147} {e} {e} {2} {0} {} {1.000}
+
+R { 7156} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 5949} {e} {e} {2} {0} {} {1.000}
+
+R { 7157} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 5946} {e} {e} {2} {0} {} {1.000}
+
+R { 7158} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 5942} {e} {e} {2} {0} {} {1.000}
+E { 7159} {s} {s} {4} {0} {} {1.000}
+E { 7163} {w} {w} {8} {0} {} {1.000}
+
+R { 7159} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains Could it be your imagination, or is that the smell of burning flesh?  Before you stretches a vast expanse of destruction and desolation.  The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  To the west, north and south you vaguely make out the continuation of the plains.   } {Mud} {} {} {} {1.000}
+E { 5939} {e} {e} {2} {0} {} {1.000}
+E { 3778} {s} {s} {4} {0} {} {1.000}
+E { 7158} {n} {n} {1} {0} {} {1.000}
+E { 7162} {w} {w} {8} {0} {} {1.000}
+
+R { 7160} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 3774} {d} {d} {32} {0} {} {1.000}
+
+R { 7161} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 3774} {u} {u} {16} {0} {} {1.000}
+
+R { 7162} {0} {} {Desolate plains (n,s,e,w)} { } {			Wastelands Before you sits a large plastic and steel structure. It gleams and glows in the dark smutty light of the Wastelands. There is a large shiny metal stairway in front of you that runs both up and down. The surrounding area looks barren and desolate. In the far distance you think you hear a shriek. } {Mud} {} {} {} {1.000}
+E { 7159} {e} {e} {2} {0} {} {1.000}
+E { 7163} {n} {n} {1} {0} {} {1.000}
+E { 3774} {s} {s} {4} {0} {} {1.000}
+E { 7164} {w} {w} {8} {0} {} {1.000}
+
+R { 7163} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains Huge clouds of dust and ash rise in the distance as you look around.  You can hear the roar of some far off motor. Who'd be way out here?  You see a bright flash of light far in the distance. It takes a very long time for the sound of the explosion to reach you.   } {HTC Northern Expansion Terminal} {} {} {} {1.000}
+E { 7162} {s} {s} {4} {0} {} {1.000}
+E { 7165} {n} {n} {1} {0} {} {1.000}
+E { 7158} {e} {e} {2} {0} {} {1.000}
+E { 7166} {w} {w} {8} {0} {} {1.000}
+
+R { 7164} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains Before you stretches a vast expanse of destruction and desolation.  You can hear the roar of some far off motor. Who'd be way out here?  A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  To the north you detect the continuation of the plains.   } {Mud} {} {} {} {1.000}
+E { 7162} {e} {e} {2} {0} {} {1.000}
+E { 7166} {n} {n} {1} {0} {} {1.000}
+E { 3772} {s} {s} {4} {0} {} {1.000}
+E { 3769} {w} {w} {8} {0} {} {1.000}
+
+R { 7165} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7163} {s} {s} {4} {0} {} {1.000}
+
+R { 7166} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7163} {e} {e} {2} {0} {} {1.000}
+E { 7164} {s} {s} {4} {0} {} {1.000}
+
+R { 7167} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 3769} {s} {s} {4} {0} {} {1.000}
+
+R { 7168} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7110} {n} {n} {1} {0} {} {1.000}
+
+R { 7169} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7111} {n} {n} {1} {0} {} {1.000}
+
+R { 7170} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7112} {n} {n} {1} {0} {} {1.000}
+
+R { 7171} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7113} {n} {n} {1} {0} {} {1.000}
+
+R { 7172} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7114} {n} {n} {1} {0} {} {1.000}
+
+R { 7173} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7115} {n} {n} {1} {0} {} {1.000}
+
+R { 7174} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7116} {n} {n} {1} {0} {} {1.000}
+
+R { 7175} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7117} {n} {n} {1} {0} {} {1.000}
+
+R { 7176} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+
+R { 7177} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7118} {n} {n} {1} {0} {} {1.000}
+
+R { 7178} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7119} {n} {n} {1} {0} {} {1.000}
+
+R { 7179} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7120} {n} {n} {1} {0} {} {1.000}
+
+R { 7180} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7121} {n} {n} {1} {0} {} {1.000}
+
+R { 7181} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7122} {n} {n} {1} {0} {} {1.000}
+
+R { 7182} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7124} {n} {n} {1} {0} {} {1.000}
+
+R { 7183} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7125} {n} {n} {1} {0} {} {1.000}
+E { 7184} {e} {e} {2} {0} {} {1.000}
+
+R { 7184} {0} {} {Coastal Wastelands (n,s,e,w)} { } {Coastal Wastelands This whole area looks like someone has come through and strip mined it. It looks much more desolate than the rest.  You've got to wonder how anything could survive way out here.  A foul wind whips by you as you survey this desolate landscape.  To the south, north and west you see the continuation of the wasteland.  The once proud city of Washington D.C. lies here in a state of chaos. } {Mud} {} {} {} {1.000}
+E { 7126} {n} {n} {1} {0} {} {1.000}
+E { 7186} {e} {e} {2} {0} {} {1.000}
+E { 7190} {s} {s} {4} {0} {} {1.000}
+E { 7183} {w} {w} {8} {0} {} {1.000}
+
+R { 7185} {0} {} {Coastal Wastelands (s,w)} { } {Coastal Wastelands The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  You wonder if you'll ever find the end of this rolling expanse.  A foul wind whips by you as you survey this desolate landscape.  To the south you vaguely detect the continuation of the wasteland.  The Atlantic Ocean stretches out to the east. } {Mud} {} {} {} {1.000}
+E { 7126} {w} {w} {8} {0} {} {1.000}
+E { 7186} {s} {s} {4} {0} {} {1.000}
+
+R { 7186} {0} {} {Coastal Wastelands (n,road,e,w)} { } {Coastal Wastelands You wonder if you'll ever find the end of this rolling expanse.  Huge clouds of dust and ash rise in the distance as you look around.  A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  To the north and west you barely detect the continuation of the wasteland.  An old road runs off towards a tattered chain link fence. } {Mud} {} {} {} {1.000}
+E { 7185} {n} {n} {1} {0} {} {1.000}
+E { 7187} {road} {road} {0} {0} {} {1.000}
+E { 7188} {e} {e} {2} {0} {} {1.000}
+E { 7184} {w} {w} {8} {0} {} {1.000}
+
+R { 7187} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+
+R { 7188} {0} {} {Coastal Wastelands (s,w)} { } {Coastal Wastelands Huge clouds of dust and ash rise in the distance as you look around.  The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  You wonder if you'll ever find the end of this rolling expanse.  To the south and west you barely detect the continuation of the wasteland.  The rippling waters of the Atlantic Ocean stretch out to the east. } {Mud} {} {} {} {1.000}
+E { 7186} {w} {w} {8} {0} {} {1.000}
+E { 7189} {s} {s} {4} {0} {} {1.000}
+
+R { 7189} {0} {} {Coastal Wastelands (n)} { } {Coastal Wastelands The clouds above you move in over the sun and block out its light.  A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  You've got to wonder how anything could survive way out here.  To the north you sense the continuation of the wasteland.  The waters of the bay stretch out to the west while the Atlantic stretches to the east and south. } {Mud} {} {} {} {1.000}
+E { 7188} {n} {n} {1} {0} {} {1.000}
+
+R { 7190} {0} {} {Coastal Wastelands (n,s,w)} { } {Coastal Wastelands Before you stretches a vast expanse of destruction and desolation.  A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  You wonder if you'll ever find the end of this rolling expanse.  To the south and north you vaguely make out the continuation of the wasteland.  The waters of the Potomac drain into the bay and stretch out to the east. } {Mud} {} {} {} {1.000}
+E { 7184} {n} {n} {1} {0} {} {1.000}
+E { 7191} {s} {s} {4} {0} {} {1.000}
+E { 7192} {w} {w} {8} {0} {} {1.000}
+
+R { 7191} {0} {} {Coastal Wastelands (n,s,e,w)} { } {Coastal Wastelands Could it be your imagination, or is that the smell of burning flesh?  A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  The clouds above you move in over the sun and block out its light.   } {Mud} {} {} {} {1.000}
+E { 7190} {n} {n} {1} {0} {} {1.000}
+E { 7193} {s} {s} {4} {0} {} {1.000}
+E { 7194} {e} {e} {2} {0} {} {1.000}
+E { 7195} {w} {w} {8} {0} {} {1.000}
+
+R { 7192} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7190} {e} {e} {2} {0} {} {1.000}
+
+R { 7193} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7191} {n} {n} {1} {0} {} {1.000}
+E { 7196} {e} {e} {2} {0} {} {1.000}
+
+R { 7194} {0} {} {Coastal Wastelands (s,w)} { } {Coastal Wastelands You've got to wonder how anything could survive way out here.  A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  Before you stretches a vast expanse of destruction and desolation.  The waters of the bay meet those of the ocean to the north and east. } {Mud} {} {} {} {1.000}
+E { 7191} {w} {w} {8} {0} {} {1.000}
+E { 7196} {s} {s} {4} {0} {} {1.000}
+
+R { 7195} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7191} {e} {e} {2} {0} {} {1.000}
+
+R { 7196} {0} {} {Coastal Wastelands (n,w,s)} { } {Coastal Wastelands Huge clouds of dust and ash rise in the distance as you look around.  Could it be your imagination, or is that the smell of burning flesh?  A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  The Atlantic Ocean stretches out to the east for as far as the eye can see. } {Mud} {} {} {} {1.000}
+E { 7194} {n} {n} {1} {0} {} {1.000}
+E { 7193} {w} {w} {8} {0} {} {1.000}
+E { 7197} {s} {s} {4} {0} {} {1.000}
+
+R { 7197} {0} {} {Coastal Wastelands (n,s,w)} { } {Coastal Wastelands A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  You've got to wonder how anything could survive way out here.  A foul wind whips by you as you survey this desolate landscape.  The Atlantic Ocean stretches out to the east. } {Mud} {} {} {} {1.000}
+E { 7196} {n} {n} {1} {0} {} {1.000}
+E { 7198} {s} {s} {4} {0} {} {1.000}
+E { 7199} {w} {w} {8} {0} {} {1.000}
+
+R { 7198} {0} {} {Coastal Wastelands (n,s,e,w)} { } {Coastal Wastelands You've got to wonder how anything could survive way out here.  The clouds above you move in over the sun and block out its light.  You see a bright flash of light far in the distance. It takes a very long time for the sound of the explosion to reach you.   } {Mud} {} {} {} {1.000}
+E { 7197} {n} {n} {1} {0} {} {1.000}
+E { 7200} {s} {s} {4} {0} {} {1.000}
+E { 7201} {e} {e} {2} {0} {} {1.000}
+E { 7202} {w} {w} {8} {0} {} {1.000}
+
+R { 7199} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7197} {e} {e} {2} {0} {} {1.000}
+
+R { 7200} {0} {} {Coastal Wastelands (enter,n,w)} { } {Coastal Wastelands Huge clouds of dust and ash rise in the distance as you look around.  You can hear the roar of some far-off motor. Who'd be way out here?  You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  To the north you barely detect the continuation of the wasteland.  The green-blue waters of the Atlantic stretch out from the New Jersey shoreline. } {Mud} {} {} {} {1.000}
+E { 7198} {n} {n} {1} {0} {} {1.000}
+E { 7204} {enter} {enter} {0} {0} {} {1.000}
+E { 7205} {w} {w} {8} {0} {} {1.000}
+
+R { 7201} {0} {} {Coastal Wastelands (board,w)} { } {Coastal Wastelands A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  A foul wind whips by you as you survey this desolate landscape.  You've got to wonder how anything could survive way out here.  To the west you barely see the continuation of the wasteland.  A submarine seems to have run aground here. } {Mud} {} {} {} {1.000}
+E { 7198} {w} {w} {8} {0} {} {1.000}
+E { 7203} {board} {board} {0} {0} {} {1.000}
+
+R { 7202} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7198} {e} {e} {2} {0} {} {1.000}
+E { 7205} {s} {s} {4} {0} {} {1.000}
+
+R { 7203} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+
+R { 7204} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+
+R { 7205} {0} {} {Coastal Wastelands (n,s,e,w)} { } {Coastal Wastelands Could it be your imagination, or is that the smell of burning flesh?  A foul wind whips by you as you survey this desolate landscape.  This whole area looks like someone has come through and strip mined it. It looks much more desolate than the rest.  To the east and south you just barely see the continuation of the wasteland.   } {Mud} {} {} {} {1.000}
+E { 7200} {e} {e} {2} {0} {} {1.000}
+E { 7202} {n} {n} {1} {0} {} {1.000}
+E { 7206} {s} {s} {4} {0} {} {1.000}
+E { 7207} {w} {w} {8} {0} {} {1.000}
+
+R { 7206} {0} {} {Coastal Wastelands (n,s,w)} { } {Coastal Wastelands You've got to wonder how anything could survive way out here.  Before you stretches a vast expanse of destruction and desolation.  This whole area looks like someone has come through and strip mined it. It looks much more desolate than the rest.  To the west you vaguely detect the continuation of the wasteland.  The rippling waters of the Atlantic Ocean stretch out to the east. } {Mud} {} {} {} {1.000}
+E { 7205} {n} {n} {1} {0} {} {1.000}
+E { 7208} {s} {s} {4} {0} {} {1.000}
+E { 7209} {w} {w} {8} {0} {} {1.000}
+
+R { 7207} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7205} {e} {e} {2} {0} {} {1.000}
+
+R { 7208} {0} {} {Coastal Wastelands (w,n)} { } {Coastal Wastelands You wonder if you'll ever find the end of this rolling expanse.  Huge clouds of dust and ash rise in the distance as you look around.  You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  The Atlantic Ocean stretches out to the east for as far as the eye can see. } {Mud} {} {} {} {1.000}
+E { 7206} {n} {n} {1} {0} {} {1.000}
+E { 7210} {w} {w} {8} {0} {} {1.000}
+
+R { 7209} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7206} {e} {e} {2} {0} {} {1.000}
+E { 7210} {s} {s} {4} {0} {} {1.000}
+
+R { 7210} {0} {} {Coastal Wastelands (n,s,e,w)} { } {Coastal Wastelands The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  You've got to wonder how anything could survive way out here.  A foul wind whips by you as you survey this desolate landscape.  To the south and west you see the continuation of the wasteland.   } {Mud} {} {} {} {1.000}
+E { 7208} {e} {e} {2} {0} {} {1.000}
+E { 7209} {n} {n} {1} {0} {} {1.000}
+E { 7211} {s} {s} {4} {0} {} {1.000}
+E { 7212} {w} {w} {8} {0} {} {1.000}
+
+R { 7211} {0} {} {Coastal Wastelands (w,n)} { } {Coastal Wastelands You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  A foul wind whips by you as you survey this desolate landscape.  You've got to wonder how anything could survive way out here.  The warm waters of the mid-Atlantic lap lightly at the shore. } {Mud} {} {} {} {1.000}
+E { 7210} {n} {n} {1} {0} {} {1.000}
+E { 7213} {w} {w} {8} {0} {} {1.000}
+
+R { 7212} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7210} {e} {e} {2} {0} {} {1.000}
+E { 7213} {s} {s} {4} {0} {} {1.000}
+
+R { 7213} {0} {} {Coastal Wastelands (n,s,e,w)} { } {Coastal Wastelands This whole area looks like someone has come through and strip mined it. It looks much more desolate than the rest.  Before you stretches a vast expanse of destruction and desolation.  You've got to wonder how anything could survive way out here.  To the south you detect the continuation of the wasteland.   } {Mud} {} {} {} {1.000}
+E { 7211} {e} {e} {2} {0} {} {1.000}
+E { 7212} {n} {n} {1} {0} {} {1.000}
+E { 7214} {s} {s} {4} {0} {} {1.000}
+E { 7215} {w} {w} {8} {0} {} {1.000}
+
+R { 7214} {0} {} {Coastal Wastelands (w,n)} { } {Coastal Wastelands You see a bright flash of light far in the distance. It takes a very long time for the sound of the explosion to reach you.  You can hear the roar of some far-off motor. Who'd be way out here?  Before you stretches a vast expanse of destruction and desolation.  To the north you almost miss the continuation of the wasteland.  Frothy whitecaps crash to shore, driven by a wind off the ocean. } {Mud} {} {} {} {1.000}
+E { 7213} {n} {n} {1} {0} {} {1.000}
+E { 7216} {w} {w} {8} {0} {} {1.000}
+
+R { 7215} {0} {} {Coastal Wastelands (n,s,w,e)} { } {Coastal Wastelands Huge clouds of dust and ash rise in the distance as you look around.  The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  Could it be your imagination, or is that the smell of burning flesh?  To the east and south you vaguely make out the continuation of the wasteland.   } {Mud} {} {} {} {1.000}
+E { 7213} {e} {e} {2} {0} {} {1.000}
+E { 7216} {s} {s} {4} {0} {} {1.000}
+E { 7252} {w} {w} {8} {0} {} {1.000}
+E { 7255} {n} {n} {1} {0} {} {1.000}
+
+R { 7216} {0} {} {Coastal Wastelands (n,s,w,e,bunker)} { } {Coastal Wastelands Could it be your imagination, or is that the smell of burning flesh?  The clouds above you move in over the sun and block out its light.  You catch the smell of something rancid burning. You probably don't want to find out what it could be that could be burning.  From here you can see a midsized military bunker. It dominates the surrounding countryside. } {Mud} {} {} {} {1.000}
+E { 7214} {e} {e} {2} {0} {} {1.000}
+E { 7215} {n} {n} {1} {0} {} {1.000}
+E { 7217} {s} {s} {4} {0} {} {1.000}
+E { 7218} {w} {w} {8} {0} {} {1.000}
+E { 7219} {bunker} {bunker} {0} {0} {} {1.000}
+
+R { 7217} {0} {} {Coastal Wastelands (n,s,w)} { } {Coastal Wastelands The clouds above you move in over the sun and block out its light.  This whole area looks like someone has come through and strip mined it. It looks much more desolate than the rest.  Could it be your imagination, or is that the smell of burning flesh?  To the west and north you vaguely sense the continuation of the wasteland.  The Atlantic Ocean stretches out to the east. } {Mud} {} {} {} {1.000}
+E { 7216} {n} {n} {1} {0} {} {1.000}
+E { 7220} {s} {s} {4} {0} {} {1.000}
+E { 7221} {w} {w} {8} {0} {} {1.000}
+
+R { 7218} {0} {} {Coastal Wastelands (n,s,w,e)} { } {Coastal Wastelands This whole area looks like someone has come through and strip mined it. It looks much more desolate than the rest.  A foul wind whips by you as you survey this desolate landscape.  You've got to wonder how anything could survive way out here.  To the east you sort of detect the continuation of the wasteland.   } {Mud} {} {} {} {1.000}
+E { 7216} {e} {e} {2} {0} {} {1.000}
+E { 7221} {s} {s} {4} {0} {} {1.000}
+E { 7252} {n} {n} {1} {0} {} {1.000}
+E { 7253} {w} {w} {8} {0} {} {1.000}
+
+R { 7219} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+
+R { 7220} {0} {} {Southeastern Swamps (n,e,w,s)} { } {Southeastern Swamps The green of the swamp amazes you since nothing else grows around here.  There is a mist that covers the ground here. It smells of sulfur.  Huge trees and ferns grow in abundance here. There must be something wrong with these plants since they seem to grow so well.   } {Mud} {} {} {} {1.000}
+E { 7217} {n} {n} {1} {0} {} {1.000}
+E { 7222} {e} {e} {2} {0} {} {1.000}
+E { 7223} {w} {w} {8} {0} {} {1.000}
+E { 7224} {s} {s} {4} {0} {} {1.000}
+E { 7247} {sw} {sw} {12} {0} {} {1.000}
+
+R { 7221} {0} {} {Coastal Wastelands (n,s,w,e)} { } {Coastal Wastelands You've got to wonder how anything could survive way out here.  The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  Huge clouds of dust and ash rise in the distance as you look around.  To the north and west you see the continuation of the wasteland.   } {Mud} {} {} {} {1.000}
+E { 7217} {e} {e} {2} {0} {} {1.000}
+E { 7223} {s} {s} {4} {0} {} {1.000}
+E { 7218} {n} {n} {1} {0} {} {1.000}
+E { 7251} {w} {w} {8} {0} {} {1.000}
+
+R { 7222} {0} {} {Coastal Wastelands (ruins,w,s)} { } {Coastal Wastelands Could it be your imagination, or is that the smell of burning flesh?  The clouds above you move in over the sun and block out its light.  A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  The green-blue waters of the Atlantic stretch out from the shoreline. Some very large ruins rise up here over the landscape. } {Mud} {} {} {} {1.000}
+E { 7220} {w} {w} {8} {0} {} {1.000}
+E { 7225} {ruins} {ruins} {0} {0} {} {1.000}
+E { 7226} {s} {s} {4} {0} {} {1.000}
+
+R { 7223} {0} {} {Southeastern Swamps (n,s,w,e,enter)} { } {Southeastern Swamps There is a mist that covers the ground here. It smells of sulfur.  The green of the swamp amazes you since nothing else grows around here.  The stench of this swamp is almost unbearable. You don't think that you're going to be able to make it through this thing.  To the west and south you vaguely detect the continuation of the swampland.  An even thicker and ominous portion of the swamp can be glimpsed through the trees to the southeast. } {Mud} {} {} {} {1.000}
+E { 7220} {e} {e} {2} {0} {} {1.000}
+E { 7247} {s} {s} {4} {0} {} {1.000}
+E { 7221} {n} {n} {1} {0} {} {1.000}
+E { 7249} {w} {w} {8} {0} {} {1.000}
+E { 7250} {enter} {enter} {0} {0} {} {1.000}
+
+R { 7224} {0} {} {Southeastern Swamps (n,s,e,w)} { } {Southeastern Swamps The canopy of the swamp vegetation blots out the sky here.  The swamp's floor is so slimy and wet that it grabs onto your boots as you walk through it. You hope you don't get stuck.  You've got to wonder how anything could survive way out here.  To the east and north you sort of see the continuation of the swampland.   } {Mud} {} {} {} {1.000}
+E { 7220} {n} {n} {1} {0} {} {1.000}
+E { 7226} {e} {e} {2} {0} {} {1.000}
+E { 7229} {s} {s} {4} {0} {} {1.000}
+E { 7247} {w} {w} {8} {0} {} {1.000}
+
+R { 7225} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+
+R { 7226} {0} {} {Southeastern Swamps (n,w,s)} { } {Southeastern Swamps The swamp encompasses you with its hot humid sticky filth.  You hear the growls of some far off animal. You don't feel like it would be a good thing to run into anything that lives here.  You can hear the roar of some far off motor. Who'd be way out here?  To the west you sense the continuation of the swampland.  The waters of the Atlantic Ocean stretch out to the east. } {Mud} {} {} {} {1.000}
+E { 7222} {n} {n} {1} {0} {} {1.000}
+E { 7224} {w} {w} {8} {0} {} {1.000}
+E { 7227} {s} {s} {4} {0} {} {1.000}
+
+R { 7227} {0} {} {Southeastern Swamps (n,s,w)} { } {Southeastern Swamps The hot slimy swamp stretches out from here in every direction.  The swamp's floor is so slimy and wet that it grabs onto your boots as you walk through it. You hope you don't get stuck.  You've got to wonder how anything could survive way out here.  To the south, west and north you see the continuation of the swampland.  The warm waters of the mid-Atlantic lap lightly at the shore. } {Mud} {} {} {} {1.000}
+E { 7226} {n} {n} {1} {0} {} {1.000}
+E { 7228} {s} {s} {4} {0} {} {1.000}
+E { 7229} {w} {w} {8} {0} {} {1.000}
+
+R { 7228} {0} {} {Southeastern Swamps (n,s,e,w)} { } {Southeastern Swamps The swamp's floor is so slimy and wet that it grabs onto your boots as you walk through it. You hope you don't get stuck.  The canopy of the swamp vegetation blots out the sky here.  There is a mist that covers the ground here. It smells of sulfur.  To the west, east and south you vaguely detect the continuation of the swampland.   } {Mud} {} {} {} {1.000}
+E { 7227} {n} {n} {1} {0} {} {1.000}
+E { 7230} {s} {s} {4} {0} {} {1.000}
+E { 7231} {e} {e} {2} {0} {} {1.000}
+E { 7232} {w} {w} {8} {0} {} {1.000}
+
+R { 7229} {0} {} {Southeastern Swamps (w,e,s,d,n)} { } {Southeastern Swamps You can hear the roar of some far off motor. Who'd be way out here?  The stench of this swamp is almost unbearable. You don't think that you're going to be able to make it through this thing.  The green of the swamp amazes you since nothing else grows around here.  To the north you determine the continuation of the swampland.  A tunnel leads down below the surface here. } {Mud} {} {} {} {1.000}
+E { 7227} {e} {e} {2} {0} {} {1.000}
+E { 7232} {s} {s} {4} {0} {} {1.000}
+E { 7245} {w} {w} {8} {0} {} {1.000}
+E { 7246} {d} {d} {32} {0} {} {1.000}
+E { 7224} {n} {n} {1} {0} {} {1.000}
+
+R { 7230} {0} {} {Southeastern Swamps (w,e,s,n,sw)} { } {Southeastern Swamps You hear the growls of some far off animal. You don't feel like it would be a good thing to run into anything that lives here.  You can hear the roar of some far off motor. Who'd be way out here?  The swamp encompasses you with its hot humid sticky filth.  To the south, west and north you barely detect the continuation of the swampland.  A more well kept area of the swamp extends to the southwest from this area. It looks like there is a structure in that direction. } {Mud} {} {} {} {1.000}
+E { 7228} {n} {n} {1} {0} {} {1.000}
+E { 7233} {e} {e} {2} {0} {} {1.000}
+E { 7240} {s} {s} {4} {0} {} {1.000}
+E { 7241} {w} {w} {8} {0} {} {1.000}
+E { 7242} {sw} {sw} {12} {0} {} {1.000}
+
+R { 7231} {0} {} {Southeastern Swamps (s,w)} { } {Southeastern Swamps The canopy of the swamp vegetation blots out the sky here.  You hear the growls of some far off animal. You don't feel like it would be a good thing to run into anything that lives here.  You can hear the roar of some far off motor. Who'd be way out here?  To the south you see the continuation of the swampland.  The waters of the Atlantic Ocean stretch out to the west. } {Mud} {} {} {} {1.000}
+E { 7228} {w} {w} {8} {0} {} {1.000}
+E { 7233} {s} {s} {4} {0} {} {1.000}
+
+R { 7232} {0} {} {Southeastern Swamps (d,n,s,e)} { } {Southeastern Swamps The swamp's floor is so slimy and wet that it grabs onto your boots as you walk through it. You hope you don't get stuck.  The canopy of the swamp vegetation blots out the sky here.  You've got to wonder how anything could survive way out here.  To the north, east and south you sort of see the continuation of the swampland.  The Gulf of Mexico laps quietly at the Florida shores. There appears to be some kind of large vegetation filled depression here. } {Mud} {} {} {} {1.000}
+E { 7228} {e} {e} {2} {0} {} {1.000}
+E { 7241} {s} {s} {4} {0} {} {1.000}
+E { 7243} {d} {d} {32} {0} {} {1.000}
+E { 7229} {n} {n} {1} {0} {} {1.000}
+
+R { 7233} {0} {} {Southeastern Swamps (n,s,e,w)} { } {Southeastern Swamps You hear the growls of some far off animal. You don't feel like it would be a good thing to run into anything that lives here.  The swamp encompasses you with its hot humid sticky filth.  You can hear the roar of some far off motor. Who'd be way out here?  To the east and north you vaguely make out the continuation of the swampland.   } {Mud} {} {} {} {1.000}
+E { 7231} {n} {n} {1} {0} {} {1.000}
+E { 7234} {s} {s} {4} {0} {} {1.000}
+E { 7235} {e} {e} {2} {0} {} {1.000}
+E { 7230} {w} {w} {8} {0} {} {1.000}
+
+R { 7234} {0} {} {Southeastern Swamps (n,s,e,w)} { } {Southeastern Swamps You can hear the roar of some far off motor. Who'd be way out here?  The hot slimy swamp stretches out from here in every direction.  Huge trees and ferns grow in abundance here. There must be something wrong with these plants since they seem to grow so well.  To the east, south and west you vaguely make out the continuation of the swampland.   } {Mud} {} {} {} {1.000}
+E { 7233} {n} {n} {1} {0} {} {1.000}
+E { 7236} {e} {e} {2} {0} {} {1.000}
+E { 7238} {s} {s} {4} {0} {} {1.000}
+E { 7240} {w} {w} {8} {0} {} {1.000}
+
+R { 7235} {0} {} {Southeastern Swamps (s,w)} { } {Southeastern Swamps You hear a loud sucking sound as you walk through the dew.  The canopy of the swamp vegetation blots out the sky here.  Huge trees and ferns grow in abundance here. There must be something wrong with these plants since they seem to grow so well.  The Atlantic Ocean stretches out towards the eastern horizon. } {Mud} {} {} {} {1.000}
+E { 7233} {w} {w} {8} {0} {} {1.000}
+E { 7236} {s} {s} {4} {0} {} {1.000}
+
+R { 7236} {0} {} {Southeastern Swamps (n,s,w)} { } {Southeastern Swamps You hear a loud sucking sound as you walk through the dew.  The swamp encompasses you with its hot humid sticky filth.  The swamp's floor is so slimy and wet that it grabs onto your boots as you walk through it. You hope you don't get stuck.  The warm waters of the mid-Atlantic lap lightly at the shore. } {Mud} {} {} {} {1.000}
+E { 7235} {n} {n} {1} {0} {} {1.000}
+E { 7237} {s} {s} {4} {0} {} {1.000}
+E { 7234} {w} {w} {8} {0} {} {1.000}
+
+R { 7237} {0} {} {Southeastern Swamps (w,n)} { } {Southeastern Swamps The canopy of the swamp vegetation blots out the sky here.  You hear a loud sucking sound as you walk through the dew.  You hear the growls of some far off animal. You don't feel like it would be a good thing to run into anything that lives here.  To the north you barely detect the continuation of the swampland.  The pirate city of Miami stretches out along the beach, oblivious to the ravages of the holocaust. } {Mud} {} {} {} {1.000}
+E { 7236} {n} {n} {1} {0} {} {1.000}
+E { 7238} {w} {w} {8} {0} {} {1.000}
+
+R { 7238} {0} {} {Southeastern Swamps (n,e,w)} { } {Southeastern Swamps You hear a loud sucking sound as you walk through the dew.  The canopy of the swamp vegetation blots out the sky here.  Huge trees and ferns grow in abundance here. There must be something wrong with these plants since they seem to grow so well.  To the east you just barely see the continuation of the swampland.  The Atlantic Ocean meets the Gulf of Mexico here at the terminus of the Florida peninsula. } {Mud} {} {} {} {1.000}
+E { 7237} {e} {e} {2} {0} {} {1.000}
+E { 7234} {n} {n} {1} {0} {} {1.000}
+E { 7239} {w} {w} {8} {0} {} {1.000}
+
+R { 7239} {0} {} {Southeastern Swamps (e,n)} { } {Southeastern Swamps There is a mist that covers the ground here. It smells of sulfur.  The stench of this swamp is almost unbearable. You don't think that you're going to be able to make it through this thing.  The green of the swamp amazes you since nothing else grows around here.  To the north you barely see the continuation of the swampland.  The waters of the Gulf of Mexico meld with those of the Atlantic Ocean to the south. } {Mud} {} {} {} {1.000}
+E { 7238} {e} {e} {2} {0} {} {1.000}
+E { 7240} {n} {n} {1} {0} {} {1.000}
+
+R { 7240} {0} {} {Southeastern Swamps (n,s,e)} { } {Southeastern Swamps There is a mist that covers the ground here. It smells of sulfur.  The canopy of the swamp vegetation blots out the sky here.  The swamp's floor is so slimy and wet that it grabs onto your boots as you walk through it. You hope you don't get stuck.  To the east, north and south you vaguely sense the continuation of the swampland.  The Gulf laps quietly at the Florida shore. } {Mud} {} {} {} {1.000}
+E { 7234} {e} {e} {2} {0} {} {1.000}
+E { 7230} {n} {n} {1} {0} {} {1.000}
+E { 7239} {s} {s} {4} {0} {} {1.000}
+
+R { 7241} {0} {} {Southeastern Swamps (e,n)} { } {Southeastern Swamps Huge trees and ferns grow in abundance here. There must be something wrong with these plants since they seem to grow so well.  You've got to wonder how anything could survive way out here.  The green of the swamp amazes you since nothing else grows around here.  The Gulf of Mexico stretches out to the south and west. } {Mud} {} {} {} {1.000}
+E { 7230} {e} {e} {2} {0} {} {1.000}
+E { 7232} {n} {n} {1} {0} {} {1.000}
+
+R { 7242} {0} {} {Entrance (ne,entrance)} { } {You stand at the basement entrance of the Underwood Disease Testing Center.  It is a large building four floors high.  A plush green lawn surrounds the outer perimeter of the facility. } {Mud} {} {} {} {1.000}
+E { 7230} {ne} {ne} {3} {0} {} {1.000}
+E { 7244} {entrance} {entrance} {0} {0} {} {1.000}
+
+R { 7243} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7232} {u} {u} {16} {0} {} {1.000}
+
+R { 7244} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+
+R { 7245} {0} {} {Southeastern Swamps (e,n)} { } {Southeastern Swamps The swamp's floor is so slimy and wet that it grabs onto your boots as you walk through it. You hope you don't get stuck.  There is a mist that covers the ground here. It smells of sulfur.  The canopy of the swamp vegetation blots out the sky here.  The beautiful blue-green waters of the Gulf of Mexico stretch out to the west and south. } {Mud} {} {} {} {1.000}
+E { 7229} {e} {e} {2} {0} {} {1.000}
+E { 7247} {n} {n} {1} {0} {} {1.000}
+
+R { 7246} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7229} {u} {u} {16} {0} {} {1.000}
+
+R { 7247} {0} {} {Southeastern Swamps (w,e,s,n,ne)} { } {Southeastern Swamps You hear the growls of some far off animal. You don't feel like it would be a good thing to run into anything that lives here.  You've got to wonder how anything could survive way out here.  The swamp encompasses you with its hot humid sticky filth.  To the north you barely detect the continuation of the swampland.   } {Mud} {} {} {} {1.000}
+E { 7224} {e} {e} {2} {0} {} {1.000}
+E { 7245} {s} {s} {4} {0} {} {1.000}
+E { 7248} {w} {w} {8} {0} {} {1.000}
+E { 7223} {n} {n} {1} {0} {} {1.000}
+E { 7220} {ne} {ne} {3} {0} {} {1.000}
+
+R { 7248} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7247} {e} {e} {2} {0} {} {1.000}
+
+R { 7249} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7223} {e} {e} {2} {0} {} {1.000}
+
+R { 7250} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+
+R { 7251} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7221} {e} {e} {2} {0} {} {1.000}
+
+R { 7252} {0} {} {Coastal Wastelands (n,s,w,e)} { } {Coastal Wastelands A gigantic crater lies before you. It's hard to imagine what could have exploded and caused something as impressive as this.  You can hear the roar of some far-off motor. Who'd be way out here?  The clouds above you move in over the sun and block out its light.  To the north you sort of detect the continuation of the wasteland.   } {Mud} {} {} {} {1.000}
+E { 7218} {s} {s} {4} {0} {} {1.000}
+E { 7254} {n} {n} {1} {0} {} {1.000}
+E { 6118} {w} {w} {8} {0} {} {1.000}
+E { 7215} {e} {e} {2} {0} {} {1.000}
+
+R { 7253} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7218} {e} {e} {2} {0} {} {1.000}
+E { 6118} {n} {n} {1} {0} {} {1.000}
+
+R { 7254} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7252} {s} {s} {4} {0} {} {1.000}
+
+R { 7255} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7215} {s} {s} {4} {0} {} {1.000}
+
+R { 7256} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 6118} {s} {s} {4} {0} {} {1.000}
 
 R {10000} {0} {} {Inside a Void Tunnel (enter)} { } {You are caught inside a bubble in the maelstrom of time and space.  Purple and pink whorls of temporal energy explode all around you.  A faint shimmer is all that protects you from eternal oblivion.  You can exit the void tunnel either back to the general safety of the world you know, or you can dive ahead into dimensions unknown. } {Kayos Wars} {event} {} {} {1.000}
 E { 1580} {enter} {enter} {0} {0} {} {1.000}
