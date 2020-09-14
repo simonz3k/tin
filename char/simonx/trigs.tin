@@ -77,7 +77,7 @@
 #NOP this is in the bot script now #if {$cact == 1} {#delay {10} {rf}};
 } {1}
 
-
+#act {You may only have one pyre active here.} {!wrap}
 
 #act {^You have become a %1} {clog {%1}};
 
