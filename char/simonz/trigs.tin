@@ -289,4 +289,10 @@ gxr;
 
 #act {Your coffin flashes as its capacity expands!} {clog {%0}};
 
+#act {Type 'accept' if you wish to be monitored.} {!accept};
+
+#act {%* reaches out his mighty hand over the realms.} {clog {%0}};
+
+#act {electricity runs screaming through} {clog {Tagged FB}};laf 
+
 #class {trigs} {close}

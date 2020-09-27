@@ -7,14 +7,7 @@
 
 #act {^=M={A Root Warrior|Tree Guardian|An Earthen Spirit|A Guardian Branch|Minor Earth Elemental|Earth Elemental|Earth Elemental Lord|Terra, Knight of Earth}} {
 	#switch {"%1"} {
-		#case {"A Root Warrior"}		{#var mobname warrior};
-		#case {"Tree Guardian"}	{#var mobname guardian};
-		#case {"An Earthen Spirit"}	{#var mobname spirit};
-		#case {"A Guardian Branch"}	{#var mobname branch};
-		#case {"Minor Earth Elemental"}	{#var mobname elemental};
-		#case {"Earth Elemental"}	{#var mobname elemental};
-		#case {"Earth Elemental Lord"}		{#var mobname elemental};
-		#case {"Terra, Knight of Earth"}		{#var mobname terra};
+		#var mobname elemental;
 	};
 	_check_mob;
 }
