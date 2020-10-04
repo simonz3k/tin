@@ -293,6 +293,20 @@ gxr;
 
 #act {%* reaches out his mighty hand over the realms.} {clog {%0}};
 
-#act {electricity runs screaming through} {clog {Tagged FB}};laf 
+#act {electricity runs screaming through} {clog {Tagged FB}};
+
+#var btank 0;
+#alias {btank} {
+    #if {$btank == 0} {
+        #showme btank on;
+        #var btank 1;
+        #act {Beloch storms out to do battle!} { #delay {2} {k beloch;};}
+    } {
+        #showme btank off;c yup
+        #var btank 0;
+        #unact {Beloch storms out to do battle!};
+    }
+}
+
 
 #class {trigs} {close}

@@ -3,9 +3,11 @@
 
 /* Jedi gags */
 #class {gag_guild} {open}
+	#var ggag 1;
+	#alias {ggag} {#if {$ggag == 0} {#var ggag 1;#showme guild gag on;}{#var ggag 0;#showme guild gag off}};
 
-	#gag {Force and deflect some};
-	#gag {lose focus and miss};
+	#act {Force and deflect some}{#if {$ggag == 1}{#line gag;}};
+	#act {lose focus and miss}{#if {$ggag == 1}{#line gag;}};
 
 
 #class {gag_guild} {close}
@@ -15,15 +17,18 @@
 
 /* Equipment gags */
 #class {gag_eq} {open}
+	#var egag 1;
+	#alias {egag} {#if {$egag == 0} {#var egag 1;#showme eq gag on;}{#var egag 0;#showme eq gag off}};
 
-	#gag {armour glimmers}
-	#gag {cocoon absorbs part};
-	#gag {Headband warms you};
-	#gag {the headband hypnotizes};
-	#gag {sparks fly from the bracers};
-	#gag {bracers flare brightly};
-	#gag {greenstone amulet feels warm};
-	#gag {you phase out of harms way};
+	#act {armour glimmers}{#if {$egag == 1}{#line gag;}};
+	#act {^The sticky cocoon absorbs part of the attack!$}{#if {$egag == 1}{#line gag;}};
+	#act {^Zelligar's Headband warms you with a radiant glow.$}{#if {$egag == 1}{#line gag;}};
+	#act {the headband hypnotizes}{#if {$egag == 1}{#line gag;}};
+	#act {sparks fly from the bracers}{#if {$egag == 1}{#line gag;}};
+	#act {bracers flare brightly}{#if {$egag == 1}{#line gag;}};
+	#act {greenstone amulet feels warm}{#if {$egag == 1}{#line gag;}};
+	#act {you phase out of harms way}{#if {$egag == 1}{#line gag;}};
+
 #class {gag_eq} {close}
 
 #gag {^{1|2|3|4|5|6|7|8|9|10} of Hearts};
