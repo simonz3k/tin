@@ -6,16 +6,15 @@ CP <138>
 CR 
 CB 
 
-F 8
+F 9
 
-I 6118
+I 7337
 
 L ▪ ╹ ╺ ┗ ╻ ┃ ┏ ┣ ╸ ┛ ━ ┻ ┓ ┫ ┳ ╋ X
 
 
 R {    1} {0} {} {Entrance (n,w,fantasy,chaos,guild,science,shop,leave)} { } {An empty room. } {"Simonz' house"} {home} {} {} {1.000}
 E {    2} {w} {w} {8} {0} {} {1.000}
-E {    3} {n} {n} {1} {0} {} {1.000}
 E {    6} {guild} {guild} {0} {0} {} {1.000}
 E {    9} {leave} {leave} {0} {0} {} {1.000}
 E {  105} {fantasy} {fantasy} {0} {0} {} {1.000}
@@ -23,14 +22,15 @@ E {  121} {science} {science} {0} {0} {} {1.000}
 E {  113} {chaos} {chaos} {0} {0} {} {1.000}
 E {   86} {shop} {shop} {0} {0} {} {1.000}
 E { 5603} {mo} {mo} {0} {0} {} {1.000}
+E {    3} {n} {n} {1} {0} {} {1.000}
 
 R {    2} {0} {} {Kitchen (ne,e)} { } {An empty room. } {"Simonz' house"} {} {} {} {1.000}
 E {    1} {e} {e} {2} {0} {} {1.000}
 E {    3} {ne} {ne} {3} {0} {} {1.000}
 
-R {    3} {0} {} {Bar (sw,s)} { } {An empty room. } {"Simonz' house"} {} {} {} {1.000}
-E {    2} {sw} {sw} {12} {0} {} {1.000}
+R {    3} {0} {} {Bar (sw,s)} { } {An empty room. } {Pinnacle's Residential Complex} {} {} {} {1.000}
 E {    1} {s} {s} {4} {0} {} {1.000}
+E {    2} {sw} {sw} {12} {0} {} {1.000}
 
 R {    4} {0} {} {Alchemy row (nw,n,s,w,e)} { } {A narrow pebbled country lane heads south here, cutting through a strange, blurry smog.  Horrible clouds rear up into an angry sky to the south.  Odd greenish red bricks undulate off to the east.  A strange, oddly twisted looking stone building lies in a clearing to the west, while a brightly colored shop lies to the northwest. } {Pinnacle} {} {} {} {1.000}
 E {   97} {s} {s} {4} {0} {} {1.000}
@@ -2101,6 +2101,7 @@ R {  431} {0} {} {Along a wall (n,s,e)} { } {You stand on the outer wall of the 
 E {  430} {s} {s} {4} {0} {} {1.000}
 E {  432} {n} {n} {1} {0} {} {1.000}
 E {  433} {e} {e} {2} {0} {} {1.000}
+E { 7257} {d} {d} {32} {0} {} {1.000}
 
 R {  432} {0} {} {Along a wall (n,s,e)} {-} {You stand on the outer wall of the dungeon.  Strange for a dungeon not to have any cells present, but there are hooks and chains abound.  The air is filled of must and dust that warn you to turn back and leave this place of horror. } {Hotel Transylvania} {} {} {} {1.000}
 E {  431} {s} {s} {4} {0} {} {1.000}
@@ -34392,6 +34393,563 @@ E { 7215} {s} {s} {4} {0} {} {1.000}
 
 R { 7256} {0} {<118>} {} { } {} {} {} {} {} {1.000}
 E { 6118} {s} {s} {4} {0} {} {1.000}
+
+R { 7257} {0} {} { A dungeon (se,u,s,e)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E {  431} {u} {u} {16} {0} {} {1.000}
+E { 7258} {se} {se} {6} {0} {} {1.000}
+E { 7259} {s} {s} {4} {0} {} {1.000}
+E { 7260} {e} {e} {2} {0} {} {1.000}
+
+R { 7258} {0} {} { A dungeon (nw,n,ne,se,s,e,w)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7257} {nw} {nw} {9} {0} {} {1.000}
+E { 7260} {n} {n} {1} {0} {} {1.000}
+E { 7262} {ne} {ne} {3} {0} {} {1.000}
+E { 7261} {e} {e} {2} {0} {} {1.000}
+E { 7277} {se} {se} {6} {0} {} {1.000}
+E { 7278} {s} {s} {4} {0} {} {1.000}
+E { 7259} {w} {w} {8} {0} {} {1.000}
+
+R { 7259} {0} {} { A dungeon (n,ne,e,s)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7257} {n} {n} {1} {0} {} {1.000}
+E { 7260} {ne} {ne} {3} {0} {} {1.000}
+E { 7258} {e} {e} {2} {0} {} {1.000}
+E { 7279} {s} {s} {4} {0} {} {1.000}
+
+R { 7260} {0} {} { A dungeon (sw,se,e,s,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7257} {w} {w} {8} {0} {} {1.000}
+E { 7259} {sw} {sw} {12} {0} {} {1.000}
+E { 7261} {se} {se} {6} {0} {} {1.000}
+E { 7262} {e} {e} {2} {0} {} {1.000}
+E { 7258} {s} {s} {4} {0} {} {1.000}
+
+R { 7261} {0} {} { A dungeon (nw,n,sw,ne,se,s,e,w)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7260} {nw} {nw} {9} {0} {} {1.000}
+E { 7262} {n} {n} {1} {0} {} {1.000}
+E { 7263} {ne} {ne} {3} {0} {} {1.000}
+E { 7276} {e} {e} {2} {0} {} {1.000}
+E { 7278} {sw} {sw} {12} {0} {} {1.000}
+E { 7275} {se} {se} {6} {0} {} {1.000}
+E { 7277} {s} {s} {4} {0} {} {1.000}
+E { 7258} {w} {w} {8} {0} {} {1.000}
+
+R { 7262} {0} {} { A dungeon (sw,w,s,e)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7260} {w} {w} {8} {0} {} {1.000}
+E { 7258} {sw} {sw} {12} {0} {} {1.000}
+E { 7261} {s} {s} {4} {0} {} {1.000}
+E { 7263} {e} {e} {2} {0} {} {1.000}
+
+R { 7263} {0} {} { A dungeon (sw,se,e,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7262} {w} {w} {8} {0} {} {1.000}
+E { 7261} {sw} {sw} {12} {0} {} {1.000}
+E { 7264} {se} {se} {6} {0} {} {1.000}
+E { 7265} {e} {e} {2} {0} {} {1.000}
+
+R { 7264} {0} {} { A dungeon (nw,n,sw,se,s,e,w)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7263} {nw} {nw} {9} {0} {} {1.000}
+E { 7265} {n} {n} {1} {0} {} {1.000}
+E { 7268} {e} {e} {2} {0} {} {1.000}
+E { 7275} {sw} {sw} {12} {0} {} {1.000}
+E { 7274} {se} {se} {6} {0} {} {1.000}
+E { 7272} {s} {s} {4} {0} {} {1.000}
+E { 7276} {w} {w} {8} {0} {} {1.000}
+
+R { 7265} {0} {} { A dungeon (w,s,e)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7263} {w} {w} {8} {0} {} {1.000}
+E { 7264} {s} {s} {4} {0} {} {1.000}
+E { 7266} {e} {e} {2} {0} {} {1.000}
+
+R { 7266} {0} {} { A dungeon (se,w,s,e)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7265} {w} {w} {8} {0} {} {1.000}
+E { 7267} {se} {se} {6} {0} {} {1.000}
+E { 7268} {s} {s} {4} {0} {} {1.000}
+E { 7269} {e} {e} {2} {0} {} {1.000}
+
+R { 7267} {0} {} { A dungeon (nw,n,w,e)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7266} {nw} {nw} {9} {0} {} {1.000}
+E { 7269} {n} {n} {1} {0} {} {1.000}
+E { 7270} {e} {e} {2} {0} {} {1.000}
+E { 7268} {w} {w} {8} {0} {} {1.000}
+
+R { 7268} {0} {} { A dungeon (n,sw,ne,se,s,e,w)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7266} {n} {n} {1} {0} {} {1.000}
+E { 7269} {ne} {ne} {3} {0} {} {1.000}
+E { 7267} {e} {e} {2} {0} {} {1.000}
+E { 7272} {sw} {sw} {12} {0} {} {1.000}
+E { 7273} {se} {se} {6} {0} {} {1.000}
+E { 7274} {s} {s} {4} {0} {} {1.000}
+E { 7264} {w} {w} {8} {0} {} {1.000}
+
+R { 7269} {0} {} { A dungeon (sw,se,e,s,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7266} {w} {w} {8} {0} {} {1.000}
+E { 7268} {sw} {sw} {12} {0} {} {1.000}
+E { 7270} {se} {se} {6} {0} {} {1.000}
+E { 7271} {e} {e} {2} {0} {} {1.000}
+E { 7267} {s} {s} {4} {0} {} {1.000}
+
+R { 7270} {0} {} { A dungeon (nw,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7269} {nw} {nw} {9} {0} {} {1.000}
+E { 7267} {w} {w} {8} {0} {} {1.000}
+
+R { 7271} {0} {} { A dungeon (w)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7269} {w} {w} {8} {0} {} {1.000}
+
+R { 7272} {0} {} { A dungeon (n,ne,w,e)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7268} {ne} {ne} {3} {0} {} {1.000}
+E { 7264} {n} {n} {1} {0} {} {1.000}
+E { 7275} {w} {w} {8} {0} {} {1.000}
+E { 7274} {e} {e} {2} {0} {} {1.000}
+
+R { 7273} {0} {} { A dungeon (nw,e)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7268} {nw} {nw} {9} {0} {} {1.000}
+E { 7335} {e} {e} {2} {0} {} {1.000}
+
+R { 7274} {0} {} { A dungeon (nw,n,w,s)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7268} {n} {n} {1} {0} {} {1.000}
+E { 7264} {nw} {nw} {9} {0} {} {1.000}
+E { 7272} {w} {w} {8} {0} {} {1.000}
+E { 7331} {s} {s} {4} {0} {} {1.000}
+
+R { 7275} {0} {} { A dungeon (nw,n,ne,s,e)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7264} {ne} {ne} {3} {0} {} {1.000}
+E { 7276} {n} {n} {1} {0} {} {1.000}
+E { 7261} {nw} {nw} {9} {0} {} {1.000}
+E { 7285} {s} {s} {4} {0} {} {1.000}
+E { 7272} {e} {e} {2} {0} {} {1.000}
+
+R { 7276} {0} {} { A dungeon (sw,w,s,e)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7264} {e} {e} {2} {0} {} {1.000}
+E { 7277} {sw} {sw} {12} {0} {} {1.000}
+E { 7261} {w} {w} {8} {0} {} {1.000}
+E { 7275} {s} {s} {4} {0} {} {1.000}
+
+R { 7277} {0} {} { A dungeon (nw,n,sw,ne,s,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7276} {ne} {ne} {3} {0} {} {1.000}
+E { 7261} {n} {n} {1} {0} {} {1.000}
+E { 7258} {nw} {nw} {9} {0} {} {1.000}
+E { 7278} {w} {w} {8} {0} {} {1.000}
+E { 7282} {sw} {sw} {12} {0} {} {1.000}
+E { 7281} {s} {s} {4} {0} {} {1.000}
+
+R { 7278} {0} {} { A dungeon (n,ne,se,s,e,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7261} {ne} {ne} {3} {0} {} {1.000}
+E { 7258} {n} {n} {1} {0} {} {1.000}
+E { 7279} {w} {w} {8} {0} {} {1.000}
+E { 7281} {se} {se} {6} {0} {} {1.000}
+E { 7282} {s} {s} {4} {0} {} {1.000}
+E { 7277} {e} {e} {2} {0} {} {1.000}
+
+R { 7279} {0} {} { A dungeon (n,e,s)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7259} {n} {n} {1} {0} {} {1.000}
+E { 7278} {e} {e} {2} {0} {} {1.000}
+E { 7280} {s} {s} {4} {0} {} {1.000}
+
+R { 7280} {0} {} { A dungeon (n,s)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7279} {n} {n} {1} {0} {} {1.000}
+E { 7287} {s} {s} {4} {0} {} {1.000}
+
+R { 7281} {0} {} { A dungeon (nw,n,se,s,e,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7278} {nw} {nw} {9} {0} {} {1.000}
+E { 7277} {n} {n} {1} {0} {} {1.000}
+E { 7283} {se} {se} {6} {0} {} {1.000}
+E { 7284} {s} {s} {4} {0} {} {1.000}
+E { 7285} {e} {e} {2} {0} {} {1.000}
+E { 7282} {w} {w} {8} {0} {} {1.000}
+
+R { 7282} {0} {} { A dungeon (n,ne,e,s)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7278} {n} {n} {1} {0} {} {1.000}
+E { 7277} {ne} {ne} {3} {0} {} {1.000}
+E { 7281} {e} {e} {2} {0} {} {1.000}
+E { 7286} {s} {s} {4} {0} {} {1.000}
+
+R { 7283} {0} {} { A dungeon (nw,n,sw,ne,se,s,e,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7281} {nw} {nw} {9} {0} {} {1.000}
+E { 7327} {s} {s} {4} {0} {} {1.000}
+E { 7289} {sw} {sw} {12} {0} {} {1.000}
+E { 7284} {w} {w} {8} {0} {} {1.000}
+E { 7285} {n} {n} {1} {0} {} {1.000}
+E { 7330} {ne} {ne} {3} {0} {} {1.000}
+E { 7328} {se} {se} {6} {0} {} {1.000}
+E { 7329} {e} {e} {2} {0} {} {1.000}
+
+R { 7284} {0} {} { A dungeon (n,sw,se,s,e,w)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7281} {n} {n} {1} {0} {} {1.000}
+E { 7286} {w} {w} {8} {0} {} {1.000}
+E { 7288} {sw} {sw} {12} {0} {} {1.000}
+E { 7327} {se} {se} {6} {0} {} {1.000}
+E { 7289} {s} {s} {4} {0} {} {1.000}
+E { 7283} {e} {e} {2} {0} {} {1.000}
+
+R { 7285} {0} {} { A dungeon (n,se,s,e,w)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7281} {w} {w} {8} {0} {} {1.000}
+E { 7283} {s} {s} {4} {0} {} {1.000}
+E { 7275} {n} {n} {1} {0} {} {1.000}
+E { 7329} {se} {se} {6} {0} {} {1.000}
+E { 7330} {e} {e} {2} {0} {} {1.000}
+
+R { 7286} {0} {} { A dungeon (n,se,s,e,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7282} {n} {n} {1} {0} {} {1.000}
+E { 7287} {w} {w} {8} {0} {} {1.000}
+E { 7289} {se} {se} {6} {0} {} {1.000}
+E { 7288} {s} {s} {4} {0} {} {1.000}
+E { 7284} {e} {e} {2} {0} {} {1.000}
+
+R { 7287} {0} {} { A dungeon (n,se,e)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7280} {n} {n} {1} {0} {} {1.000}
+E { 7288} {se} {se} {6} {0} {} {1.000}
+E { 7286} {e} {e} {2} {0} {} {1.000}
+
+R { 7288} {0} {} { A dungeon (nw,n,ne,se,s,e)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7287} {nw} {nw} {9} {0} {} {1.000}
+E { 7286} {n} {n} {1} {0} {} {1.000}
+E { 7284} {ne} {ne} {3} {0} {} {1.000}
+E { 7290} {se} {se} {6} {0} {} {1.000}
+E { 7291} {s} {s} {4} {0} {} {1.000}
+E { 7289} {e} {e} {2} {0} {} {1.000}
+
+R { 7289} {0} {} { A dungeon (nw,n,sw,ne,s,e,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7286} {nw} {nw} {9} {0} {} {1.000}
+E { 7288} {w} {w} {8} {0} {} {1.000}
+E { 7291} {sw} {sw} {12} {0} {} {1.000}
+E { 7327} {e} {e} {2} {0} {} {1.000}
+E { 7284} {n} {n} {1} {0} {} {1.000}
+E { 7283} {ne} {ne} {3} {0} {} {1.000}
+E { 7290} {s} {s} {4} {0} {} {1.000}
+
+R { 7290} {0} {} { A dungeon (n,nw,sw,s,w)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7288} {nw} {nw} {9} {0} {} {1.000}
+E { 7291} {w} {w} {8} {0} {} {1.000}
+E { 7293} {sw} {sw} {12} {0} {} {1.000}
+E { 7292} {s} {s} {4} {0} {} {1.000}
+E { 7289} {n} {n} {1} {0} {} {1.000}
+
+R { 7291} {0} {} { A dungeon (n,ne,se,s,e)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7288} {n} {n} {1} {0} {} {1.000}
+E { 7289} {ne} {ne} {3} {0} {} {1.000}
+E { 7292} {se} {se} {6} {0} {} {1.000}
+E { 7293} {s} {s} {4} {0} {} {1.000}
+E { 7290} {e} {e} {2} {0} {} {1.000}
+
+R { 7292} {0} {} { A dungeon (nw,n,sw,se,e,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7291} {nw} {nw} {9} {0} {} {1.000}
+E { 7293} {w} {w} {8} {0} {} {1.000}
+E { 7294} {sw} {sw} {12} {0} {} {1.000}
+E { 7299} {se} {se} {6} {0} {} {1.000}
+E { 7290} {n} {n} {1} {0} {} {1.000}
+E { 7309} {e} {e} {2} {0} {} {1.000}
+
+R { 7293} {0} {} { A dungeon (n,ne,e,s)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7291} {n} {n} {1} {0} {} {1.000}
+E { 7290} {ne} {ne} {3} {0} {} {1.000}
+E { 7292} {e} {e} {2} {0} {} {1.000}
+E { 7294} {s} {s} {4} {0} {} {1.000}
+
+R { 7294} {0} {} { A dungeon (n,ne,se,s,e,w)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7293} {n} {n} {1} {0} {} {1.000}
+E { 7292} {ne} {ne} {3} {0} {} {1.000}
+E { 7295} {se} {se} {6} {0} {} {1.000}
+E { 7296} {s} {s} {4} {0} {} {1.000}
+E { 7297} {e} {e} {2} {0} {} {1.000}
+E { 7298} {w} {w} {8} {0} {} {1.000}
+
+R { 7295} {0} {} { A dungeon (nw,n,ne,e,w)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7294} {nw} {nw} {9} {0} {} {1.000}
+E { 7296} {w} {w} {8} {0} {} {1.000}
+E { 7297} {n} {n} {1} {0} {} {1.000}
+E { 7299} {ne} {ne} {3} {0} {} {1.000}
+E { 7300} {e} {e} {2} {0} {} {1.000}
+
+R { 7296} {0} {} { A dungeon (nw,n,ne,e)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7294} {n} {n} {1} {0} {} {1.000}
+E { 7298} {nw} {nw} {9} {0} {} {1.000}
+E { 7297} {ne} {ne} {3} {0} {} {1.000}
+E { 7295} {e} {e} {2} {0} {} {1.000}
+
+R { 7297} {0} {} { A dungeon (sw,se,e,s,w)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7294} {w} {w} {8} {0} {} {1.000}
+E { 7296} {sw} {sw} {12} {0} {} {1.000}
+E { 7295} {s} {s} {4} {0} {} {1.000}
+E { 7300} {se} {se} {6} {0} {} {1.000}
+E { 7299} {e} {e} {2} {0} {} {1.000}
+
+R { 7298} {0} {} { A dungeon (se,e)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7294} {e} {e} {2} {0} {} {1.000}
+E { 7296} {se} {se} {6} {0} {} {1.000}
+
+R { 7299} {0} {} { A dungeon (nw,n,sw,ne,se,s,e,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7295} {sw} {sw} {12} {0} {} {1.000}
+E { 7300} {s} {s} {4} {0} {} {1.000}
+E { 7302} {se} {se} {6} {0} {} {1.000}
+E { 7301} {e} {e} {2} {0} {} {1.000}
+E { 7292} {nw} {nw} {9} {0} {} {1.000}
+E { 7309} {n} {n} {1} {0} {} {1.000}
+E { 7310} {ne} {ne} {3} {0} {} {1.000}
+E { 7297} {w} {w} {8} {0} {} {1.000}
+
+R { 7300} {0} {} { A dungeon (nw,n,ne,e,w)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7295} {w} {w} {8} {0} {} {1.000}
+E { 7297} {nw} {nw} {9} {0} {} {1.000}
+E { 7299} {n} {n} {1} {0} {} {1.000}
+E { 7301} {ne} {ne} {3} {0} {} {1.000}
+E { 7302} {e} {e} {2} {0} {} {1.000}
+
+R { 7301} {0} {} { A dungeon (nw,n,sw,ne,se,s,e,w)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7300} {sw} {sw} {12} {0} {} {1.000}
+E { 7302} {s} {s} {4} {0} {} {1.000}
+E { 7304} {se} {se} {6} {0} {} {1.000}
+E { 7303} {e} {e} {2} {0} {} {1.000}
+E { 7309} {nw} {nw} {9} {0} {} {1.000}
+E { 7310} {n} {n} {1} {0} {} {1.000}
+E { 7311} {ne} {ne} {3} {0} {} {1.000}
+E { 7299} {w} {w} {8} {0} {} {1.000}
+
+R { 7302} {0} {} { A dungeon (nw,n,ne,e,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7300} {w} {w} {8} {0} {} {1.000}
+E { 7299} {nw} {nw} {9} {0} {} {1.000}
+E { 7301} {n} {n} {1} {0} {} {1.000}
+E { 7303} {ne} {ne} {3} {0} {} {1.000}
+E { 7304} {e} {e} {2} {0} {} {1.000}
+
+R { 7303} {0} {} { A dungeon (sw,se,e,s,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7302} {sw} {sw} {12} {0} {} {1.000}
+E { 7304} {s} {s} {4} {0} {} {1.000}
+E { 7306} {se} {se} {6} {0} {} {1.000}
+E { 7305} {e} {e} {2} {0} {} {1.000}
+E { 7301} {w} {w} {8} {0} {} {1.000}
+
+R { 7304} {0} {} { A dungeon (nw,n,ne,e,w)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7302} {w} {w} {8} {0} {} {1.000}
+E { 7301} {nw} {nw} {9} {0} {} {1.000}
+E { 7303} {n} {n} {1} {0} {} {1.000}
+E { 7305} {ne} {ne} {3} {0} {} {1.000}
+E { 7306} {e} {e} {2} {0} {} {1.000}
+
+R { 7305} {0} {} { A dungeon (sw,w,s,e)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7304} {sw} {sw} {12} {0} {} {1.000}
+E { 7306} {s} {s} {4} {0} {} {1.000}
+E { 7307} {e} {e} {2} {0} {} {1.000}
+E { 7303} {w} {w} {8} {0} {} {1.000}
+
+R { 7306} {0} {} { A dungeon (nw,n,ne,w)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7304} {w} {w} {8} {0} {} {1.000}
+E { 7303} {nw} {nw} {9} {0} {} {1.000}
+E { 7305} {n} {n} {1} {0} {} {1.000}
+E { 7307} {ne} {ne} {3} {0} {} {1.000}
+
+R { 7307} {0} {} { A dungeon (sw,e,w)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7306} {sw} {sw} {12} {0} {} {1.000}
+E { 7308} {e} {e} {2} {0} {} {1.000}
+E { 7305} {w} {w} {8} {0} {} {1.000}
+
+R { 7308} {0} {} { A dungeon (w)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7307} {w} {w} {8} {0} {} {1.000}
+
+R { 7309} {0} {} { A dungeon (n,ne,se,s,e,w)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7301} {se} {se} {6} {0} {} {1.000}
+E { 7299} {s} {s} {4} {0} {} {1.000}
+E { 7292} {w} {w} {8} {0} {} {1.000}
+E { 7312} {n} {n} {1} {0} {} {1.000}
+E { 7313} {ne} {ne} {3} {0} {} {1.000}
+E { 7310} {e} {e} {2} {0} {} {1.000}
+
+R { 7310} {0} {} { A dungeon (nw,n,sw,s,e,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7301} {s} {s} {4} {0} {} {1.000}
+E { 7299} {sw} {sw} {12} {0} {} {1.000}
+E { 7309} {w} {w} {8} {0} {} {1.000}
+E { 7312} {nw} {nw} {9} {0} {} {1.000}
+E { 7313} {n} {n} {1} {0} {} {1.000}
+E { 7311} {e} {e} {2} {0} {} {1.000}
+
+R { 7311} {0} {} { A dungeon (nw,sw,e,w)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7301} {sw} {sw} {12} {0} {} {1.000}
+E { 7310} {w} {w} {8} {0} {} {1.000}
+E { 7313} {nw} {nw} {9} {0} {} {1.000}
+E { 7314} {e} {e} {2} {0} {} {1.000}
+
+R { 7312} {0} {} { A dungeon (n,ne,se,s,e)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7309} {s} {s} {4} {0} {} {1.000}
+E { 7310} {se} {se} {6} {0} {} {1.000}
+E { 7313} {e} {e} {2} {0} {} {1.000}
+E { 7327} {n} {n} {1} {0} {} {1.000}
+E { 7328} {ne} {ne} {3} {0} {} {1.000}
+
+R { 7313} {0} {} { A dungeon (nw,n,sw,se,s,w)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7309} {sw} {sw} {12} {0} {} {1.000}
+E { 7310} {s} {s} {4} {0} {} {1.000}
+E { 7311} {se} {se} {6} {0} {} {1.000}
+E { 7327} {nw} {nw} {9} {0} {} {1.000}
+E { 7328} {n} {n} {1} {0} {} {1.000}
+E { 7312} {w} {w} {8} {0} {} {1.000}
+
+R { 7314} {0} {} { A dungeon (w,e)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7311} {w} {w} {8} {0} {} {1.000}
+E { 7315} {e} {e} {2} {0} {} {1.000}
+
+R { 7315} {0} {} { A dungeon (ne,e,w)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7314} {w} {w} {8} {0} {} {1.000}
+E { 7316} {ne} {ne} {3} {0} {} {1.000}
+E { 7317} {e} {e} {2} {0} {} {1.000}
+
+R { 7316} {0} {} { A dungeon (sw,se,ne,e,s)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7315} {sw} {sw} {12} {0} {} {1.000}
+E { 7317} {s} {s} {4} {0} {} {1.000}
+E { 7319} {se} {se} {6} {0} {} {1.000}
+E { 7318} {e} {e} {2} {0} {} {1.000}
+E { 7340} {ne} {ne} {3} {0} {} {1.000}
+
+R { 7317} {0} {} { A dungeon (n,ne,w,e)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7315} {w} {w} {8} {0} {} {1.000}
+E { 7316} {n} {n} {1} {0} {} {1.000}
+E { 7318} {ne} {ne} {3} {0} {} {1.000}
+E { 7319} {e} {e} {2} {0} {} {1.000}
+
+R { 7318} {0} {} { A dungeon (n,sw,ne,s,e,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7317} {sw} {sw} {12} {0} {} {1.000}
+E { 7319} {s} {s} {4} {0} {} {1.000}
+E { 7320} {e} {e} {2} {0} {} {1.000}
+E { 7326} {ne} {ne} {3} {0} {} {1.000}
+E { 7316} {w} {w} {8} {0} {} {1.000}
+E { 7340} {n} {n} {1} {0} {} {1.000}
+
+R { 7319} {0} {} { A dungeon (nw,n,ne,e,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7317} {w} {w} {8} {0} {} {1.000}
+E { 7316} {nw} {nw} {9} {0} {} {1.000}
+E { 7318} {n} {n} {1} {0} {} {1.000}
+E { 7320} {ne} {ne} {3} {0} {} {1.000}
+E { 7321} {e} {e} {2} {0} {} {1.000}
+
+R { 7320} {0} {} { A dungeon (nw,n,sw,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7319} {sw} {sw} {12} {0} {} {1.000}
+E { 7326} {n} {n} {1} {0} {} {1.000}
+E { 7318} {w} {w} {8} {0} {} {1.000}
+E { 7340} {nw} {nw} {9} {0} {} {1.000}
+
+R { 7321} {0} {} { A dungeon (w,e)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7319} {w} {w} {8} {0} {} {1.000}
+E { 7322} {e} {e} {2} {0} {} {1.000}
+
+R { 7322} {0} {} { A dungeon (w,e)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7321} {w} {w} {8} {0} {} {1.000}
+E { 7323} {e} {e} {2} {0} {} {1.000}
+
+R { 7323} {0} {} { A dungeon (w,e)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7322} {w} {w} {8} {0} {} {1.000}
+E { 7324} {e} {e} {2} {0} {} {1.000}
+
+R { 7324} {0} {} { A dungeon (w)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7323} {w} {w} {8} {0} {} {1.000}
+
+R { 7325} {0} {} { A dungeon (n,w,e,s)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7337} {n} {n} {1} {0} {} {1.000}
+E { 7338} {w} {w} {8} {0} {} {1.000}
+E { 7339} {e} {e} {2} {0} {} {1.000}
+E { 7340} {s} {s} {4} {0} {} {1.000}
+
+R { 7326} {0} {} { A dungeon (sw,ne,s,e)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7320} {s} {s} {4} {0} {} {1.000}
+E { 7318} {sw} {sw} {12} {0} {} {1.000}
+E { 7341} {ne} {ne} {3} {0} {} {1.000}
+E { 7342} {e} {e} {2} {0} {} {1.000}
+
+R { 7327} {0} {} { A dungeon (nw,n,ne,se,s,e,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7313} {se} {se} {6} {0} {} {1.000}
+E { 7312} {s} {s} {4} {0} {} {1.000}
+E { 7284} {nw} {nw} {9} {0} {} {1.000}
+E { 7283} {n} {n} {1} {0} {} {1.000}
+E { 7329} {ne} {ne} {3} {0} {} {1.000}
+E { 7328} {e} {e} {2} {0} {} {1.000}
+E { 7289} {w} {w} {8} {0} {} {1.000}
+
+R { 7328} {0} {} { A dungeon (nw,n,sw,ne,s,e,w)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7313} {s} {s} {4} {0} {} {1.000}
+E { 7312} {sw} {sw} {12} {0} {} {1.000}
+E { 7327} {w} {w} {8} {0} {} {1.000}
+E { 7283} {nw} {nw} {9} {0} {} {1.000}
+E { 7329} {n} {n} {1} {0} {} {1.000}
+E { 7332} {ne} {ne} {3} {0} {} {1.000}
+E { 7333} {e} {e} {2} {0} {} {1.000}
+
+R { 7329} {0} {} { A dungeon (nw,n,sw,ne,se,s,e,w)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7327} {sw} {sw} {12} {0} {} {1.000}
+E { 7283} {w} {w} {8} {0} {} {1.000}
+E { 7285} {nw} {nw} {9} {0} {} {1.000}
+E { 7331} {ne} {ne} {3} {0} {} {1.000}
+E { 7330} {n} {n} {1} {0} {} {1.000}
+E { 7333} {se} {se} {6} {0} {} {1.000}
+E { 7328} {s} {s} {4} {0} {} {1.000}
+E { 7332} {e} {e} {2} {0} {} {1.000}
+
+R { 7330} {0} {} { A dungeon (sw,se,e,s,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7283} {sw} {sw} {12} {0} {} {1.000}
+E { 7285} {w} {w} {8} {0} {} {1.000}
+E { 7331} {e} {e} {2} {0} {} {1.000}
+E { 7332} {se} {se} {6} {0} {} {1.000}
+E { 7329} {s} {s} {4} {0} {} {1.000}
+
+R { 7331} {0} {} { A dungeon (n,sw,w,s)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7274} {n} {n} {1} {0} {} {1.000}
+E { 7329} {sw} {sw} {12} {0} {} {1.000}
+E { 7330} {w} {w} {8} {0} {} {1.000}
+E { 7332} {s} {s} {4} {0} {} {1.000}
+
+R { 7332} {0} {} { A dungeon (nw,n,sw,s,e,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7331} {n} {n} {1} {0} {} {1.000}
+E { 7330} {nw} {nw} {9} {0} {} {1.000}
+E { 7329} {w} {w} {8} {0} {} {1.000}
+E { 7328} {sw} {sw} {12} {0} {} {1.000}
+E { 7333} {s} {s} {4} {0} {} {1.000}
+E { 7334} {e} {e} {2} {0} {} {1.000}
+
+R { 7333} {0} {} { A dungeon (nw,n,ne,w)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7329} {nw} {nw} {9} {0} {} {1.000}
+E { 7328} {w} {w} {8} {0} {} {1.000}
+E { 7332} {n} {n} {1} {0} {} {1.000}
+E { 7334} {ne} {ne} {3} {0} {} {1.000}
+
+R { 7334} {0} {} { A dungeon (sw,w)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7333} {sw} {sw} {12} {0} {} {1.000}
+E { 7332} {w} {w} {8} {0} {} {1.000}
+
+R { 7335} {0} {} { A dungeon (w,e)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7273} {w} {w} {8} {0} {} {1.000}
+E { 7336} {e} {e} {2} {0} {} {1.000}
+
+R { 7336} {0} {} { A dungeon (se,w)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7335} {w} {w} {8} {0} {} {1.000}
+E { 7337} {se} {se} {6} {0} {} {1.000}
+
+R { 7337} {0} {} { A dungeon (nw,sw,s,se)} { } {You stand in the lower level of the dungeon.  It is much the same as the upper level.  Groans from the past-living still echoes in this chamber.  You are barely able to see the cold stone upon which you stand.   } {Hotel Transylvania} {} {} {} {1.000}
+E { 7336} {nw} {nw} {9} {0} {} {1.000}
+E { 7325} {s} {s} {4} {0} {} {1.000}
+E { 7339} {se} {se} {6} {0} {} {1.000}
+E { 7338} {sw} {sw} {12} {0} {} {1.000}
+
+R { 7338} {0} {} { A dungeon (ne,e,se)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7325} {e} {e} {2} {0} {} {1.000}
+E { 7340} {se} {se} {6} {0} {} {1.000}
+E { 7337} {ne} {ne} {3} {0} {} {1.000}
+
+R { 7339} {0} {} { A dungeon (nw,sw,e,w)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7325} {w} {w} {8} {0} {} {1.000}
+E { 7340} {sw} {sw} {12} {0} {} {1.000}
+E { 7341} {e} {e} {2} {0} {} {1.000}
+E { 7337} {nw} {nw} {9} {0} {} {1.000}
+
+R { 7340} {0} {} { A dungeon (nw,n,sw,se,ne,s)} { } {You stand in the lower level of the dungeon.  The dank air fills your nostrils and feelings of nausea begin to overwhelm your senses.  Each step produces crunching that sounds sends your imagination reeling.  Broken chains lie in shambles on the floor. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7325} {n} {n} {1} {0} {} {1.000}
+E { 7338} {nw} {nw} {9} {0} {} {1.000}
+E { 7316} {sw} {sw} {12} {0} {} {1.000}
+E { 7320} {se} {se} {6} {0} {} {1.000}
+E { 7339} {ne} {ne} {3} {0} {} {1.000}
+E { 7318} {s} {s} {4} {0} {} {1.000}
+
+R { 7341} {0} {} { A dungeon (sw,s,w)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7326} {sw} {sw} {12} {0} {} {1.000}
+E { 7342} {s} {s} {4} {0} {} {1.000}
+E { 7339} {w} {w} {8} {0} {} {1.000}
+
+R { 7342} {0} {} { A dungeon (w,n)} { } {You stand in the lower level of the dungeon.  Muffled groans seem to come from all directions.  The lack of light enhances the feeling of danger and doom that is ever present here.  Perhaps it is time to consider an exit strategy. } {Hotel Transylvania} {} {} {} {1.000}
+E { 7326} {w} {w} {8} {0} {} {1.000}
+E { 7341} {n} {n} {1} {0} {} {1.000}
 
 R {10000} {0} {} {Inside a Void Tunnel (enter)} { } {You are caught inside a bubble in the maelstrom of time and space.  Purple and pink whorls of temporal energy explode all around you.  A faint shimmer is all that protects you from eternal oblivion.  You can exit the void tunnel either back to the general safety of the world you know, or you can dive ahead into dimensions unknown. } {Kayos Wars} {event} {} {} {1.000}
 E { 1580} {enter} {enter} {0} {0} {} {1.000}

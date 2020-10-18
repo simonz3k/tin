@@ -9,6 +9,7 @@
 	#switch {%1} {
 		#case {2} {#var {botpath} {e;e;e;n;n;n;n;e;e;s;s;w;w;s;e;e;e;n;n;n;n;w;w;w;w;s;s;s;s;unlock door;w;take key;e;n;n;n;n;e;e;e;e;s;s;s;s;w;w;w;s;w;w;w;n;n;w;w;n;unlock door;w;w;s;s;sw;w;w;w;n;nw;e;e;e;e;n;ne;e;e;e;w;w;w;sw;nw;nw;w;e;sw;e;se;w;w;s;w;se;e;e;e;s;ne;n;n;e;e;s;s;w;se;s;e;s;s}};
 		#case {3} {#var {botpath} {unlock door;w;w;s;s;sw;w;w;w;n;nw;e;e;e;e;n;ne;e;e;e;w;w;w;sw;nw;nw;w;e;sw;e;se;w;w;s;w;se;e;e;e;s;ne;n;n;e;e;s;s;w;se;s;e;s;s}};
+		#case {4} {#var {botpath} {w;w;w;sw;nw;nw;w;e;sw;e;se;w;w;s;w;se;e;e;e;s;ne;n;n;e;e;s;s;w;se;s;e;s;s}};
 		#default {#var {botpath} {n;n;e;w;w;n;nw;e;e;s;n;w;n;n;s;e;n;e;n;s;w;s;e;e;w;s;s;search shelves;n;n;w;w;w;s;take key;n;e;e;e;s;s;e;e;e;n;n;n;n;e;e;s;s;w;w;s;e;e;e;n;n;n;n;w;w;w;w;s;s;s;s;unlock door;w;take key;e;n;n;n;n;e;e;e;e;s;s;s;s;w;w;w;s;w;w;w;n;n;w;w;n;unlock door;w;w;s;s;sw;w;w;w;n;nw;e;e;e;e;n;ne;e;e;e;w;w;w;sw;nw;nw;w;e;sw;e;se;w;w;s;w;se;e;e;e;s;ne;n;n;e;e;s;s;w;se;s;e;s;s}};
 	}
 	#path load $botpath;

@@ -1,0 +1,28 @@
+#class {bot} {open}
+
+#var no_loop 1
+!dungeons;
+!scaler 136;
+
+
+#var {botpath} {n;d;e;e;e;e;e;e;e;w;se;w;w;s;w;n;sw;n;w;w;w;s;s;s;e;n;n;e;s;e;e;e;s;e;sw;w;n;w;s;w;n;sw;s;e;s;w;s;w;se;e;n;e;s;e;n;e;s;e;ne;e;w;w;w;w;nw;n;e;s;e;e;e;e;e;e;e;e;e;w;w;w;w;nw;e;e;n;e;n;w;sw;nw;e;n;nw;w;w;nw;n;w;w;w;w;w;u;s}
+#NOP  zombie waiter offering drinks|
+#act {^=M={A buff vampire|A chubby vampire|An ugly vampire| zombie waiter offering drinks}} {
+	#var mobname vampire;
+	_check_mob;
+}
+#alias {bp} {
+	#switch {%1} {
+		#case {2} {#var {botpath} {e;w;s;w;w;w;w;w;w;s;e;e;e;e;e;w;s;w;w;w;w;s;e;e;e;w;s;w;w;s;e;w;s;w;s}};
+		#case {3} {#var {botpath} {e;e;e;e;w;s;w;w;w;w;s;e;e;e;w;s;w;w;s;e;w;s;w;s}};
+		#case {4} {#var {botpath} {e;e;e;w;s;w;w;s;e;w;s;w;s}};
+		#default {#var {botpath} {n;d;e;e;e;e;e;e;e;w;se;w;w;s;w;n;sw;n;w;w;w;s;s;s;e;n;n;e;s;e;e;e;s;e;sw;w;n;w;s;w;n;sw;s;e;s;w;sw;w;se;e;n;e;s;e;n;e;s;e;ne;e;w;w;w;w;nw;n;e;s;e;e;e;e;e;ee;e;e;w;w;w;w;nw;e;e;n;e;n;w;sw;nw;e;n;nw;w;w;nw;n;w;w;w;w;w;u;s}};
+	}
+	#path load $botpath;
+}
+
+
+
+#alias {botcleanup} {#var cact 0;#showme Cact: $cact;dso;#var disa 0};
+
+#class {bot} {close}

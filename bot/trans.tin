@@ -26,13 +26,6 @@
 	_check_mob
 }
 
-#act {standard glowrod goes dark} {
-	!light rod;
-	!smr backpack;
-	!get rod from backpack;
-	!keep rod;
-	!sm backpack;
-}
 
 #alias {botcleanup} {#var cact 0;#showme Cact: $cact;dso;#var disa 0};
 
