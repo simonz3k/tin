@@ -55,7 +55,8 @@ prompt >$nl$
 					#path walk
 				} {
 					.pause;
-					k $mobname;
+					!k $mobname;
+					#if {$gcon == 1} {#delay {1} {!con}};
 					#if {$cact == 1} {#delay {2} {rf}};
 					#var foundmob 1;
 				}
@@ -87,6 +88,7 @@ prompt >$nl$
 		#delay {0} {..}
 	}
 }
+
 
 
 

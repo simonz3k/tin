@@ -1,0 +1,21 @@
+#class {bot} {open}
+
+#var dtaco 0;
+#alias {dtaco} { #if {$dtaco == 0} {#var dtaco 1} {#var dtaco 0} #var dtaco};
+dtaco;
+
+#alias {dotaco} {e;grab shell}
+#act {You try to grab a taco shell, but they all wriggle away from your grasp!} {e;grab lettuce;#var dtacoingr lettuce;!lev}
+#act {You try to grab some lettuce, but it shrinks away from your hand!} {!levo;ga;e;grab tomatoes;#var dtacoingr tomatoes}
+#act {You try to grab some tomatoes but they quiver like jello and slime away} {e;grab cheese;#var dtacoingr cheese}
+#act {You try to grab a handful of cheese, but it slips away from you.} {s;grab meat;#var dtacoingr meat}
+#act {You try to grab some meat, but it creeps away from your grasp!} {get all;w;grab cream;#var dtacoingr cream}
+#act {You try to grab a scoop of the sour cream, but it quivers away from you.} {get all;w;grab guac;#var dtacoingr guac}
+#act {You try to grab a scoop of the guacamole, but it quivers away from you.} {get all;w;grab sauce;#var dtacoingr sauce}
+#act {You try to grab a packet of hot sauce, but it crinkles away from you.} {#nop}
+
+#var weapon axe
+#act {The melting cheese finally evaporates from %w.} {ls1}
+#act {The guacamole coating %w finally oozes off.} {!wear all}
+
+#class {bot} {close}

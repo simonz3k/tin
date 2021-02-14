@@ -48,7 +48,7 @@
 
 /* PARTY (Until they add timestamps) */
 #act {~^\e[0m\e[33;1m[PARTY]\e[0m} {-cl;#bell} {4}
-#act {^[PARTY] {GOLD divvy called by|All gold divvied}} {#nop} {3}
+#act {^[PARTY] {GOLD divvy called by|All gold divvied}} {#line gag} {3}
 #act {~^\e[0m[PARTY]} {#nop} {3}
 
 #act {Lupin tells} {#nop} {0}

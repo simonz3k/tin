@@ -3,6 +3,8 @@
   #VAR {session[name]} {%0};
 };
 
+#VAR {my_name} {simonz};
+
 #SESSION {3k} {3k.org} {3000};simonz;1661
 #CONFIG {packet patch} {0.5};
 #CONFIG {command echo} {off};
@@ -19,6 +21,7 @@
 #read ./mip/mip.tin;
 #read ./mip/miphp.tin;
 #read ./mip/graph.tin;
+#NOP #read ./mip/chat.tin;
 #read ./map/mapper.tin;
 #read ./crafting/crafting.tin;
 #read ./char/simonz/trigs.tin;

@@ -39,7 +39,7 @@
 
 #act {%1 leaves following %2} {
 	#format {follower} {%l} {%1};
-	#if {%2 == "$following"} {
+	#if {%2 == "$following" && %1 == $my_name} {
 		#map move $foldir
 	}
 } {4}
@@ -409,6 +409,9 @@
 
 #NOP Rocky Hill
 #act {^Waving their rusty scimitars and growling loudly, the jackalmen} {#map undo}
+
+#NOP Section Z
+#act {^You press PAUSE on the game, saving the rest for later.} {#map go 7343}
 
 #NOP SolChem
 #act {^The gang member shoves you back.} {#map undo}

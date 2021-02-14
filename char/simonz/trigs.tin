@@ -5,6 +5,9 @@
 #var cact 0;
 #alias {cact} { #if {$cact == 0} {#var cact 1} {#var cact 0} #var cact};
 
+#var gcon 0;
+#alias {gcon} { #if {$gcon == 0} {#var gcon 1} {#var gcon 0} #var gcon};
+
 #var medp 50;
 #alias {medp} {#showme medp changed from $medp to %1; #var medp %1};
 
@@ -31,6 +34,7 @@
     #if {$tank == 1} {
         !wrap;        
         !focus absorb energy;
+	!dg;
         !get coins;
     };
     #NOP !get all;
@@ -39,7 +43,7 @@
 
     #if {$gcheck == 1} {!gs};
 
-    #if {$cbot == 1} {!g};
+    #NOP #if {$cbot == 1} {!g};
 
     #if {$bot == 1} {
         #act {stir from your meditation} { #delay {2} {!focus meditation;#unact {stir from your meditation}}};
@@ -75,6 +79,7 @@
             #delay {2} {.bot};
         };
         #if {$disa == 1} {!ds};
+	#if {$dtaco == 1} {!ga;!grab $dtacoingr};
     } {!glance};
     #if {$coon == 1} {!fuse 100};
 #NOP this is in the bot script now #if {$cact == 1} {#delay {10} {rf}};

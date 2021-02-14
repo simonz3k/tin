@@ -97,10 +97,8 @@
 		.stop;
 		#unvar bot;
 		clog {deadman triggered, 2min countdown, 'botres' to continue};
-		#delay {gohome} {
-			botkill;
-			go home;
-		} {120};
+		#NOP delay {gohome} {botkill;go home;} {120};
+		
 		#alias {botres} {#undelay {gohome};..;clog {deadman cancelled}};
 		#NOP class trigs kill;
 	};
