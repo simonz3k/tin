@@ -38,14 +38,13 @@ prompt >$nl$
 	#var bot 1;
 	#var halt 0;
 	#class {xbot} {open};
-		#delay {4};
 		#act {{^=S=}} {xx} {1};
 		#alias {xx} {
 			#var foundplayer 0;
 			#var itemfound 0;
 			#act {^>$} {
-				#delay {2} {#path walk};
-				#unact {^>$}
+				#path walk;
+				#unact {^>$};
 			} {1}
 		};
 		#alias {_check_mob} {

@@ -8,7 +8,7 @@ CB
 
 F 9
 
-I 1643
+I 7818
 
 L ▪ ╹ ╺ ┗ ╻ ┃ ┏ ┣ ╸ ┛ ━ ┻ ┓ ┫ ┳ ╋ X
 
@@ -15153,7 +15153,7 @@ E { 3155} {w} {w} {8} {0} {} {1.000}
 R { 3153} {0} {} {The Wrangler Room (s)} { } {This wing of the crafting guild belongs to the chaos wranglers.  Giant high-backed chairs and elaborate furnishings are scattered throughout the room.  Within the chairs, or more commonly, standing up, or even more commonly, standing up on the furnishings and shouting, are the chaos wranglers.  They are discussing (at very high volume) various topics of interest such as gem capacities and efficient ways of gathering chaotic energy. } {Mud} {} {} {} {1.000}
 E { 3152} {s} {s} {4} {0} {} {1.000}
 
-R { 3154} {0} {} {The Enchanter Room (n,e,kiln)} { } {This wing of the crafting guild belongs to the enchanters.  Around you, there is a bustle of activity as enchanters come and go with various magical components.  Deeper into the wing, you can hear the fires of kilns and the occaisional explosion. } {Mud} {kiln} {} {} {1.000}
+R { 3154} {0} {} {The Enchanter Room (n,e,kiln)} { } {This wing of the crafting guild belongs to the enchanters.  Around you, there is a bustle of activity as enchanters come and go with various magical components.  Deeper into the wing, you can hear the fires of kilns and the occaisional explosion. } {Mud} {} {} {} {1.000}
 E { 3152} {n} {n} {1} {0} {} {1.000}
 E { 3172} {e} {e} {2} {0} {} {1.000}
 E { 3173} {kiln} {kiln} {0} {0} {} {1.000}
@@ -15244,7 +15244,7 @@ R { 3171} {0} {<118>} {} { } {} {} {} {} {} {1.000}
 R { 3172} {0} {} {The Enchanter Recipe Shop (w)} { } {Various pots and jars line the whitewashed walls, but these are clearly for show.  Your keen eye spots the real prize hidden among the jars: the mouldings.  These are the key to the whole enchanting process!  There is no shopkeeper here, but a bobbing ball of light sits at the one end of the sterile room, repeating: 'You can 'list' or 'buy' items here.' You can also 'showitem' to see a specific recipe, or you can 'list nontrivial' if you want to see only those recipes that will provide you with skillups. } {Mud} {} {} {} {1.000}
 E { 3154} {w} {w} {8} {0} {} {1.000}
 
-R { 3173} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 3173} {0} {<118>} {} { } {} {} {kiln} {} {} {1.000}
 E { 3154} {out} {out} {0} {0} {} {1.000}
 
 R { 3174} {0} {} {-= Wayhaven Bazaar =- (s,e)} { } {You wander among the maze of stalls and multitudes of people within the Bazaar of the City of Wayhaven.  Merchants from throughout the realm have set up their stalls here in the Bazaar assaulting your senses with myriad sights and scents of the bizarre and exotic. } {Wayhaven} {} {} {} {1.000}
@@ -17848,6 +17848,10 @@ R { 3773} {0} {} {Desolate plains (n,s,w,e)} { } {Desolate plains Could it be yo
 E { 3770} {w} {w} {8} {0} {} {1.000}
 E { 3775} {s} {s} {4} {0} {} {1.000}
 E { 3776} {e} {e} {2} {0} {} {1.000}
+
+R { 3774} {0} {} {Forest Path (n,s)} { } {You hear the sounds of birds and other wildlife as you walk along this forest path.  The forest on each side of the trail is very thick, and won't allow you to pass into the woods.  Further to the south, you see what appears to be a town gate. } {Around the town of Angelo} {} {} {} {1.000}
+E { 4888} {n} {n} {1} {0} {} {1.000}
+E { 7808} {s} {s} {4} {0} {} {1.000}
 
 R { 3775} {0} {} {Desolate plains (n,s,e,w)} { } {Desolate plains The ground under your feet cracks and snaps as you walk. The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.  The clouds above you move in over the sun and block out its light.  You can hear the roar of some far off motor. Who'd be way out here?  To the west and north you make out the continuation of the plains.   } {Mud} {} {} {} {1.000}
 E { 3773} {n} {n} {1} {0} {} {1.000}
@@ -23237,8 +23241,9 @@ E { 4886} {n} {n} {1} {0} {} {1.000}
 E { 4888} {s} {s} {4} {0} {} {1.000}
 E { 4889} {nw} {clear log;nw} {9} {1} {} {1.000}
 
-R { 4888} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+R { 4888} {0} {} {Forest Path (n,s)} { } {The dark trail grows slightly wider as it continues southward.  Sounds of busy market place can be heard coming through the forest, although the trees are far too dense to detect their source.  The dirt along the trail is hard packed, giving the trail a well traveled appearance. } {Around the town of Angelo} {} {} {} {1.000}
 E { 4887} {n} {n} {1} {0} {} {1.000}
+E { 3774} {s} {s} {4} {0} {} {1.000}
 
 R { 4889} {0} {} {A forgotten forest trail (se,n)} { } { Round: 0 Fdef Rate: 0.610584 =S=A forgotten forest trail (se,n)                             =S=      ---*---   You stumble into the forest following a long lost trail. Wild growth of grass and bushes covers the trail and you wonder why all this has been abandoned. Peering ahead, you can see the trail splits up in two directions. } {Forest Trail} {} {} {} {1.000}
 E { 4887} {se} {se} {6} {1} {} {1.000}
@@ -36937,6 +36942,90 @@ E { 7807} {n} {n} {1} {0} {} {1.000}
 
 R { 7807} {0} {} {Servant's room (s)} { } {This room is where Hovis, Zosimus's servant, sleeps.  It is he who obviously tends to the garden, as his room is neat and tidy.  A simple servant's cot sits next to a small table with neatly stacked papers.  There is precious little else here that suggests the room is regularly inhabited. } {Alchemist's House} {} {} {} {1.000}
 E { 7806} {s} {s} {4} {0} {} {1.000}
+
+R { 7808} {0} {} {Town entrance of Angelo (n,s)} { } {Stepping through the forest, you have come to a large gate leading into a small town.  The gate stands open, but swings with an eerie squeal as the wind blows it gently.  From each side of the gate, a large brick wall appears to extend across the northern border of the town.  Taking a glance southward down the cobblestone road, it would appear that this town is going through hard times.  The buildings are in disrepair, and stray bits of debris fly across the road as they are blown in the gentle breeze.  One can only wonder what has caused such  $world   Uptime: 7.9 days  Reboot: 1.3 days  Lag: 0.00  Idle: [00:00:02]/900   grief upon this small town. } {Around the town of Angelo} {} {} {} {1.000}
+E { 3774} {n} {n} {1} {0} {} {1.000}
+E { 7809} {s} {s} {4} {0} {} {1.000}
+
+R { 7809} {0} {} {Town of Angelo (s,w,n)} { } {The wind howls as it travels along the cobblestone streets of Angelo. An eerie squeak can be heard from the gate just north as it echoes off the brick walls.  A bit of debris floats in the wind, occasionally bouncing off the cobblestones.  Looking down the street, you see an occasional citizen traveling in and out of buildings, but they scurry away as you look their direction.  Just to the west is a run-down shack that appears to be a guard post.  The road continues south into the heart of Angelo. } {Around the town of Angelo} {} {} {} {1.000}
+E { 7808} {n} {n} {1} {0} {} {1.000}
+E { 7810} {s} {s} {4} {0} {} {1.000}
+E { 7811} {w} {w} {8} {0} {} {1.000}
+
+R { 7810} {0} {} {Town of Angelo (s,e,w,n)} { } {The cobblestone roads intersect as you approach the center of the city.  Glancing in each direction you see that the streets are fairly deserted.  An occasional citizen can be found along the road, but they quickly turn away as you look in their direction.  A strong breeze blows towards the south, causing pieces of debris to blow around and bounce off the stones.  To the southeast appears to be some kind of town center with a statue. } {Around the town of Angelo} {} {} {} {1.000}
+E { 7809} {n} {n} {1} {0} {} {1.000}
+E { 7812} {s} {s} {4} {0} {} {1.000}
+E { 7813} {e} {e} {2} {0} {} {1.000}
+E { 7814} {w} {w} {8} {0} {} {1.000}
+
+R { 7811} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7809} {e} {e} {2} {0} {} {1.000}
+
+R { 7812} {0} {} {Town of Angelo (e,s,n)} { } {A gentle northern wind blows the loose dirt and debris along the cobblestone streets.  Looking towards the south, you see the large brick wall that surrounds the town at the end of the road.  The road also leads north out of town.   Just to the east appears to be some kind of shrine or statue within the town square.  It's covered in weeds and moss and doesn't appear to be well-kept. } {Around the town of Angelo} {} {} {} {1.000}
+E { 7810} {n} {n} {1} {0} {} {1.000}
+E { 7815} {e} {e} {2} {0} {} {1.000}
+E { 7816} {s} {s} {4} {0} {} {1.000}
+E { 7823} {w} {w} {8} {0} {} {1.000}
+
+R { 7813} {0} {} {Town of Angelo (s,e,w,n)} { } {Bits of debris fly before you as you walk along the cobblestone streets of Angelo.  A gentle breeze blows and the distinctive sounds of a hammer and anvil can be heard from the shop to the north.  The streets are mostly deserted, and what few citizens you do see quickly scurry out of sight.  Farther to the east appears to be the market section of the town while to the south appears to be some kind of statue or shrine. } {Around the town of Angelo} {} {} {} {1.000}
+E { 7810} {w} {w} {8} {0} {} {1.000}
+E { 7815} {s} {s} {4} {0} {} {1.000}
+E { 7817} {e} {e} {2} {0} {} {1.000}
+E { 7818} {n} {n} {1} {0} {} {1.000}
+
+R { 7814} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7810} {e} {e} {2} {0} {} {1.000}
+
+R { 7815} {0} {} {Town of Angelo (w,n)} { } {Standing within the town square of Angelo, this once beautiful garden is now just a field of weeds.  The ground is heavily marred from people walking across it and is cluttered with large stones, scraps of metal and various other debris that people have left.  Within the center of the square is a large statue.  As you stand within the field, a gentle breeze blows from the north and a strange sense of foreboding tells you that something about this statue isn't quite right. } {Around the town of Angelo} {} {} {} {1.000}
+E { 7812} {w} {w} {8} {0} {} {1.000}
+E { 7813} {n} {n} {1} {0} {} {1.000}
+
+R { 7816} {0} {} {Town of Angelo (e,w,n)} { } {The road comes to an abrupt end as the protective wall cuts off any further travel to the south.  The cobblestones do continue to the east and west though.  Looking back toward the north, a cool breeze blows in your face as you look towards the heart of the city.  Off to the east appears to be some kind of training grounds, while the street looks quite deserted to the west. } {Around the town of Angelo} {} {} {} {1.000}
+E { 7812} {n} {n} {1} {0} {} {1.000}
+E { 7819} {e} {e} {2} {0} {} {1.000}
+E { 7820} {w} {w} {8} {0} {} {1.000}
+E { 7821} {e w} {e w} {0} {0} {} {1.000}
+
+R { 7817} {0} {} {Town of Angelo (s,e,w,n)} { } {Flies and other various insects appear to infest this section of the town.  They seem attracted to the meat market directly to the north.  Several of the cobblestones within the road are cracked and the gaps are filled with packed dirt.  To the east appears to be a large barricade of some sort, while the road extends far to the west.  On the south side of the road appears to be some kind of general store. } {Around the town of Angelo} {} {} {} {1.000}
+E { 7813} {w} {w} {8} {0} {} {1.000}
+E { 7824} {s} {s} {4} {0} {} {1.000}
+E { 7825} {e} {e} {2} {0} {} {1.000}
+E { 7826} {n} {n} {1} {0} {} {1.000}
+
+R { 7818} {0} {} {Bob Blackburn's Smith Shop (s)} { } {This small shack belongs to the town smith.  Bits of metal and scraps of leather litter the dirt floor.  The shack is made of wood, with many items simply nailed into the wall for decoration.  The rear of the building is bucked up against the town wall.  The heat in the shack is near intolerable as the fire pit in the back of the shack heats several bars of iron.  Near the center of the room is a large anvil.  The front of the building is completely open, leading back to the road south. } {Around the town of Angelo} {bob} {} {} {1.000}
+E { 7813} {s} {s} {4} {0} {} {1.000}
+
+R { 7819} {0} {} {Town of Angelo (e,w)} { } {The cobblestone street fades into a large dirt field as you travel towards the east.  Looking across the field, you see a large amount of training equipment for practicing the art of combat.  To the west, the cobblestone road leads into a deserted part of town and just to the north appears to be the town square, where a large statue stands.  The southern end of the field ends abruptly at the town's brick wall and a large wooden shack is just off to the east. =M=Town Guard of Angelo. =M=Town Guard of Angelo. =M=Town Guard of Angelo. >  $world   Uptime: 7.9 days  Reboot: 1.3 days  Lag: 0.00  Idle: [00:00:01]/900   HP:5754/5376 SP:1273/ 832 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 24.34 H:   107%    S:   153%    G1:   100%    G2:   0%    Fdr: 0.509091  FXP: 6.44 W:    77%   (1/15) [][][D] [LFS][GFS][RS][RP][EM][] [] [/] Round: 0  $world   Uptime: 7.9 days  Reboot: 1.3 days  Lag: 0.00  Idle: [00:00:02]/900    $world   Uptime: 7.9 days  Reboot: 1.3 days  Lag: 0.00  Idle: [00:00:03]/900   HP:5754/5376 SP:1273/ 832 GP1: 100/ 100 GP2:   0/ 100 E:   100%    GXP: 24.34 H:   107%    S:   153%    G1:   100%    G2:   0%    Fdr: 0.509091  FXP: 6.44 W:    77%   (1/15) [][][D] [LFS][GFS][RS][RP][EM][] [] [/] Round: 0 You have never been here before. =S=Town of Angelo (e,w)                                        =S=    W ---*--- E The cobblestone street fades into a large dirt field as you travel towards the east.  Looking across the field, you see a large amount of training equipment for practicing the art of combat.  To the west, the cobblestone road leads into a deserted part of town and just to the north appears to be the town square, where a large statue stands.  The southern end of the field ends abruptly at the town's brick wall and a large wooden shack is just off to the east. } {Around the town of Angelo} {} {} {} {1.000}
+E { 7816} {w} {w} {8} {0} {} {1.000}
+E { 7822} {e} {e} {2} {0} {} {1.000}
+
+R { 7820} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7816} {e} {e} {2} {0} {} {1.000}
+
+R { 7821} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+
+R { 7822} {0} {} {Town of Angelo (w)} { } {Stepping off the dirt field, you have entered what appears to be the commander's quarters.  This wooden shack is in fair condition, but it looks as if the soldiers try to keep it up.  Several of the floorboards have obviously been re-nailed down and the commander uses a makeshift desk made from a large piece of wood and a couple of barrels.  A gentle breeze blows in dust and dirt from the front windows and doorway,  causing the place to be very difficult to keep clean. } {Around the town of Angelo} {} {} {} {1.000}
+E { 7819} {w} {w} {8} {0} {} {1.000}
+
+R { 7823} {0} {<118>} {} { } {} {} {} {} {} {1.000}
+E { 7812} {e} {e} {2} {0} {} {1.000}
+
+R { 7824} {0} {} {Roland's Shop (n,e)} { } {Stepping into one of the few nice buildings of Angelo, you have entered Roland's general store.  The floor is made of sturdy wooden planks, and the room is filled with tables containing various trinkets for sale.  Roland stands behind a counter ready to sell you an item at a good price.  Rays of sunshine extend through the northern windows and they are followed by a gentle breeze.  An open doorway to the east appears to lead into a second shop.  Behind the counter is a large placard.   } {Around the town of Angelo} {} {} {} {1.000}
+E { 7817} {n} {n} {1} {0} {} {1.000}
+E { 7828} {e} {e} {2} {0} {} {1.000}
+
+R { 7825} {0} {} {Town of Angelo (n,w)} { } {You have come to the end of the road.  A large barricade blocks any further travel to the east.  Looking beyond the barricade, all you see is burned-out buildings and destruction in the old ruins of Angelo. The shop to the north appears to have fallen victim as well as it is now just a burned out shell.  The brick wall surrounding Angelo extends from the barricade and travels along the perimeter of the city.  To the south appears to be the side of a large store and the road travels west back into the city. } {Around the town of Angelo} {} {} {} {1.000}
+E { 7817} {w} {w} {8} {0} {} {1.000}
+E { 7827} {n} {n} {1} {0} {} {1.000}
+
+R { 7826} {0} {} {Meat Market (s)} { } {As you enter this wooden building, the stench nearly knocks you on your behind.  You appear to have entered the town meat market.  The market is made of wooden walls and a wood plank floor.  The floor is stained red with blood dripping from various strips of discarded beef that litter the floor.  A large counter lines the back of the room and a doorway, which apparently leads to some kind of storeroom.  Across the back wall is a large placard showing you what is for sale. } {Around the town of Angelo} {} {} {} {1.000}
+E { 7817} {s} {s} {4} {0} {} {1.000}
+
+R { 7827} {0} {} {Town of Angelo (s)} { } {Black soot covers everything within this burned-out remains of a trading post.  The once wooden floor is now just a line of cinder-burned planks that are supported by the dirt floor below.  Glancing towards the rafters, the building leans heavily to the east, apparently up against the heavy brick wall outside.  As you survey the room, the building begins to creak and groan, as if it could collapse upon you at any moment. } {Around the town of Angelo} {} {} {} {1.000}
+E { 7825} {s} {s} {4} {0} {} {1.000}
+
+R { 7828} {0} {} {Willow's House of Wonders (w)} { } {Stepping through the doorway, you have entered Willow's House of Wonders!  This small shop is unlike anything you would expect.  The walls are painted a bright orange color and along them are mounted various wands and other instruments that Willow has for sale.  The floor is made of wood, but is painted with large colorful dots of various rainbow colors.  The entire floor area is kept clear and the room has no windows.  Willow happily moves about the room, dusting his various wonders.  The only exit is through the doorway back into the general store.  } {Around the town of Angelo} {} {} {} {1.000}
+E { 7824} {w} {w} {8} {0} {} {1.000}
 
 R {10000} {0} {} {Inside a Void Tunnel (enter)} { } {You are caught inside a bubble in the maelstrom of time and space.  Purple and pink whorls of temporal energy explode all around you.  A faint shimmer is all that protects you from eternal oblivion.  You can exit the void tunnel either back to the general safety of the world you know, or you can dive ahead into dimensions unknown. } {Kayos Wars} {event} {} {} {1.000}
 E { 1580} {enter} {enter} {0} {0} {} {1.000}

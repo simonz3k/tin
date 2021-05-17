@@ -36,7 +36,6 @@ prompt >$nl$
 	#var cbot 1;
 	#var halt 0;
 	#class {xbot} {open};
-		#delay {4};
 		#act {{^=S=}} {_check_room} {1};
 		#alias {_check_room} {
 			!spelunk;

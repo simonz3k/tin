@@ -102,7 +102,7 @@
 		#alias {botres} {#undelay {gohome};..;clog {deadman cancelled}};
 		#NOP class trigs kill;
 	};
-	update_caption
+	update_caption;
 } {1}
 
 #EVENT {RECEIVED INPUT} {#var idle 0}

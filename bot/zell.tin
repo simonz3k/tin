@@ -3,6 +3,7 @@
 #var no_loop 1;
 !dungeons;
 !scaler 140;
+
 #var {botpath} {n;n;e;w;w;n;nw;e;e;s;n;w;n;n;s;e;n;e;n;s;w;s;e;e;w;s;s;search shelves;n;n;w;w;w;s;take key;n;e;e;e;s;s;e;e;e;n;n;n;n;e;e;s;s;w;w;s;e;e;e;n;n;n;n;w;w;w;w;s;s;s;s;unlock door;w;take key;e;n;n;n;n;e;e;e;e;s;s;s;s;w;w;w;s;w;w;w;n;n;w;w;n;unlock door;w;w;s;s;sw;w;w;w;n;nw;e;e;e;e;n;ne;e;e;e;w;w;w;sw;nw;nw;w;e;sw;e;se;w;w;s;w;se;e;e;e;s;ne;n;n;e;e;s;s;w;se;s;e;s;s};
 
 #alias {bp} {
@@ -83,26 +84,40 @@
 
 #alias {zf} {
 #showme zf is $zf;
-    #if {$zf == 0} {
-        #var zf 1;
-        #showme zf turned on;
-        #act {The Golem calls for help!} {
-            #ticker {zf} {
-                #if {$enemy[hp] < 10} {
-                    !k golem;
-                    #unticker {zf};
-                };
-            }{2}
-        }
-    } {
-        #showme zf turned off;
-        #var zf 0;
-        #unticker {zf};
-        #unact {The Golem calls for help!};
-    }
+	#if {$zf == 0} {
+		#var zf 1;
+		#showme zf turned on;
+		#act {The Golem calls for help!} {
+			#ticker {zf} {
+				#NOP showme ticker1;
+				#if {$enemy[hp] < 10} {
+					#NOP showme enlarging the first golem;
+					#NOP !(enlarge;
+					#NOP showme attacking the second golem;
+					!k golem;
+					#delay {2} {
+						#ticker {zf} {
+							#NOP showme ticker2, $enemy[hp];
+							#if {$enemy[hp] < 10} {
+								!k golem 2;
+								#unticker {zf};
+							};
+						}{2}
+					};
+				};
+			}{2}
+		}
+	} {
+		#showme zf turned off;
+		#var zf 0;
+		#unticker {zf};
+		#unact {The Golem calls for help!};
+	}
 };
+zf;
 
 #highlight {The Golem calls for help!} {tan b red};
+#highlight {Zelligar screams} {tab b red};
 
 #alias {botcleanup} {
 	#2 {!unkeep key;!dispose key;};

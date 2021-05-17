@@ -43,7 +43,8 @@
 #alias {ls1} {
 	sheath;
 	draw lightstaff;
-	#delay {2} {focus mode /guide};
+	#NOP delay {2} {focus mode /guide};
+	focus mode /guide;
 }
 #alias {ls2} {
 	sheath;
@@ -87,7 +88,7 @@
 
 #alias {rf} {
 	!unwrap;
-	!focus release force;
+	#delay {1} {!focus release force};
 }
 
 #NOP alias for logging things to my chat file
@@ -160,5 +161,7 @@
 	#act {The cocoon is as strong as it'll ever be!} {#unticker fuse};
 	#ticker {fuse} {!fuse 100;}{2};
 };
+
+#act {^Parts of the cocoon shatters and falls to the ground!} {#if {$coon} {coonup};};
 
 #class {aliases} {close}

@@ -4,59 +4,113 @@
 #VAR {crafting[quality][transmute]} {{4}{superior}{3}{good}{2}{average}{2}{poor}};
 #VAR {crafting[quality][all]} {{best}{worst}{all}{any}${crafting[quality][specific]}};
 #VAR {crafting[limit][default]} {10};
+#VAR {transmute[limit]} {{1}{100}  {2}{4}  {3}{3}  {4}{2}  {5}{3}};
 
 #ALIAS {stc}
 {
-    #ACTION {^%%*%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|} 
-    {
-        #FORMAT {crafting[ingredient]} {%l} {%%1};
-        #VAR {satchel[$crafting[ingredient]][total]} {%%4};
-        #VAR {satchel[$crafting[ingredient]][subtotal][1]} {%%7};
-        #VAR {satchel[$crafting[ingredient]][subtotal][2]} {%%10};
-        #VAR {satchel[$crafting[ingredient]][subtotal][3]} {%%13};
-        #VAR {satchel[$crafting[ingredient]][subtotal][4]} {%%16};
-        #VAR {satchel[$crafting[ingredient]][subtotal][5]} {%%19};
-        .CleanIngredient $crafting[ingredient];
-    };
+  #ACTION {^%%*%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|} 
+  {
+    #FORMAT {crafting[ingredient]} {%l} {%%1};
+    #VAR {satchel[$crafting[ingredient]][total]} {%%4};
+    #VAR {satchel[$crafting[ingredient]][subtotal][1]} {%%7};
+    #VAR {satchel[$crafting[ingredient]][subtotal][2]} {%%10};
+    #VAR {satchel[$crafting[ingredient]][subtotal][3]} {%%13};
+    #VAR {satchel[$crafting[ingredient]][subtotal][4]} {%%16};
+    #VAR {satchel[$crafting[ingredient]][subtotal][5]} {%%19};
+    .CleanIngredient $crafting[ingredient];
+  };
 
-    #ACTION {You have %%d/%%d items in your satchel.}
-    {
-        #UNACTION {^%%*%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|};
-        #UNACTION {You have %%d/%%d items in your satchel.};
-    };
+  #ACTION {You have %%d/%%d items in your satchel.}
+  {
+    #UNACTION {^%%*%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|};
+    #UNACTION {You have %%d/%%d items in your satchel.};
+  };
 
-    #SEND {!stashlist %0};
+  #SEND {!stashlist %0};
 };
 
 #ALIAS {.CleanIngredient}
 {
-    #REGEX {%0} {{fragment|essence}}
+  #REGEX {%0} {{fragment|essence}}
+  {    
+    #FOREACH {$crafting[quality][specific][]} {i}
     {
-        #FOREACH {$crafting[quality][specific][]} {i}
-        {
-            #IF {$satchel[%0][subtotal][$i] >= 5}
-            {
-                #SEND {!unstash2 5 $crafting[quality][specific][$i] %0};
-                #SEND {!assemble %0};
-                #SEND {!stash all};
-            };
-        };
+      #IF {$satchel[%0][subtotal][$i] >= 5}
+      {
+        #NOP get the subtotal for the quality we're going to assemble
+        #VAR {sub} {$satchel[%0][subtotal][$loop]};
+        #MATH {assembleTimes} {$sub / 5};
+        #SEND {!unstash2 5 $crafting[quality][specific][$i] %0};
+        #SEND {!assemble %0};
+        #SEND {!stash all};
+      };
+    };
+}
+{
+    #IF {$crafting[limit][%0] > 0}
+    {
+      #VAR {crafting[limit][current]} {$crafting[limit][%0]};
     }
     {
-        #IF {$crafting[limit][%0] > 0}
-        {
-            #VAR {crafting[limit][current]} {$crafting[limit][%0]};
-        }
-        {
-            #VAR {crafting[limit][current]} {$crafting[limit][default]};
-        }
-        #MATH {crafting[delta]} {$satchel[%0][total] - $crafting[limit][current]};
-        #IF {$crafting[delta] > 0} 
-        {
-            #$crafting[delta] {!unstash2 worst %0};
-            #VAR {satchel[%0][total]} {$crafting[limit][current]};
-        };
+      #VAR {crafting[limit][current]} {$crafting[limit][default]};
+    }
+    #MATH {crafting[delta]} {$satchel[%0][total] - $crafting[limit][current]};
+    #IF {$crafting[delta] > 0} 
+    {
+      #$crafting[delta] {!unstash2 worst %0};
+      #VAR {satchel[%0][total]} {$crafting[limit][current]};
     };
+  };
+};
+
+#NOP copied from the stc alias above and renamed to call .TransmuteIngredient instead of .CleanIngredient
+#NOP otherwise it's identical
+#ALIAS {stt}
+{
+  #ACTION {^%%*%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|} 
+  {
+    #FORMAT {crafting[ingredient]} {%l} {%%1};
+    #VAR {satchel[$crafting[ingredient]][total]} {%%4};
+    #VAR {satchel[$crafting[ingredient]][subtotal][1]} {%%7};
+    #VAR {satchel[$crafting[ingredient]][subtotal][2]} {%%10};
+    #VAR {satchel[$crafting[ingredient]][subtotal][3]} {%%13};
+    #VAR {satchel[$crafting[ingredient]][subtotal][4]} {%%16};
+    #VAR {satchel[$crafting[ingredient]][subtotal][5]} {%%19};
+    .TransmuteIngredient $crafting[ingredient];
+  };
+
+  #ACTION {You have %%d/%%d items in your satchel.}
+  {
+    #UNACTION {^%%*%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|%%s%%d%%s|};
+    #UNACTION {You have %%d/%%d items in your satchel.};
+  };
+
+  #SEND {!stashlist %0};
+};
+
+#NOP Called alias for transmuting crafting mats.  This relies on the new #VAR transmute[limit] listed at the top of the script.
+#NOP It takes the subtotals starting with the lowest quality and determines how many times it needs to transmute them, adding that
+#NOP to the subtotal for the next higher quality so that they get included in the calculation for that quality.
+#ALIAS {.TransmuteIngredient}
+{
+  #REGEX {%0} {{fragment|essence|heart}}
+  {
+    #showme got here;
+    #LOOP {5} {2} loop 
+    {
+      #math {nextq} {$loop - 1};
+      #VAR {sub} {$satchel[%0][subtotal][$loop]};
+      #VAR {limit} {$transmute[limit][$loop]};
+
+      #IF {$sub >= $limit} {
+        #math {xmuteTimes} {$sub / $limit};
+        #math {satchel[%0][subtotal][$nextq]} {$satchel[%0][subtotal][$nextq] + $xmuteTimes};
+        #$xmuteTimes {!unstash2 $limit $crafting[quality][specific][$loop] %0};
+        #SEND {!transmute all %0 quality to $crafting[quality][specific][$nextq]};
+        #SEND {!stash all};
+      };
+    }
+  }
 };
 
 #alias {setlimit} {

@@ -1,9 +1,10 @@
 #class {trigs} {open}
 
-#alias {trel} {#class trigs kill;#read char/simonz/trigs.tin}
+#alias {trel} {#class trigs kill;#read char/simonz/trigs.tin;#delay {4} {#read mip/mip.tin}};
 
 #var cact 0;
 #alias {cact} { #if {$cact == 0} {#var cact 1} {#var cact 0} #var cact};
+#act {^You may only have one pyre active here.} {wrap};
 
 #var gcon 0;
 #alias {gcon} { #if {$gcon == 0} {#var gcon 1} {#var gcon 0} #var gcon};
@@ -17,6 +18,9 @@
 #var coon 0;
 #alias {coon} {#if {$coon == 0} {#showme fuse activated;#var coon 1;}{#showme fuse disabled;#var coon 0;}};
 
+#var coonum 100;
+#alias {coonum} {#showme coonum changed from $coonum to %1; #var coonum %1};
+
 #var tank 1;
 #alias {tank} {#if {$tank == 1} {#showme Not tanking;#var tank 0;}{#showme Tanking;#var tank 1;}};
 
@@ -29,14 +33,19 @@
 #var cof 0;
 #alias {cof} {#if {$cof == 0} {#showme wrapping corpses;#var cof 1;}{#showme not wrapping corpses;#var cof 0;}};
 
+#var bdelay 0;
+#alias {bdelay} {#showme bdelay changed from $bdelay to %1;#var bdelay %1;}
+
+#var gdiv 1;
+#alias {gdiv} {#showme gdiv changed from $gdiv to %1;#var gdiv %1;}
+
 
 #act {^%1 dealt the killing blow to} {
     #if {$tank == 1} {
         !wrap;        
         !focus absorb energy;
-	!dg;
-        !get coins;
     };
+    #if {$gdiv == 1} {!dg;!get coins;} {!get coins};
     #NOP !get all;
     !hp;
     #delay {1} {#showme Rounds: $mip[pround]};
@@ -78,10 +87,13 @@
             #unact {You have no need to meditate};
             #delay {2} {.bot};
         };
+        
         #if {$disa == 1} {!ds};
 	#if {$dtaco == 1} {!ga;!grab $dtacoingr};
-    } {!glance};
-    #if {$coon == 1} {!fuse 100};
+    } 
+    {#delay {$bdelay} {!glance}};
+    #NOP !glance;
+    #if {$coon == 1} {!fuse $coonum};
 #NOP this is in the bot script now #if {$cact == 1} {#delay {10} {rf}};
 } {1}
 
@@ -101,19 +113,19 @@
 #act {You have no cell.} {#var invcell 0};
 
 #act {%* scratches {his|her|its} butt.} {!say Someone should wash %2 hands..};
-#act {%*{offhand blaster's|teepo blaster's|lightdaggers's|lightsaber's|lightstaff's} casing flares nearly white hot} {
+#act {%*{lightdaggers's|lightsaber's|lightstaff's} casing flares nearly white hot} {
     @weapon_fail{%2};
 };
-#act {Your %*{offhand blaster|teepo blaster|lightdaggers|lightsaber|lightstaff} erupts in a deafening display} {
+#act {Your %*{lightdaggers|lightsaber|lightstaff} erupts in a deafening display} {
     @weapon_fail{%2};
 };
-#act {Sparks fly from your %*{offhand blaster's|teepo blaster's|lightdaggers's|lightsaber's|lightstaff's} handle as the circuitry} {
+#act {Sparks fly from your %*{lightdaggers's|lightsaber's|lightstaff's} handle as the circuitry} {
     @weapon_fail{%2};
 };
-#act {Your %*{offhand blaster|teepo blaster|lightdaggers|lightsaber|lightstaff} shuts down, and the heat in your hand} {
+#act {Your %*{lightdaggers|lightsaber|lightstaff} shuts down, and the heat in your hand} {
         @weapon_fail{%2};
 };
-#act {Your %*{offhand blaster's|teepo blaster's|lightdaggers's|lightsaber's|lightstaff's} blade crackles and fades} {
+#act {Your %*{lightdaggers's|lightsaber's|lightstaff's} blade crackles and fades} {
         @weapon_fail{%2};
 };
 #act {Green beams of pure energy withdraw back into your %*{lightstaff}} {
@@ -129,7 +141,7 @@
 
 #var bdam 1;
 #alias {bdr} {#var bdam 1};
-#act {^Your teepo blaster begins to make a weird noise like something is wrong!} { clog {$bdam : %0};#math {bdam} {$bdam + 1}};
+#act {^Your lightstaff begins to flicker and the handle warms!} { clog {$bdam : %0};#math {bdam} {$bdam + 1}};
 
 
 #var staff_status 1;
@@ -300,6 +312,10 @@ gxr;
 
 #act {electricity runs screaming through} {clog {Tagged FB}};
 
+#act {You notice that %* has come into view.} {clog {%0}};
+
+#act {^As you look through the mask, the eyes flash briefly with a dim, blue light.} {clog {Mask active}};
+
 #var btank 0;
 #alias {btank} {
     #if {$btank == 0} {
@@ -311,7 +327,73 @@ gxr;
         #var btank 0;
         #unact {Beloch storms out to do battle!};
     }
-}
+};
+
+#var fsat 0;
+#alias {fsat} { #if {$fsat == 0} {#var fsat 1} {#var fsat 0}};
+#var fsatp 50;
+#alias {fsatp} {#showme fsatp changed from $fsatp to %1; #var fsatp %1};
+#var concp 45;
+#alias {concp} {#showme concp changed from $concp to %1; #var concp %1};
+#var {menders} {
+  {ziphe}{{active}{0}{action}{tug ziphe}}
+  {whoknows}{{active}{0}{action}{tug whoknows}}
+  {kenny}{{active}{0}{action}{tug kenny}}
+  {benek}{{active}{0}{action}{tell benek mendgp}}
+};
+#alias {mendact} {
+  #if {$menders[%0][active] == 0} {
+    #var menders[%0][active] 1;
+    #showme <007>Mender %0 is now active<088>;
+  }{
+    #var menders[%0][active] 0;
+    #showme <007>Mender %0 is now inactive<088>;
+  }
+};
+#act {^[{Whoknows|Ziphe|Kenny|Benek} disconnects]} {#if {$menders[%0][active] == 1} {mendact %0;}};
+#act {^[{Whoknows|Ziphe|Kenny|Benek} reconnects]} {#if {$menders[%0][active] == 0} {mendact %0;}};
+#alias {mstat} {#foreach {$menders[]} {m} {#showme <007>$m is $menders[$m][active]<088>}};
+#alias {mendme}{
+  #foreach {$menders[]} {m} {
+    #if {$menders[$m][active] == 1} {
+      !$menders[$m][action];
+    }
+  }
+};
+#alias {forcesat} {
+  fsat;
+  #if {$fsat == 1} {
+    #showme forcesat on with $fsatp / $concp;
+    #ticker {forcesat} {
+      #if {$gp2 > $fsatp || $gp1 < $concp} {
+        mendme;
+        forcesat;
+        fsatcooldown;
+      }
+    } {10};
+  }
+  {
+    #var fsat 0;
+    #unticker {forcesat};
+    #showme forcesat off;
+  };
+};
+#alias {fsatcooldown} {
+  clog {forcesat on cooldown};
+  #var ftimer 0;
+  #var fmin 0; 
+  #ticker {fsattimer} {
+    #math {ftimer} {$ftimer + 1};
+    #math {fmin} {$ftimer / 60};
+    #if {($ftimer % 60) == 0 } {#showme <007>minute $fmin of cooldown<088>;};    
+  } {1};
+  #ticker {fsatcooldown} {
+    forcesat;
+    #unticker fsatcooldown;
+    #unticker fsattimer;
+    clog {forcesat cooldown over};
+  } {600};
+};
 
 
 #class {trigs} {close}
