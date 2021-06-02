@@ -1,0 +1,37 @@
+#EVENT {SESSION CONNECTED}
+{
+  #VAR {session[name]} {%0};
+};
+
+#SESSION {3k} {3k.org} {3000};psimonz;1661
+#CONFIG {packet patch} {0.5};
+#CONFIG {command echo} {off};
+#FORMAT {session[ScreenRows]} {%R};
+#FORMAT {session[ScreenCols]} {%C};
+
+#SPLIT 1 4;
+
+#var {guild} {psicorp};
+
+#NOP #READ ${session[name]}_variables.tin;
+#read ./bot_load.tin;
+#read ./mbot_load.tin;
+#read ./mip/mip.tin;
+#read ./char/psimonz/miphp.tin;
+#read ./mip/graph.tin;
+#read ./map/mapper.tin;
+#read ./crafting/satchel.tin;
+#read ./crafting/ctrigs.tin;
+#read ./crafting/enchanter.tin;
+#read ./char/psimonz/trigs.tin;
+#read ./char/psimonz/alias.tin;
+#read ./char/psimonz/gag.tin;
+#read ./char/psimonz/subs.tin;
+
+
+#ticker {tHPBar}
+{
+    update_status;
+}
+{2};
+

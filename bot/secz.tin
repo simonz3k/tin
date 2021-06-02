@@ -16,7 +16,7 @@
         get capsule;
 
 };
-#act {The effects of the pale %* capsule fade away.} {swallow %1};
+#act {The effects of the %* capsule fade away.} {eat capsule};
 
 #alias {bp} {
         #switch {%1} {

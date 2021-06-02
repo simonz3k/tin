@@ -24,9 +24,8 @@
 	#format {wpn_charge}	{%+4s} {$my[charge][current]};
 	#format {fdef}			{%f+4s} {$my[fdef_xp][current]};
 	
-	#showme {<228>HP:<138>$hp/$hp_max <068>SP:<168>$sp/$sp_max GP1:$gp1/$gp1_max GP2:$gp2/$gp2_max E:$enemy[graph] GXP: $my[gxp][display]} {4} <088>;
-	#showme {H:$my[hp][graph] S:$my[sp][graph] G1:$my[gp1][graph] G2:$my[gp2][graph] Fdr: $my[fdef][proc_rate]  FXP: $my[gline2][fdp]} {3}<088>;
-	#showme {[$my[gline2][fd]][$my[gline2][cpain]][$my[gline2][dodge]] [$my[gline2][lfs]][$my[gline2][gfs]][$my[gline2][rstun]][$my[gline2][rpoison]][$my[gline2][emet]][$my[gline2][diss]] [$my[gline2][tk]] [$my[ki][cur]/$my[ki][max]] Round: $mip[round]} {2}<088>;
+	#showme {<228>HP:<138>$hp/$hp_max  <068>SP:<168>$sp/$sp_max  GP1:$gp1/$gp1_max  E:$enemy[graph]} {3} <088>;
+	#showme {H:$my[hp][graph]  S:$my[sp][graph]  G1:$my[gp1][graph] Round: $mip[round]  GXP: $my[gxp][display]} {2}<088>;
 }
 
 #class {miphp} {close}

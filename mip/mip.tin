@@ -196,7 +196,8 @@
 		#VAR {enemy} {};
 		#VAR {enemy[name]} {%1};
 	} {
-		#VAR {enemy[hp]} {}
+		#VAR {enemy[hp]} {};
+    #VAR {enemy[name]} {};
 	}
 }
 

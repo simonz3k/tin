@@ -132,21 +132,7 @@
 
 #alias {eprot} {!focus maintain for rpoison;!focus maintain for rstun;!focus maintain for emet;};
 
-#alias {pathdump} {
-	#path save forward pathtmp;
-	#map get {roomvnum} {vnum};
-	#map goto 1;
-	#map find {roomnote} %1;
-	#path save forward pathto;
-	#replace {pathto} {;} {,};
-	#showme $pathto;
-	#path load $pathtmp;
-	!tell %2 $pathto;
-	#map goto $vnum;
-	#unvar pathtmp;
-	#unvar pathto;
-	#unvar vnum;
-}
+
 
 #alias {edet} {!ei %0;!(learn details %0;}
 

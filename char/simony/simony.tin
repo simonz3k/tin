@@ -9,7 +9,7 @@
 #FORMAT {session[ScreenRows]} {%R};
 #FORMAT {session[ScreenCols]} {%C};
 
-#SPLIT 1 5;
+#SPLIT 1 4;
 
 #var {guild} {jedi};
 
@@ -23,11 +23,10 @@
 #read ./crafting/satchel.tin;
 #read ./crafting/ctrigs.tin;
 #read ./crafting/enchanter.tin;
-#read ./char/simonz/trigs.tin;
-#read ./char/simonz/alias.tin;
-#read ./char/simonz/gag.tin;
-#read ./char/simonz/subs.tin;
-#read ./char/simonz/dirs.tin;
+#read ./char/simony/trigs.tin;
+#read ./char/simony/alias.tin;
+#read ./char/simony/gag.tin;
+#read ./char/simony/subs.tin;
 
 #ticker {tHPBar}
 {

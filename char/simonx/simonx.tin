@@ -9,9 +9,9 @@
 #FORMAT {session[ScreenRows]} {%R};
 #FORMAT {session[ScreenCols]} {%C};
 
-#SPLIT 1 5;
+#SPLIT 1 4;
 
-#var {guild} {jedi};
+#var {guild} {android};
 
 #NOP #READ ${session[name]}_variables.tin;
 #read ./bot_load.tin;

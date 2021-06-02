@@ -79,6 +79,8 @@
 #NOP    - 3 : first golem is dead, change state back to 0 and run alias to start ticker
 
 
+#var zen 1;
+#alias {zen} {#if {$zen == 1} {#showme not enlarging;#var zen 0;}{#showme enlarging;#var zen 1;}};
 
 #var zf 0;
 
@@ -91,10 +93,13 @@
 			#ticker {zf} {
 				#NOP showme ticker1;
 				#if {$enemy[hp] < 10} {
-					#NOP showme enlarging the first golem;
-					#NOP !(enlarge;
-					#NOP showme attacking the second golem;
+          #if {$zen == 1} {
+					  #showme attempting to enlarge the first golem;
+					  !(enlarge;
+					  #showme attacking the second golem;
+          }
 					!k golem;
+          #unticker {zf};
 					#delay {2} {
 						#ticker {zf} {
 							#NOP showme ticker2, $enemy[hp];
@@ -116,14 +121,16 @@
 };
 zf;
 
+
 #highlight {The Golem calls for help!} {tan b red};
-#highlight {Zelligar screams} {tab b red};
+#highlight {Zelligar screams} {tan b red};
 
 #alias {botcleanup} {
 	#2 {!unkeep key;!dispose key;};
 	!unkeep gloves of acid protection;
 	!dispose gloves of acid protection;
 	#unalias zf;#unticker zf;#unvar zf;
+  #unvar zen;
 }
 
 

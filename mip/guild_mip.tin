@@ -17,6 +17,7 @@
 			#CASE {"necromancer"}	{.mipProcessGlineNecromancer {%1}};
 			#CASE {"psicorp"}	{.mipProcessGlinePsicorp {%1}};
 			#CASE {"sii"}		{.mipProcessGlineSii {%1}}
+      #CASE {"android"}		{.mipProcessGlineAndroid {%1}}
         }
 
     }
@@ -48,6 +49,27 @@
     #ELSE {
         #ECHO {<171> Invalid Gline Number <088>}
     }
+}
+
+#ALIAS {.mipProcessGlinePsicorp} {
+	#IF {%1 == 1} {
+		#NOP
+	}; #ELSEIF {%1 == 2} {
+		#REGEX {$mip[gline][2]} {G2N: %* / %d\%} {
+			#FORMAT {my[gxp][tnl]} {%d} {&1};
+			#VAR {my[gxp][per]} {&2}
+		}
+    #REGEX {$mip[gline][2]} {TL: %d} {#VAR {my[gline2][fd]} {FD}};
+	}; #ELSE {
+		#ECHO {<171> Invalid Gline Number <088>}
+	}
+}
+
+#ALIAS {.mipProcessGlineAndroid} {
+  #IF {%1 == 1} {
+    #unvar my[gline1];
+    #REGEX {$mip[gline][1]} {G2N:\[%d\%]} {#VAR {my[gline1][gxp]}   {&1};};
+  };
 }
 
 #ALIAS {.mipProcessGlineChangeling} {
@@ -215,19 +237,6 @@
 		#REGEX {$mip[gline][2]}	{SPf:%d/%d}	{
 			#VAR {my[sp][fuse][current]}	{&1};
 			#VAR {my[sp][fuse][max]}	{&2}
-		}
-	}; #ELSE {
-		#ECHO {<171> Invalid Gline Number <088>}
-	}
-}
-
-#ALIAS {.mipProcessGlinePsicorp} {
-	#IF {%1 == 1} {
-		#NOP
-	}; #ELSEIF {%1 == 2} {
-		#REGEX {$mip[gline][2]} {G2N: %* / %d\%} {
-			#FORMAT {my[gxp][tnl]} {%d} {&1};
-			#VAR {my[gxp][per]} {&2}
 		}
 	}; #ELSE {
 		#ECHO {<171> Invalid Gline Number <088>}

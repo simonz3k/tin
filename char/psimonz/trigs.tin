@@ -1,0 +1,101 @@
+#class {trigs} {open}
+
+#alias {trel} {#class trigs kill;#read char/psimonz/trigs.tin;#delay {4}{#read mip/mip.tin}}
+
+#var solo 1;
+#alias {solo} {#if {$solo == 1} {#showme Not solo;#var solo 0;}{#showme Solo;#var solo 1;}};
+
+
+#act {^%1 dealt the killing blow to} {
+  !wrap;
+  !dg;
+  !get coins from corpse;
+  !hp;
+  #delay {1} {#showme Rounds: $mip[pround]};
+  #if {$bot == 1} {.bot};
+} {1}
+
+#alias {gxr} {
+	#var my[gxp][rounds] 0;
+    #var my[gxp][current] 0;
+    #var my[gxp][base] 0;
+    #var my[gxp][previous] 0;
+    #var my[gxp][total_gain] 0;
+    #var my[gxp][xp_rate][current] 0.0000;
+    #var my[gxp][xp_rate][average] 0.0000;
+    !hp;
+};
+gxr;
+
+#var ggag 1;
+#alias {ggag} {#if {$ggag == 1} {#showme ggag off;#var ggag 0} {#showme ggag on; #var ggag 1}};
+
+#act {Expendable  : %d} {#showme matched on %1};
+#act {G2N:\[%1%\]} {
+	#if {$ggag == 1} {#line gag;};
+	#math {my[gxp][rounds]} {$my[gxp][rounds] + 1};
+	#var my[gxp][display] %1;
+  #format my[gxp][previous] {%f} {$my[gxp][current]};
+  #format my[gxp][current] {%f} {%1};
+  #if {$my[gxp][base] == 0 } {#var my[gxp][base] $my[gxp][current]};
+  #math {my[gxp][total_gain]} {$my[gxp][current] - $my[gxp][base]};
+  #math {my[gxp][xp_rate][average]} {$my[gxp][total_gain] / $my[gxp][rounds]};
+};
+
+#alias {gxp} {
+    #showme gxp rounds: $my[gxp][rounds];
+    #showme gxp total gain: $my[gxp][total_gain];
+    #showme gxp xp increase: $my[gxp][xp_rate][current];
+    #showme gxp avg increase: $my[gxp][xp_rate][average];
+
+};
+
+#act {^You have become a %1} {clog {%1}};
+
+#act {^%1 thinks . o O ( %2 } {clog {%1 esp: %2}};
+
+#act {The colours in your transmuter's stone begins to swirl.} {
+	#highlight {%0} {light pink};
+	clog {%0};
+};
+#act {^Your transmuter's stone bursts with %* new colours!$} {
+	#highlight {%0} {light pink};
+	clog {%0};
+	!exa stone;	
+};
+#act {A Transmuter's Stone (%*)} {clog {%0}}:
+
+#act {^You have found %1!} {
+	#if {"%1" != "a deposit %*"} {
+		clog {Found world drop: {%1}};
+		!get %1;
+	}
+}
+
+#act {%1 You have found A Tome %2} {!get tome;!smuggle tome;clog {%0}} {1};
+
+#act {You have advanced your %1 skill} {clog {%0}};
+
+#act {What luck!  You have found %1!} {clog {%0}};
+
+#act {the accomplishments of the Mortal %1.} {clog {%1 leveled}};
+#act {[BOOM!] %1 has eternally reached level %2!} {clog {%0}};
+#act {corpse of %1, courtesy of %2.  The buzzards feed} {clog {%1 died to %2}};
+#act {You see the Grim Reaper drift over to the corpse of %1.  The dark} {clog {%1 died}};
+#act {[[DEATH]] %1 has been slain by Zombie!} {clog {newbie death: %0}};
+#act {%1 screams as %2 tears his heart out! (c) Castle Arg} {clog {%1 died to %2}};
+
+#act {^Your legs run away with you%1} {clog {%0}};
+
+#act {^{Poor|Average|Good|Superior|Legendary} {fragment|essence|heart} of %*} {get %2;smr backpack;put %2 in backpack;sm backpack;clog {picked up thing}}
+
+#act {^To do so, type: tskill %w %*}{!tskill %1 %2;};
+
+#act {**** REMINDER ****} {clog {%0 : $rem}};
+
+#act {%*screams out in pain as %* tears his heart out in the ARENA!} {clog {%0}};
+
+#var healamt 2250;
+#alias {healamt} {#var healamt %0;#showme now healing at $healamt hp;};
+
+#class {trigs} {close}

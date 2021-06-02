@@ -1,0 +1,20 @@
+#CLASS {cGlobalVars} OPEN
+
+#ACTION {^Character saved.}
+{
+	#class {cGlobalVars} {write} {${session[name]}_variables.tin};
+	#showme Vars saved
+}
+{1}
+
+#ACTION {^Your holocron glows brightly as it saves your status.$}
+{
+	#class {cGlobalVars} {write} {${session[name]}_variables.tin};
+	#showme Vars saved
+}
+{1}
+
+#VARIABLE         {global}  {}
+#VARIABLE         {static}  {}
+
+#CLASS {cGlobalVars} CLOSE

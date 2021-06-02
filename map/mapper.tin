@@ -254,12 +254,28 @@
 	mapoff;
 }
 
+#alias {pathdump} {
+	#path save forward pathtmp;
+	#map get {roomvnum} {vnum};
+	#map goto 1;
+	#map find {roomnote} %1;
+	#path save forward pathto;
+	#replace {pathto} {;} {,};
+	#showme $pathto;
+	#path load $pathtmp;
+	!tell %2 $pathto;
+	#map goto $vnum;
+	#unvar pathtmp;
+	#unvar pathto;
+	#unvar vnum;
+}
+
 /* TMUX Sizing */
 #NOP event {SCREEN RESIZE} {rs}
 
 
 #NOP Death
-#act {^You die.$} {#map goto 6247}
+#act {^You die.$} {#map goto 1}
 
 #NOP Death Taco
 #act {^You shoot through a graceful arc, and feel weightless for the} {#map goto {roomnote} roaches}

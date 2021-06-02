@@ -1,83 +1,57 @@
 #class {trigs} {open}
 
-#alias {trel} {#class trigs kill;#read trigs.tin}
-
-#var cact 0;
-#alias {cact} { #if {$cact == 0} {#var cact 1} {#var cact 0} #var cact};
-
-#var medp 70;
-#alias {medp} {#showme medp changed from $medp to %1; #var medp %1};
-
-#var htp 30;
-#alias {htp} {#showme htp changed from $htp to %1; #var htp %1};
-
-#var coon 0;
-#alias {coon} {#if {$coon == 0} {#showme fuse activated;#var coon 1;}{#showme fuse disabled;#var coon 0;}};
+#alias {trel} {#class trigs kill;#read char/simonx/trigs.tin;#delay {4}{#read mip/mip.tin}}
 
 #var tank 1;
 #alias {tank} {#if {$tank == 1} {#showme Not tanking;#var tank 0;}{#showme Tanking;#var tank 1;}};
-
-#var disa 0;
-#alias {disa} {#if {$disa == 0} {#showme turning dissipates back on after htrance;#var disa 1;}{#showme not dissapating;#var disa 0;}};
 
 #var gcheck 0;
 #alias {gcheck} {#if {$gcheck == 0} {#showme turning gs on after kills;#var gcheck 1;}{#showme gs disabled;#var gcheck 0;}};
 
 
 #act {^%1 dealt the killing blow to} {
-    #if {$tank == 1} {
-        !wrap;        
-        !focus absorb energy;
-        !get coins;
-    };
-	#NOP !get all;
-	#NOP !hp;
-	#delay {1} {#showme Rounds: $mip[pround]};
-
-	#if {$gcheck == 1} {!gs};
-
-	#if {$cbot == 1} {!g};
-
-	#if {$bot == 1} {
-		#act {stir from your meditation} { #delay {2} {!focus meditation;#unact {stir from your meditation}}};
-		#if {$gp2 > $htp} {
-			#delay {2} {!focus hibernation trance};
-			#act {fully rejuvenated and thus exit} {
-				#unact {fully rejuvenated and thus exit};
-				#delay {2}; 
-				#if {$gp1 < $medp} {
-					!focus meditation;
-					clog {Htrance triggered};
-				} {
-					#delay {1} {.bot};
-				}
-			};
-		} {
-			#delay {2};
-			#if {$gp1 < $medp} {
-				!focus meditation;
-				clog {Meditation triggered};
-			} {
-				#delay {2} {.bot};
-			}
-		}
-		#act {You stop your meditation exercises} {
-			#unact {stir from your meditation};
-			#unact {You stop your meditation exercises};            
-			#delay {2} {.bot};
-		};
-		#act {You have no need to meditate} {
-			#unact {stir from your meditation};
-			#unact {You have no need to meditate};
-			#delay {2} {.bot};
-		};
-		#if {$disa == 1} {!ds};
-	} {!glance};
-	#if {$coon == 1} {!fuse 100};
-#NOP this is in the bot script now #if {$cact == 1} {#delay {10} {rf}};
+  !wrap;        
+  !b;
+  !dg;
+  !get coins;
+  !hp;
+  #delay {1} {#showme Rounds: $mip[pround]};
+  #if {$bot == 1} {.bot};
 } {1}
 
-#act {You may only have one pyre active here.} {!wrap}
+#alias {gxr} {
+	#var my[gxp][rounds] 0;
+    #var my[gxp][current] 0;
+    #var my[gxp][base] 0;
+    #var my[gxp][previous] 0;
+    #var my[gxp][total_gain] 0;
+    #var my[gxp][xp_rate][current] 0.0000;
+    #var my[gxp][xp_rate][average] 0.0000;
+    !hp;
+};
+gxr;
+
+#var ggag 1;
+#alias {ggag} {#if {$ggag == 1} {#showme ggag off;#var ggag 0} {#showme ggag on; #var ggag 1}};
+
+#act {G2N:\[%1%\]} {
+	#if {$ggag == 1} {#line gag;};
+	#math {my[gxp][rounds]} {$my[gxp][rounds] + 1};
+	#var my[gxp][display] %1;
+  #format my[gxp][previous] {%f} {$my[gxp][current]};
+  #format my[gxp][current] {%f} {%1};
+  #if {$my[gxp][base] == 0 } {#var my[gxp][base] $my[gxp][current]};
+  #math {my[gxp][total_gain]} {$my[gxp][current] - $my[gxp][base]};
+  #math {my[gxp][xp_rate][average]} {$my[gxp][total_gain] / $my[gxp][rounds]};
+};
+
+#alias {gxp} {
+    #showme gxp rounds: $my[gxp][rounds];
+    #showme gxp total gain: $my[gxp][total_gain];
+    #showme gxp xp increase: $my[gxp][xp_rate][current];
+    #showme gxp avg increase: $my[gxp][xp_rate][average];
+
+};
 
 #act {^You have become a %1} {clog {%1}};
 
@@ -114,98 +88,9 @@
 #act {[[DEATH]] %1 has been slain by Zombie!} {clog {newbie death: %0}};
 #act {%1 screams as %2 tears his heart out! (c) Castle Arg} {clog {%1 died to %2}};
 
-#    FDEF xp tracking system
-
-#    this resets the data, useful for when you want to get a baseline number for a particular mob or area
-#alias {fdr} {
-    #var my[fdef][base] 0;
-    #var my[fdef][current] 0;
-    #var my[fdef][previous] 0;
-    #var my[fdef][total_gain] 0;
-    #var my[fdef][proc] 0;
-    #var my[fdef][total_proc] 0;
-    #var my[fdef][proc_rate] 0.000000;
-    #var my[fdef][rounds] 0;
-    #var my[fdef][xp_rate][current] 0.000000;
-    #var my[fdef][xp_rate][average] 0.000000;
-    gxr;
-}
-fdr;
-
-#var fgag 1;
-#alias {fgag} {#if {$fgag == 1} {#showme fgag off;#var fgag 0} {#showme fgag on; #var fgag 1}};
-#act {The Force guides your actions. -> focus check /deflect} {#line gag}
-
-#act {^You are %1% to your next deflect level.$} {
-    #if {$fgag == 1} {#line gag;};
-    #math {my[fdef][rounds]} {$my[fdef][rounds] + 1};
-    #var my[fdef][previous] $my[fdef][current];
-    #var my[fdef][current] %1;
-    #if {$my[fdef][base] == 0} {#var my[fdef][base] $my[fdef][current]};
-    #math {my[fdef][total_gain]} {$my[fdef][current] - $my[fdef][base]};
-    #math {my[fdef][xp_rate][average]} {$my[fdef][total_gain] / $my[fdef][total_proc]};
-    #if {$my[fdef][current] == $my[fdef][previous]} {
-        #var my[fdef][proc] 0
-    } {
-        #var my[fdef][proc] 1;
-        #math {my[fdef][total_proc]} {$my[fdef][total_proc] + 1.000000};
-    };
-    #math {my[fdef][proc_rate]} {$my[fdef][total_proc] / $my[fdef][rounds]};
-    #math {my[fdef][xp_rate][current]} {$my[fdef][current] - $my[fdef][previous]};
-}
-
-#alias {fds} {
-    #showme fdef rounds: $my[fdef][rounds];
-    #showme fdef total proc: $my[fdef][total_proc];
-    #showme fdef proc rate: $my[fdef][proc_rate];
-    #showme fdef total gain: $my[fdef][total_gain];
-    #showme fdef xp increase: $my[fdef][xp_rate][current];
-    #showme fdef avg increase: $my[fdef][xp_rate][average];
-
-}
-
-#alias {gxr} {
-    #var my[gxp][current] 0;
-    #var my[gxp][base] 0;
-    #var my[gxp][previous] 0;
-    #var my[gxp][total_gain] 0;
-    #var my[gxp][xp_rate][current] 0.0000;
-    #var my[gxp][xp_rate][average] 0.0000;
-}
-gxr;
-
-#NOP Ki:5/5 N:1499 Gx: 74.81%
-
-#act {Ki:%1/%2 N:%3 Gx: %4%} {
-    #if {$ggag == 1} {#line gag};
-	#var my[ki][cur] %1;
-	#NOP #showme ki %1/%2;
-	#var my[ki][max] %2;
-	#var my[energy][cur] %3;
-    #var my[gxp][display] %4;
-    #format my[gxp][previous] {%f} {$my[gxp][current]};
-    #format my[gxp][current] {%f} {%4};
-    #if {$my[gxp][base] == 0 } {#var my[gxp][base] $my[gxp][current]};
-    #math {my[gxp][total_gain]} {$my[gxp][current] - $my[gxp][base]};
-    #math {my[gxp][xp_rate][average]} {$my[gxp][total_gain] / $my[fdef][rounds]};
-}
-
-#alias {gxp} {
-    #showme gxp rounds: $my[fdef][rounds];
-    #showme gxp total gain: $my[gxp][total_gain];
-    #showme gxp xp increase: $my[gxp][xp_rate][current];
-    #showme gxp avg increase: $my[gxp][xp_rate][average];
-
-}
-
-#var ggag 1;
-#alias {ggag} {#if {$ggag == 1} {#showme ggag off;#var ggag 0} {#showme ggag on; #var ggag 1}};
-
-
 #act {^Your legs run away with you%1} {clog {%0}};
 
-#act {You notice a small fragment and pick it up} {smr backpack;put fragment in backpack;sm backpack};
-#act {^{Poor|Average|Good|Superior|Legendary} {fragment|essence|heart} of %*} {get %2;smr backpack;put %2 in backpack;clog {picked up thing}}
+#act {^{Poor|Average|Good|Superior|Legendary} {fragment|essence|heart} of %*} {get %2;smr backpack;put %2 in backpack;sm backpack;clog {picked up thing}}
 
 #act {^To do so, type: tskill %w %*}{!tskill %1 %2;};
 
@@ -223,5 +108,28 @@ gxr;
         }
     }
 }
+
+#act {// Info: You have a new personal top Android kill!} {clog {%0}};
+#act {// Info: You do not have enough charge keep your plating electrified!} {clog {%0}};
+#act {// Error: You do not have enough charge to sustain engaged plating!} {clog {%0}};
+
+#var healamt 2250;
+#alias {healamt} {#var healamt %0;#showme now healing at $healamt hp;};
+
+#ticker {healhp} {
+  #if {$my[hp][current] < $healamt} {!q};
+}{1};
+#ticker {healgp} {
+  #if {$my[gp1][current] < 2000} {!unwrap;!b}
+}{1};
+
+#highlight {// Info: Your nanobots explode with life and furiously repair your suit.}{reverse jade};
+#highlight {// Error: Your nanobots can not work that fast!}{reverse red};
+
+
+#act {yellowy haze of mystic adrenaline} {
+  clog {Enlarged};
+  #delay {780} {clog {enlarge reset};}
+};
 
 #class {trigs} {close}
